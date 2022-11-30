@@ -33,18 +33,17 @@
 //   padding: 20px;
 // `;
 
-// // p element 
+// // p element
 // const ThePar = styled.p`
 //   margin: 0;
 // `;
 
-
-// // Icon element 
+// // Icon element
 // const TheIcon = styled.a`
 //   text-decoration: none;
 // `;
 
-// // Icon element 
+// // Icon element
 // const LinkedIn = styled.img`
 //   color: #0072b1;
 // `;

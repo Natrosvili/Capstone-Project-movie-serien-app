@@ -7,7 +7,6 @@ export default function Header() {
   return (
     <StyledHeader>
       <Image src={logo} width="150" height="100" alt="the main logo" />
-
       <EveryLink href="">
         <em>Movies</em>
       </EveryLink>
