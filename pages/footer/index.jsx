@@ -27,7 +27,6 @@
 //     text-decoration: none
 // `
 
-
 // const LinkedIn = styled.img`
 //     color: #0072B1;
 // `
