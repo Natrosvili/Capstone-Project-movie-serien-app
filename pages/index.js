@@ -1,6 +1,6 @@
 import Head from "next/head";
-import Header from "./header";
-// import Footer from "./footer"
+import Header from "./Header";
+import Footer from "./Footer"
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
       </Head>
       <Header />
 
-      {/* <Footer/> */}
+      <Footer/>
     </>
   );
 }
