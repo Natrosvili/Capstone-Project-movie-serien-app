@@ -4,7 +4,7 @@ import Header from "./header";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Head>
         <title>
           Search Find Go! - Find Your Favourite Movies and Series in
@@ -16,6 +16,6 @@ export default function Home() {
       <Header />
 
       {/* <Footer/> */}
-    </div>
+    </>
   );
 }

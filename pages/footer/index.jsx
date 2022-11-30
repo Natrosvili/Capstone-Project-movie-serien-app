@@ -1,14 +1,13 @@
-// import Image from "next/image"
-// import Link from "next/link"
 // import styled from "styled-components"
+// import { Icon } from '@iconify/react';
 
 // export default function Footer() {
 //     return (
 //         <TheFooter>
 //             <ThePar>Find the Onwer At:</ThePar>
-//             <Link href=""><Image src="" alt="gmail" width="something" height="something" /></Link>
-//             <Link href=""><Image src="" alt="linkedIn" width="something" height="something" /></Link>
-//             <Link href=""><Image src="" alt="github" width="something" height="something" /></Link>
+//             <TheIcon href=""><Icon icon="material-symbols:alternate-email" width="35" height="35" /></TheIcon>
+//             <TheIcon href=""><LinkedIn icon="mdi:linkedin" width="35" height="35" /></TheIcon>
+//             <TheIcon href=""><Icon icon="mdi:github" width="35" height="35" /></TheIcon>
 //             <ThePar>©2022 Search Find Go! --All external content remains the property of the righful owner.</ThePar>
 //         </TheFooter>
 //     )
@@ -22,4 +21,13 @@
 
 // const ThePar = styled.p`
 //     margin: 0;
+// `
+
+// const TheIcon = styled.a`
+//     text-decoration: none
+// `
+
+
+// const LinkedIn = styled.img`
+//     color: #0072B1;
 // `
