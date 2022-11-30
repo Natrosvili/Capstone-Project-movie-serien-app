@@ -6,8 +6,8 @@ describe("Home", () => {
   it("renders an octopus", () => {
     render(<Home />);
 
-    const parameter = true; 
-    
-    expect(parameter).toBe(true)
+    const parameter = true;
+
+    expect(parameter).toBe(true);
   });
 });
