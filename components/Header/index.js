@@ -2,32 +2,34 @@ import styled from "styled-components";
 import Image from "next/image";
 import logo from "./logo.png";
 import {Icon} from "@iconify/react";
+import Link from "next/link";
 
 export default function Header() {
   return (
     <StyledHeader>
       <Image src={logo} width="150" height="100" alt="search find go" />
-      <Link href="">
+      <StyledLink href="">
         <Span>Movies</Span>
-      </Link>
-      <Link href="">
+      </StyledLink>
+      <StyledLink href="">
         <Span>Series</Span>
-      </Link>
+      </StyledLink>
+
       <form>
-        <label>
-          <Search>
+        <SearchComponent>
+          <label>
             <Icon icon="ic:baseline-search" width="35" height="35" />
-          </Search>
-        </label>
-        <Input type="search" id="search" placeholder="Search..." />
+          </label>
+          <Input type="search" id="search" placeholder="Search..." />
+        </SearchComponent>
       </form>
 
-      <Link href="">
+      <StyledLink href="">
         <Icon icon="material-symbols:login" width="35" height="35" />
-      </Link>
-      <Link href="">
+      </StyledLink>
+      <StyledLink href="">
         <Icon icon="mdi:register" width="35" height="35" />
-      </Link>
+      </StyledLink>
     </StyledHeader>
   );
 }
@@ -48,10 +50,20 @@ const StyledHeader = styled.header`
     font-size: 13px;
   }
 `;
+const SearchComponent = styled.div`
+  display: flex;
+  border: 2px solid white;
+  padding-left: 5px;
+  box-shadow: inset 0 0 1px white;
+  border-radius: 20px;
+  background-color: #9a9595;
+  align-items: center;
+`;
 
 // Link element
-const Link = styled.a`
+const StyledLink = styled(Link)`
   text-decoration: none;
+  z-index: 1;
   color: #ffffff;
 `;
 
@@ -67,22 +79,11 @@ const Input = styled.input`
   width: 200px;
   background-color: #9a9595;
   color: #ffffff;
-  padding-left: 40px;
   cursor: pointer;
+  border: none;
+  outline: none;
 
   @media screen and (max-width: 622px) {
     width: 170px;
-  }
-`;
-
-// search Icon
-const Search = styled.i`
-  position: absolute;
-  right: 150px;
-  top: 40px;
-
-  @media screen, (max-width: 622px) and (min-width: 622px) {
-    left: 320px;
-    top: 40px;
   }
 `;
