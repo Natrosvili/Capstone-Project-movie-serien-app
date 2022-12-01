@@ -7,7 +7,9 @@ import Link from "next/link";
 export default function Header() {
   return (
     <StyledHeader>
-      <Image src={logo} width="150" height="100" alt="search find go" />
+      <StyledLink href="">
+        <Img src={logo} width="200" height="100" alt="search find go" />
+      </StyledLink>
       <StyledLink href="">
         <Span>Movies</Span>
       </StyledLink>
@@ -50,6 +52,15 @@ const StyledHeader = styled.header`
     font-size: 13px;
   }
 `;
+
+const Img = styled(Image)`
+  @media screen and (max-width: 622px) {
+    width: 150px;
+    height: 80px;
+  }
+`;
+
+// div behind input element
 const SearchComponent = styled.div`
   display: flex;
   border: 2px solid white;
