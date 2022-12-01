@@ -78,7 +78,7 @@ const Input = styled.input`
 // search Icon
 const Search = styled.i`
   position: absolute;
-  right: 615px;
+  right: 150px;
   top: 40px;
 
   @media screen, (max-width: 622px) and (min-width: 622px) {
