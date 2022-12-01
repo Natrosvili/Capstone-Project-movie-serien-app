@@ -2,6 +2,9 @@
 // import {Icon} from "@iconify/react";
 
 // export default function Footer() {
+
+//   const  currentYear = new Date().getFullYear()
+
 //   return (
 //     <TheFooter>
 //       <ThePar>Find the Onwer At:</ThePar>
@@ -19,7 +22,7 @@
 //         <Icon icon="mdi:github" width="35" height="35" />
 //       </TheIcon>
 //       <ThePar>
-//         ©2022 Search Find Go! --All external content remains the property of the
+//         ©{currentYear} Search Find Go! --All external content remains the property of the
 //         righful owner.
 //       </ThePar>
 //     </TheFooter>

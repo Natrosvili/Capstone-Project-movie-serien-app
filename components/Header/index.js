@@ -6,25 +6,25 @@ import {Icon} from "@iconify/react";
 export default function Header() {
   return (
     <StyledHeader>
-      <Image src={logo} width="150" height="100" alt="the main logo" />
-      <EveryLink href="">
-        <em>Movies</em>
-      </EveryLink>
-      <EveryLink href="">
-        <em>Series</em>
-      </EveryLink>
+      <Image src={logo} width="150" height="100" alt="search find go" />
+      <Link href="">
+        <Span>Movies</Span>
+      </Link>
+      <Link href="">
+        <Span>Series</Span>
+      </Link>
 
       <Search htmlFor="search">
         <Icon icon="ic:baseline-search" width="35" height="35" />
       </Search>
       <Input type="search" id="search" placeholder="Search..." />
 
-      <EveryLink href="">
+      <Link href="">
         <Icon icon="material-symbols:login" width="25" height="25" />
-      </EveryLink>
-      <EveryLink href="">
+      </Link>
+      <Link href="">
         <Icon icon="mdi:register" width="35" height="35" />
-      </EveryLink>
+      </Link>
     </StyledHeader>
   );
 }
@@ -47,10 +47,15 @@ const StyledHeader = styled.header`
 `;
 
 // Link element
-const EveryLink = styled.a`
+const Link = styled.a`
   text-decoration: none;
   color: #ffffff;
 `;
+
+// span element
+const Span = styled.span`
+  font-style: italic;
+`
 
 // input element
 const Input = styled.input`
