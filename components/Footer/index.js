@@ -35,6 +35,7 @@ const StyledFooter = styled.footer`
   text-align: center;
   padding: 20px;
   font-style: italic;
+  border-top: 5px solid #ffffff;
 `;
 
 const StyledIcon = styled(Icon)`
