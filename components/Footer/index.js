@@ -9,17 +9,17 @@ export default function Footer() {
   return (
     <StyledFooter>
       <Par>Find the Onwer At:</Par>
-      <Link href="">
+      <Link href="mailto:georgenatro@gmail.com">
         <StyledIcon
           icon="material-symbols:alternate-email"
           width="35"
           height="35"
         />
       </Link>
-      <Link href="">
+      <Link href="https://www.linkedin.com/in/natrosvili/">
         <Icon icon="mdi:linkedin" width="35" height="35" />
       </Link>
-      <Link href="">
+      <Link href="https://github.com/Natrosvili">
         <StyledIcon icon="mdi:github" width="35" height="35" />
       </Link>
       <Par>
