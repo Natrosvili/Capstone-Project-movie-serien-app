@@ -1,52 +1,47 @@
-// import styled from "styled-components";
-// import {Icon} from "@iconify/react";
+import styled from "styled-components";
+// import Image from "next/image";
+import {Icon} from "@iconify/react";
+import Link from "next/link";
 
-// export default function Footer() {
+export default function Footer() {
+  const currentYear = new Date().getFullYear();
 
-//   const  currentYear = new Date().getFullYear()
+  return (
+    <StyledFooter>
+      <Par>Find the Onwer At:</Par>
+      <Link href="">
+        <StyledIcon
+          icon="material-symbols:alternate-email"
+          width="35"
+          height="35"
+        />
+      </Link>
+      <Link href="">
+        <Icon icon="mdi:linkedin" width="35" height="35" />
+      </Link>
+      <Link href="">
+        <StyledIcon icon="mdi:github" width="35" height="35" />
+      </Link>
+      <Par>
+        ©{currentYear} Search Find Go! --All external content remains the
+        property of the righful owner.
+      </Par>
+    </StyledFooter>
+  );
+}
 
-//   return (
-//     <TheFooter>
-//       <ThePar>Find the Onwer At:</ThePar>
-//       <TheIcon href="">
-//         <TheIcon
-//           icon="material-symbols:alternate-email"
-//           width="35"
-//           height="35"
-//         />
-//       </TheIcon>
-//       <TheIcon href="">
-//         <LinkedIn icon="mdi:linkedin" width="35" height="35" />
-//       </TheIcon>
-//       <TheIcon href="">
-//         <Icon icon="mdi:github" width="35" height="35" />
-//       </TheIcon>
-//       <ThePar>
-//         ©{currentYear} Search Find Go! --All external content remains the property of the
-//         righful owner.
-//       </ThePar>
-//     </TheFooter>
-//   );
-// }
+// footer element
+const StyledFooter = styled.footer`
+  background-color: #000000;
+  text-align: center;
+  padding: 20px;
+  font-style: italic;
+`;
 
-// // footer element
-// const TheFooter = styled.footer`
-//   background-color: #000000;
-//   text-align: center;
-//   padding: 20px;
-// `;
+const StyledIcon = styled(Icon)`
+  color: #ffffff;
+`;
 
-// // p element
-// const ThePar = styled.p`
-//   margin: 0;
-// `;
-
-// // Icon element
-// const TheIcon = styled.a`
-//   text-decoration: none;
-// `;
-
-// // Icon element
-// const LinkedIn = styled.img`
-//   color: #0072b1;
-// `;
+const Par = styled.p`
+  margin: 0;
+`;
