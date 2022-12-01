@@ -13,14 +13,17 @@ export default function Header() {
       <Link href="">
         <Span>Series</Span>
       </Link>
-
-      <Search htmlFor="search">
-        <Icon icon="ic:baseline-search" width="35" height="35" />
-      </Search>
-      <Input type="search" id="search" placeholder="Search..." />
+      <form>
+        <label>
+          <Search>
+            <Icon icon="ic:baseline-search" width="35" height="35" />
+          </Search>
+        </label>
+        <Input type="search" id="search" placeholder="Search..." />
+      </form>
 
       <Link href="">
-        <Icon icon="material-symbols:login" width="25" height="25" />
+        <Icon icon="material-symbols:login" width="35" height="35" />
       </Link>
       <Link href="">
         <Icon icon="mdi:register" width="35" height="35" />
@@ -41,7 +44,7 @@ const StyledHeader = styled.header`
   text-align: center;
   border-bottom: 5px solid #ffffff;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 622px) {
     font-size: 13px;
   }
 `;
@@ -55,7 +58,7 @@ const Link = styled.a`
 // span element
 const Span = styled.span`
   font-style: italic;
-`
+`;
 
 // input element
 const Input = styled.input`
@@ -65,19 +68,21 @@ const Input = styled.input`
   background-color: #9a9595;
   color: #ffffff;
   padding-left: 40px;
+  cursor: pointer;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 622px) {
     width: 170px;
   }
 `;
 
 // search Icon
-const Search = styled.label`
+const Search = styled.i`
   position: absolute;
-  left: 795px;
+  right: 615px;
   top: 40px;
 
-  @media screen and (max-width: 600px) {
-    left: 315px;
+  @media screen, (max-width: 622px) and (min-width: 622px) {
+    left: 320px;
+    top: 40px;
   }
 `;
