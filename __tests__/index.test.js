@@ -1,15 +1,13 @@
 import {render, screen} from "@testing-library/react";
-import Home from "../pages/index";
 import "@testing-library/jest-dom";
+import Header from "../components/Header";
 
 describe("Home", () => {
-  it("renders an octopus", () => {
-    render(<Home />);
+  it("renders a button", () => {
+    render(<Header />);
 
-    const heading = screen.getByRole("heading", {
-      name: /🐙/i,
-    });
+    const text = screen.getByText(/Movies/i);
 
-    expect(heading).toBeInTheDocument();
+    expect(text).toBeInTheDocument();
   });
 });
