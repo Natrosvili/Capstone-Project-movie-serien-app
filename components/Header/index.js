@@ -6,33 +6,36 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <StyledHeader>
-      <StyledLink href="">
-        <Img src={logo} width="200" height="100" alt="search find go" />
-      </StyledLink>
-      <StyledLink href="">
-        <Span>Movies</Span>
-      </StyledLink>
-      <StyledLink href="">
-        <Span>Series</Span>
-      </StyledLink>
+    <>
+      <StyledHeader>
+        <StyledLink href="../components/Main">
+          <Img src={logo} width="200" height="100" alt="search find go" />
+        </StyledLink>
+        <StyledLink href="">
+          <Span>Movies</Span>
+        </StyledLink>
+        <StyledLink href="">
+          <Span>Series</Span>
+        </StyledLink>
 
-      <form>
-        <SearchComponent>
+        <form>
           <label>
-            <Icon icon="ic:baseline-search" width="35" height="35" />
+            <SearchComponent>
+              <Icon icon="ic:baseline-search" width="35" height="35" />
+              <Input type="search" id="search" placeholder="Search..." />
+            </SearchComponent>
           </label>
-          <Input type="search" id="search" placeholder="Search..." />
-        </SearchComponent>
-      </form>
+        </form>
 
-      <StyledLink href="">
-        <Icon icon="material-symbols:login" width="35" height="35" />
-      </StyledLink>
-      <StyledLink href="">
-        <Icon icon="mdi:register" width="35" height="35" />
-      </StyledLink>
-    </StyledHeader>
+        <StyledLink href="">
+          <Icon icon="material-symbols:login" width="35" height="35" />
+        </StyledLink>
+        <StyledLink href="">
+          <Icon icon="mdi:register" width="35" height="35" />
+        </StyledLink>
+      </StyledHeader>
+      <Hr />
+    </>
   );
 }
 
@@ -46,15 +49,14 @@ const StyledHeader = styled.header`
   flex-direction: row;
   align-items: center;
   text-align: center;
-  border-bottom: 5px solid #ffffff;
 
-  @media screen and (max-width: 622px) {
+  @media screen and (max-width: 576px) {
     font-size: 13px;
   }
 `;
 
 const Img = styled(Image)`
-  @media screen and (max-width: 622px) {
+  @media screen and (max-width: 576px) {
     width: 150px;
     height: 80px;
   }
@@ -94,7 +96,13 @@ const Input = styled.input`
   border: none;
   outline: none;
 
-  @media screen and (max-width: 622px) {
+  @media screen and (max-width: 576px) {
     width: 170px;
   }
+`;
+
+const Hr = styled.hr`
+  margin: 0;
+  height: 2px;
+  width: 100vw;
 `;
