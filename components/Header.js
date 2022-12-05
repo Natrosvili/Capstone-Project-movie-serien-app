@@ -8,13 +8,13 @@ export default function Header({children}) {
   return (
     <>
       <StyledHeader>
-        <StyledLink href="/main">
+        <StyledLink href="">
           <Img src={logo} width="200" height="100" alt="search find go" />
         </StyledLink>
-        <StyledLink href="/movies">
+        <StyledLink href="">
           <Span>Movies</Span>
         </StyledLink>
-        <StyledLink href="/series">
+        <StyledLink href="">
           <Span>Series</Span>
         </StyledLink>
 
