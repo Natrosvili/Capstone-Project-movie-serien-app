@@ -1,6 +1,6 @@
 import GlobalStyles from "../styles/GlobalStyles";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
+import Footer from "./footer";
+import Header from "./header";
 
 export default function MyApp({Component, pageProps}) {
   return (

@@ -56,6 +56,5 @@ const StyledIcon = styled(Icon)`
 `;
 
 const Par = styled.p`
-  padding: 0;
   padding: 1px 0 1px 0;
 `;

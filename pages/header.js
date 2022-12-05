@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Image from "next/image";
-import logo from "../../public/logo.png";
+import logo from "../public/logo.png";
 import {Icon} from "@iconify/react";
 import Link from "next/link";
 
@@ -8,13 +8,13 @@ export default function Header({children}) {
   return (
     <>
       <StyledHeader>
-        <StyledLink href="">
+        <StyledLink href="/">
           <Img src={logo} width="200" height="100" alt="search find go" />
         </StyledLink>
-        <StyledLink href="">
+        <StyledLink href="/movies">
           <Span>Movies</Span>
         </StyledLink>
-        <StyledLink href="">
+        <StyledLink href="/series">
           <Span>Series</Span>
         </StyledLink>
 
