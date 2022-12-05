@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Image from "next/image";
-import logo from "../../public/logo.png";
+import logo from "../public/logo.png";
 import {Icon} from "@iconify/react";
 import Link from "next/link";
 
