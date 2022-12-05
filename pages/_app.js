@@ -1,8 +1,8 @@
 import GlobalStyles from "../styles/GlobalStyles";
-import Header from "./header";
-import Footer from "./footer";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
-function MyApp({Component, pageProps}) {
+export default function MyApp({Component, pageProps}) {
   return (
     <>
       <GlobalStyles />
@@ -13,5 +13,3 @@ function MyApp({Component, pageProps}) {
     </>
   );
 }
-
-export default MyApp;
