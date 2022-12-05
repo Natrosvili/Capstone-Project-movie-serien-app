@@ -107,7 +107,7 @@ export default function Series() {
           <ChildDiv>
             <Photo src={neueFischePhoto} alt="recommended series" />
             <Link href="">
-              <h3>Name</h3>          
+              <h3>Name</h3>
             </Link>
             <span>SS Num</span>
             <StyledSpan>EP Num</StyledSpan>
