@@ -1,20 +1,20 @@
 import styled from "styled-components";
 import Image from "next/image";
-import logo from "./logo.png";
+import logo from "../../public/logo.png";
 import {Icon} from "@iconify/react";
 import Link from "next/link";
 
-export default function Header() {
+export default function Header({children}) {
   return (
     <>
       <StyledHeader>
-        <StyledLink href="../components/Main">
+        <StyledLink href="/main">
           <Img src={logo} width="200" height="100" alt="search find go" />
         </StyledLink>
-        <StyledLink href="">
+        <StyledLink href="/movies">
           <Span>Movies</Span>
         </StyledLink>
-        <StyledLink href="">
+        <StyledLink href="/series">
           <Span>Series</Span>
         </StyledLink>
 
@@ -35,6 +35,7 @@ export default function Header() {
         </StyledLink>
       </StyledHeader>
       <Hr />
+      {children}
     </>
   );
 }
@@ -75,6 +76,7 @@ const SearchComponent = styled.div`
 
 // Link element
 const StyledLink = styled(Link)`
+  list-style: none;
   text-decoration: none;
   z-index: 1;
   color: #ffffff;

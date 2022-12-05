@@ -1,10 +1,10 @@
 import styled from "styled-components";
 import Image from "next/image";
-import seats from "./seats.png";
-import twoBoysOneGirl from "./twoBoysOneGirl.jpg";
-import coupleWatchingMovie1 from "./coupleWatchingMovie1.jpg";
-import coupleWatchingMovie2 from "./coupleWatchingMovie2.jpg";
-import neueFischePhoto from "./neuefische.jpeg";
+import seats from "../public/seats.png";
+import twoBoysOneGirl from "../public/twoBoysOneGirl.jpg";
+import coupleWatchingMovie1 from "../public/coupleWatchingMovie1.jpg";
+import coupleWatchingMovie2 from "../public/coupleWatchingMovie2.jpg";
+import neueFischePhoto from "../public/neuefische.jpeg";
 import Link from "next/link";
 import {Icon} from "@iconify/react";
 
