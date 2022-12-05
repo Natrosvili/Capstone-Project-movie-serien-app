@@ -1,9 +1,14 @@
 import styled from "styled-components";
 import {Icon} from "@iconify/react";
 import Link from "next/link";
+import {useEffect, useState} from "react";
 
 export default function Footer() {
-  const currentYear = new Date().getFullYear();
+  const [year, setYear] = useState(null);
+
+  useEffect(() => {
+    setYear(new Date().getFullYear());
+  }, []);
 
   return (
     <>
@@ -24,8 +29,8 @@ export default function Footer() {
           <StyledIcon icon="mdi:github" width="35" height="35" />
         </Link>
         <Par>
-          ©{currentYear} Search Find Go! --All external content remains the
-          property of the righful owner.
+          ©{year} Search Find Go! --All external content remains the property of
+          the righful owner.
         </Par>
       </StyledFooter>
     </>
