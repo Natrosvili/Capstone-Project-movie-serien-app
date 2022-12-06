@@ -125,21 +125,21 @@ export default function Movies() {
 }
 
 const StyledSection = styled.section`
-  margin: 60px 40px;
+  margin: 3.75rem 2.5rem;
 `;
 
 const ParentDiv = styled.div`
   display: flex;
   justify-content: space-around;
-  margin: 50px;
+  margin: 3.125rem;
 
-  @media screen and (max-width: 576px) {
+  @media screen and (max-width: 36rem) {
     justify-content: space-between;
   }
 `;
 
 const ChildDiv = styled.div`
-  font-size: 18px;
+  font-size: 1.25rem;
   color: #d9d9d9;
 `;
 
@@ -148,25 +148,25 @@ const ToMovie = styled(Link)`
 `;
 
 const Photo = styled(Image)`
-  width: 230px;
-  height: 230px;
-  left: 34px;
-  top: 553px;
+  width: 26.5vw;
+  height: 30vh;
+  left: 2.125rem;
+  top: 34.5rem;
   background: #d9d9d9;
 
   border-radius: 15px;
 
-  @media screen and (max-width: 576px) {
-    width: 180px;
-    height: 200px;
+  @media screen and (max-width: 36rem) {
+    width: 26vw;
+    height: 21vh;
   }
 `;
 
 const StyledSpan = styled.span`
   position: relative;
-  left: 140px;
+  left: 8.75rem;
 
-  @media screen and (max-width: 576px) {
-    left: 88px;
+  @media screen and (max-width: 36rem) {
+    left: 5.5rem;
   }
 `;

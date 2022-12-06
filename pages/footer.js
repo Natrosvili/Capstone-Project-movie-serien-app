@@ -40,14 +40,14 @@ export default function Footer() {
 const Hr = styled.hr`
   width: 100vw;
   margin: 0;
-  height: 2px;
+  min-height: 2px;
 `;
 
 // footer element
 const StyledFooter = styled.footer`
   background-color: #000000;
   text-align: center;
-  padding: 15px;
+  padding: 0.9375em;
   font-style: italic;
 `;
 
@@ -56,5 +56,5 @@ const StyledIcon = styled(Icon)`
 `;
 
 const Par = styled.p`
-  padding: 1px 0 1px 0;
+  padding: 0.0625em 0;
 `;

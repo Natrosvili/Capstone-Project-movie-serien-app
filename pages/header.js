@@ -9,7 +9,7 @@ export default function Header({children}) {
     <>
       <StyledHeader>
         <StyledLink href="/">
-          <Img src={logo} width="200" height="100" alt="search find go" />
+          <Img src={logo} width="150" height="100" alt="search find go" />
         </StyledLink>
         <StyledLink href="/movies">
           <Span>Movies</Span>
@@ -21,17 +21,17 @@ export default function Header({children}) {
         <form>
           <label>
             <SearchComponent>
-              <Icon icon="ic:baseline-search" width="35" height="35" />
-              <Input type="search" id="search" placeholder="Search..." />
+              <SearchIcon icon="ic:baseline-search" width="35" height="35" />
+              <Input type="search" id="search" />
             </SearchComponent>
           </label>
         </form>
 
         <StyledLink href="">
-          <Icon icon="material-symbols:login" width="35" height="35" />
+          <LoginIcon icon="material-symbols:login" width="35" height="35" />
         </StyledLink>
         <StyledLink href="">
-          <Icon icon="mdi:register" width="35" height="35" />
+          <RegisterIcon icon="mdi:register" width="35" height="35" />
         </StyledLink>
       </StyledHeader>
       <Hr />
@@ -42,24 +42,23 @@ export default function Header({children}) {
 
 // header element
 const StyledHeader = styled.header`
-  width: 100vw;
-  height: 120px;
+  width: 100%;
+  height: 15vh;
   background-color: #000000;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-direction: row;
   align-items: center;
   text-align: center;
 
-  @media screen and (max-width: 576px) {
-    font-size: 13px;
+  @media screen and (max-width: 26.875rem) {
   }
 `;
 
 const Img = styled(Image)`
-  @media screen and (max-width: 576px) {
-    width: 150px;
-    height: 80px;
+  @media screen and (max-width: 26.875rem) {
+    width: 80%;
+    height: 70%;
   }
 `;
 
@@ -67,11 +66,16 @@ const Img = styled(Image)`
 const SearchComponent = styled.div`
   display: flex;
   border: 2px solid white;
-  padding-left: 5px;
+  padding-left: 0, 3125rem;
   box-shadow: inset 0 0 1px white;
   border-radius: 20px;
   background-color: #9a9595;
   align-items: center;
+
+  @media screen and (max-width: 26.875rem) {
+    width: 100%;
+    height: 60%;
+  }
 `;
 
 // Link element
@@ -85,26 +89,41 @@ const StyledLink = styled(Link)`
 // span element
 const Span = styled.span`
   font-style: italic;
+
+  @media screen and (max-width: 26.875rem) {
+    font-size: 1rem;
+  }
 `;
 
 // input element
 const Input = styled.input`
   border-radius: 15px;
-  height: 40px;
-  width: 200px;
+  height: 5%;
+  width: 14%;
   background-color: #9a9595;
   color: #ffffff;
-  cursor: pointer;
   border: none;
   outline: none;
+`;
 
-  @media screen and (max-width: 576px) {
-    width: 170px;
+const SearchIcon = styled(Icon)`
+  @media screen and (max-width: 26.875rem) {
+    width: 40%;
+  }
+`;
+
+const LoginIcon = styled(Icon)`
+  @media screen and (max-width: 26.875rem) {
+    width: 100%;
+  }
+`;
+
+const RegisterIcon = styled(Icon)`
+  @media screen and (max-width: 26.875rem) {
+    width: 100%;
   }
 `;
 
 const Hr = styled.hr`
   margin: 0;
-  height: 2px;
-  width: 100vw;
 `;

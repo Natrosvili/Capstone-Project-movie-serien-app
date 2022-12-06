@@ -1,9 +1,6 @@
 import styled from "styled-components";
 import Image from "next/image";
 import seats from "../public/seats.png";
-import twoBoysOneGirl from "../public/twoBoysOneGirl.jpg";
-import coupleWatchingMovie1 from "../public/coupleWatchingMovie1.jpg";
-import coupleWatchingMovie2 from "../public/coupleWatchingMovie2.jpg";
 import neueFischePhoto from "../public/neuefische.jpeg";
 import Link from "next/link";
 import {Icon} from "@iconify/react";
@@ -23,7 +20,7 @@ export default function Main() {
           </Info>
         </FirstSection>
         <SecondAndThirdSection>
-          <h2>Recommended Movies</h2>
+          <H2>Recommended Movies</H2>
           <hr />
           <ParentDiv>
             <ChildDiv>
@@ -43,7 +40,7 @@ export default function Main() {
         </SecondAndThirdSection>
         <br />
         <SecondAndThirdSection>
-          <h2>Recommended Series</h2>
+          <H2>Recommended Series</H2>
           <hr />
           <ParentDiv>
             <ChildDiv>
@@ -63,20 +60,27 @@ export default function Main() {
         </SecondAndThirdSection>
         <br />
         <ForthSection>
-          <div>
-            <AnotherPhoto
-              src={coupleWatchingMovie1}
+          <ImageContainer1>
+            <Img1
+              src="/coupleWatchingMovie1.jpg"
               alt="photo of friends watching a movie/series"
             />
-          </div>
-          <div>
-            <EditedImage
-              src={coupleWatchingMovie2}
+          </ImageContainer1>
+          <ImageContainer2>
+            <Img2
+              src="/coupleWatchingMovie2.jpg"
               alt="photo of friends watching a movie/series"
             />
-          </div>
+          </ImageContainer2>
+          <ImageContainer3>
+            <Img3
+              src="/twoBoysOneGirl.jpg"
+              alt="photo of friends watching a movie/series"
+            />
+          </ImageContainer3>
+
           <EditedDiv>
-            <h3>Share With Your Friends</h3>
+            <H3>Share With Your Friends</H3>
             <p>Help me grow by sharing my website with your friends!</p>
             <StyledLink href="https://www.facebook.com">
               <StyledIcon icon="logos:facebook" width="35" />
@@ -94,14 +98,6 @@ export default function Main() {
               <StyledIcon icon="logos:twitter" width="35" />
             </StyledLink>
           </EditedDiv>
-          <div>
-            <AnotherPhoto
-              src={twoBoysOneGirl}
-              width="250"
-              height="250"
-              alt="photo of friends watching a movie/series"
-            />
-          </div>
         </ForthSection>
       </StyledMain>
     </>
@@ -112,26 +108,31 @@ export default function Main() {
 const StyledMain = styled.main`
   font-style: italic;
   background-color: #000000;
+  width: 100%;
 `;
 
 // first section of the main page
 const FirstSection = styled.section`
   text-align: center;
-  height: 700px;
+  height: 50rem;
+
+  @media screen and (max-width: 26.875rem) {
+    height: 40rem;
+  }
 `;
 
 // h1 element
 const H1 = styled.h1`
-  padding: 10px;
+  padding: 0.5em;
   z-index: 1;
-  bottom: 490px;
+  bottom: 30rem;
   position: relative;
 `;
 
 // first Image element (it is used for background image)
 const BackgroundImage = styled(Image)`
   width: 100vw;
-  height: 650px;
+  height: 85vh;
   z-index: 0;
 `;
 
@@ -139,15 +140,15 @@ const BackgroundImage = styled(Image)`
 const Info = styled.p`
   position: relative;
   z-index: 1;
-  bottom: 520px;
+  bottom: 32.5rem;
   line-height: 145.2%;
-  padding: 50px;
-  font-weight: 470px;
-  font-size: 20px;
-  margin: 0 100px;
+  padding: 3.125rem;
+  font-weight: 30rem;
+  font-size: 1, 25rem;
+  margin: 0 6.25rem;
 
-  @media screen and (max-width: 576px) {
-    margin: 0 30px;
+  @media screen and (max-width: 26.875rem) {
+    margin: 0 2rem;
   }
 `;
 
@@ -155,56 +156,69 @@ const Info = styled.p`
 const ParentDiv = styled.div`
   display: flex;
   justify-content: space-around;
-  margin: 50px;
+  margin: 3.125em;
 
-  @media screen and (max-width: 576px) {
+  @media screen and (max-width: 26.875rem) {
     justify-content: space-between;
+    text-align: center;
   }
 `;
 
 // div (child)
 const ChildDiv = styled.div`
-  font-size: 18px;
   color: #d9d9d9;
 `;
 
 // Image element (for the movies and series)
 const Photo = styled(Image)`
-  width: 230px;
-  height: 230px;
-  left: 34px;
-  top: 553px;
+  width: 100%;
+  height: 75%;
+  left: 2rem;
+  top: 35rem;
   background: #d9d9d9;
   border-radius: 15px;
 
-  @media screen and (max-width: 576px) {
-    width: 180px;
-    height: 200px;
+  @media screen and (max-width: 26.875rem) {
+    width: 80%;
+    height: 80%;
   }
 `;
 
 // second and third section of the main page
 const SecondAndThirdSection = styled.section`
-  margin: 60px 40px;
+  margin: 0 3.75rem;
+
+  @media screen and (max-width: 36rem) {
+    margin: 0;
+  }
+`;
+
+const H2 = styled.h2`
+  @media screen and (max-width: 26.875rem) {
+    text-align: center;
+  }
 `;
 
 // span element (for the number of minutes of a movie)
 const EditedSpanMin = styled.span`
   position: relative;
-  left: 140px;
+  left: 9rem;
 
-  @media screen and (max-width: 576px) {
-    left: 88px;
+  @media screen and (max-width: 26.875rem) {
+    left: 1.2rem;
+    font-size: 1rem;
+    /* text-align: center; */
   }
 `;
 
 // span element (for the number of episodes in a series)
 const EditedSpanEp = styled.span`
   position: relative;
-  left: 100px;
+  left: 6.25rem;
 
-  @media screen and (max-width: 576px) {
-    left: 50px;
+  @media screen and (max-width: 26.875rem) {
+    left: 1rem;
+    font-size: 1rem;
   }
 `;
 
@@ -217,56 +231,72 @@ const StyledLink = styled(Link)`
 const ForthSection = styled.section`
   text-align: center;
   display: grid;
-  grid-template-rows: 45% 50%;
-  grid-template-columns: 20% 15% 60%;
-  column-gap: 5px;
-  padding: 10px 15px 0 15px;
-  margin-left: 100px;
+  place-content: center;
+  grid-template-rows: repeat(4, 25%);
+  grid-template-columns: repeat(3, 20%);
+  column-gap: 10px;
+  padding: 2em 2em;
+  width: 100%;
+  height: auto;
 
-  @media screen and (max-width: 576px) {
-    margin-left: 0;
-    grid-template-columns: 20% 20% 60%;
+  @media screen and (max-width: 26.875rem) {
+    grid-template-rows: repeat(4, 20%);
+    grid-template-columns: repeat(3, 35%);
+    row-gap: 2px;
   }
 `;
 
-const AnotherPhoto = styled(Image)`
-  width: 250px;
-  height: 220px;
-
-  @media screen and (max-width: 576px) {
-    width: 150px;
-    height: 120px;
-  }
+const ImageContainer1 = styled.div`
+  grid-row: 1 / span 2;
+  grid-column: 1 / 1;
+  display: flex;
+  align-items: start;
 `;
 
-// Image element
-const EditedImage = styled(Image)`
-  position: relative;
-  top: 80px;
-  width: 250px;
-  height: 300px;
+const Img1 = styled.img`
+  width: 100%;
+`;
 
-  @media screen and (max-width: 576px) {
-    top: 50px;
-    width: 150px;
-    height: 160px;
-  }
+const ImageContainer2 = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center
+  height: auto;
+  grid-row: 2 / span 2;
+  grid-column: 2 / 3;
+`;
+
+const Img2 = styled.img`
+  width: 100%;
+`;
+
+const ImageContainer3 = styled.div`
+  display: flex;
+  justify-content: end;
+  grid-row: 3 / span 2;
+`;
+
+const Img3 = styled.img`
+  width: 100%;
 `;
 
 const EditedDiv = styled.div`
-  font-size: 23px;
-  align-self: end;
-  position: relative;
-  top: 60px;
+  grid-column: 3 / 3;
+  grid-row: 2 / span 2;
+  width: 100%;
+  font-size: 1.21rem;
 
-  @media screen and (max-width: 576px) {
-    font-size: 13px;
-    top: 70px;
+  @media screen and (max-width: 26.875rem) {
+    font-size: 0.666rem;
   }
 `;
 
+const H3 = styled.h3`
+  margin: 0;
+`;
+
 const StyledIcon = styled(Icon)`
-  @media screen and (max-width: 576px) {
-    width: 30px;
+  @media screen and (max-width: 26.875rem) {
+    width: 20%;
   }
 `;

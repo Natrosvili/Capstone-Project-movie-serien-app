@@ -121,43 +121,43 @@ export default function Series() {
 }
 
 const Photo = styled(Image)`
-  width: 230px;
-  height: 230px;
-  left: 34px;
-  top: 553px;
+  width: 34vw;
+  height: 30vh;
+  left: 2.125rem;
+  top: 34.5rem;
   background: #d9d9d9;
   border-radius: 15px;
 
-  @media screen and (max-width: 576px) {
-    width: 180px;
-    height: 200px;
+  @media screen and (max-width: 36rem) {
+    width: 28vw;
+    height: 26vh;
   }
 `;
 
 const StyledSection = styled.section`
-  margin: 60px 40px;
+  margin: 3.75em 2.5em;
 `;
 
 const ParentDiv = styled.div`
   display: flex;
   justify-content: space-around;
-  margin: 50px;
+  margin: 3.125em;
 
-  @media screen and (max-width: 576px) {
+  @media screen and (max-width: 36em) {
     justify-content: space-between;
   }
 `;
 
 const ChildDiv = styled.div`
-  font-size: 18px;
+  font-size: 1.25rem;
   color: #d9d9d9;
 `;
 
 const StyledSpan = styled.span`
   position: relative;
-  left: 100px;
+  left: 6.25rem;
 
-  @media screen and (max-width: 576px) {
-    left: 50px;
+  @media screen and (max-width: 36rem) {
+    left: 3.125rem;
   }
 `;
