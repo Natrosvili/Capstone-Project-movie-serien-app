@@ -6,174 +6,195 @@ import Link from "next/link";
 export default function Movies() {
   return (
     <>
-      <h1>Movies</h1>
-      <StyledSection>
-        <H2>Action</H2>
-        <hr />
-        <ParentDiv>
-          <div style={{color: "#d9d9d9"}}>
-            <Link style={{textDecoration: "none"}} href="#">
-              <Photo src={neueFischePhoto} alt="recommended series" />
-            </Link>
-            <Link style={{color: "grey", textDecoration: "none"}} href="#">
-              <h3>
+      <section style={{backgroundColor: "#010101"}}>
+        <H1>
+          <em>Movies</em>
+        </H1>
+        <StyledSection>
+          <H2>
+            <em>Action</em>
+          </H2>
+          <hr />
+          <ParentDiv>
+            <div style={{color: "#d9d9d9"}}>
+              <Link style={{textDecoration: "none"}} href="#">
+                <Photo src={neueFischePhoto} alt="recommended series" />
+              </Link>
+              <Link style={{color: "grey", textDecoration: "none"}} href="#">
+                <h3>
+                  <em>Name</em>
+                </h3>
+              </Link>
+              <span>
                 <em>Name</em>
-              </h3>
-            </Link>
-            <span>
-              <em>Name</em>
-            </span>
-            <StyledMain>
-              <em>no min</em>
-            </StyledMain>
-          </div>
-          <div style={{color: "#d9d9d9"}}>
-            <Link style={{textDecoration: "none"}} href="#">
-              <Photo src={neueFischePhoto} alt="recommended series" />
-            </Link>
-            <Link style={{color: "grey", textDecoration: "none"}} href="#">
-              <h3>
+              </span>
+              <StyledMain>
+                <em>no min</em>
+              </StyledMain>
+            </div>
+            <div style={{color: "#d9d9d9"}}>
+              <Link style={{textDecoration: "none"}} href="#">
+                <Photo src={neueFischePhoto} alt="recommended series" />
+              </Link>
+              <Link style={{color: "grey", textDecoration: "none"}} href="#">
+                <h3>
+                  <em>Name</em>
+                </h3>
+              </Link>
+              <span>
+                <em>Year</em>
+              </span>
+              <StyledMain>
+                <em>no min</em>
+              </StyledMain>
+            </div>
+          </ParentDiv>
+          <hr />
+        </StyledSection>
+        <StyledSection>
+          <H2>
+            <em>Adventure</em>
+          </H2>
+          <hr />
+          <ParentDiv>
+            <div style={{color: "#d9d9d9"}}>
+              <Link style={{textDecoration: "none"}} href="#">
+                <Photo src={neueFischePhoto} alt="recommended series" />
+              </Link>
+              <Link style={{color: "grey", textDecoration: "none"}} href="#">
+                <h3>
+                  <em>Name</em>
+                </h3>
+              </Link>
+              <span>
                 <em>Name</em>
-              </h3>
-            </Link>
-            <span>
-              <em>Year</em>
-            </span>
-            <StyledMain>
-              <em>no min</em>
-            </StyledMain>
-          </div>
-        </ParentDiv>
-        <hr />
-      </StyledSection>
-      <StyledSection>
-        <H2>Adventure</H2>
-        <hr />
-        <ParentDiv>
-          <div style={{color: "#d9d9d9"}}>
-            <Link style={{textDecoration: "none"}} href="#">
-              <Photo src={neueFischePhoto} alt="recommended series" />
-            </Link>
-            <Link style={{color: "grey", textDecoration: "none"}} href="#">
-              <h3>
+              </span>
+              <StyledMain>
+                <em>no min</em>
+              </StyledMain>
+            </div>
+            <div style={{color: "#d9d9d9"}}>
+              <Link style={{textDecoration: "none"}} href="#">
+                <Photo src={neueFischePhoto} alt="recommended series" />
+              </Link>
+              <Link style={{color: "grey", textDecoration: "none"}} href="#">
+                <h3>
+                  <em>Name</em>
+                </h3>
+              </Link>
+              <span>
+                <em>Year</em>
+              </span>
+              <StyledMain>
+                <em>no min</em>
+              </StyledMain>
+            </div>
+          </ParentDiv>
+          <hr />
+        </StyledSection>
+        <StyledSection>
+          <H2>
+            <em>Comedy</em>
+          </H2>
+          <hr />
+          <ParentDiv>
+            <div style={{color: "#d9d9d9"}}>
+              <Link style={{textDecoration: "none"}} href="#">
+                <Photo src={neueFischePhoto} alt="recommended series" />
+              </Link>
+              <Link style={{color: "grey", textDecoration: "none"}} href="#">
+                <h3>
+                  <em>Name</em>
+                </h3>
+              </Link>
+              <span>
                 <em>Name</em>
-              </h3>
-            </Link>
-            <span>
-              <em>Name</em>
-            </span>
-            <StyledMain>
-              <em>no min</em>
-            </StyledMain>
-          </div>
-          <div style={{color: "#d9d9d9"}}>
-            <Link style={{textDecoration: "none"}} href="#">
-              <Photo src={neueFischePhoto} alt="recommended series" />
-            </Link>
-            <Link style={{color: "grey", textDecoration: "none"}} href="#">
-              <h3>
+              </span>
+              <StyledMain>
+                <em>no min</em>
+              </StyledMain>
+            </div>
+            <div style={{color: "#d9d9d9"}}>
+              <Link style={{textDecoration: "none"}} href="#">
+                <Photo src={neueFischePhoto} alt="recommended series" />
+              </Link>
+              <Link style={{color: "grey", textDecoration: "none"}} href="#">
+                <h3>
+                  <em>Name</em>
+                </h3>
+              </Link>
+              <span>
+                <em>Year</em>
+              </span>
+              <StyledMain>
+                <em>no min</em>
+              </StyledMain>
+            </div>
+          </ParentDiv>
+          <hr />
+        </StyledSection>
+        <StyledSection>
+          <H2>
+            <em>Drama</em>
+          </H2>
+          <hr />
+          <ParentDiv>
+            <div style={{color: "#d9d9d9"}}>
+              <Link style={{textDecoration: "none"}} href="#">
+                <Photo src={neueFischePhoto} alt="recommended series" />
+              </Link>
+              <Link style={{color: "grey", textDecoration: "none"}} href="#">
+                <h3>
+                  <em>Name</em>
+                </h3>
+              </Link>
+              <span>
                 <em>Name</em>
-              </h3>
-            </Link>
-            <span>
-              <em>Year</em>
-            </span>
-            <StyledMain>
-              <em>no min</em>
-            </StyledMain>
-          </div>
-        </ParentDiv>
-        <hr />
-      </StyledSection>
-      <StyledSection>
-        <H2>Comedy</H2>
-        <hr />
-        <ParentDiv>
-          <div style={{color: "#d9d9d9"}}>
-            <Link style={{textDecoration: "none"}} href="#">
-              <Photo src={neueFischePhoto} alt="recommended series" />
-            </Link>
-            <Link style={{color: "grey", textDecoration: "none"}} href="#">
-              <h3>
-                <em>Name</em>
-              </h3>
-            </Link>
-            <span>
-              <em>Name</em>
-            </span>
-            <StyledMain>
-              <em>no min</em>
-            </StyledMain>
-          </div>
-          <div style={{color: "#d9d9d9"}}>
-            <Link style={{textDecoration: "none"}} href="#">
-              <Photo src={neueFischePhoto} alt="recommended series" />
-            </Link>
-            <Link style={{color: "grey", textDecoration: "none"}} href="#">
-              <h3>
-                <em>Name</em>
-              </h3>
-            </Link>
-            <span>
-              <em>Year</em>
-            </span>
-            <StyledMain>
-              <em>no min</em>
-            </StyledMain>
-          </div>
-        </ParentDiv>
-        <hr />
-      </StyledSection>
-      <StyledSection>
-        <H2>Drama</H2>
-        <hr />
-        <ParentDiv>
-          <div style={{color: "#d9d9d9"}}>
-            <Link style={{textDecoration: "none"}} href="#">
-              <Photo src={neueFischePhoto} alt="recommended series" />
-            </Link>
-            <Link style={{color: "grey", textDecoration: "none"}} href="#">
-              <h3>
-                <em>Name</em>
-              </h3>
-            </Link>
-            <span>
-              <em>Name</em>
-            </span>
-            <StyledMain>
-              <em>no min</em>
-            </StyledMain>
-          </div>
-          <div style={{color: "#d9d9d9"}}>
-            <Link style={{textDecoration: "none"}} href="#">
-              <Photo src={neueFischePhoto} alt="recommended series" />
-            </Link>
-            <Link style={{color: "grey", textDecoration: "none"}} href="#">
-              <h3>
-                <em>Name</em>
-              </h3>
-            </Link>
-            <span>
-              <em>Year</em>
-            </span>
-            <StyledMain>
-              <em>no min</em>
-            </StyledMain>
-          </div>
-        </ParentDiv>
-        <hr />
-      </StyledSection>
+              </span>
+              <StyledMain>
+                <em>no min</em>
+              </StyledMain>
+            </div>
+            <div style={{color: "#d9d9d9"}}>
+              <Link style={{textDecoration: "none"}} href="#">
+                <Photo src={neueFischePhoto} alt="recommended series" />
+              </Link>
+              <Link style={{color: "grey", textDecoration: "none"}} href="#">
+                <h3>
+                  <em>Name</em>
+                </h3>
+              </Link>
+              <span>
+                <em>Year</em>
+              </span>
+              <StyledMain>
+                <em>no min</em>
+              </StyledMain>
+            </div>
+          </ParentDiv>
+          <hr />
+        </StyledSection>
+      </section>
     </>
   );
 }
 
 // second and third section of the main page
 const StyledSection = styled.section`
-  margin: 3rem 3.75rem;
-  backgroundcolor: #010101;
+  padding: 3rem 3.75rem;
 
   @media screen and (max-width: 430px) {
-    margin: 0 0 3rem;
+    padding: 0 0 3rem;
+  }
+`;
+
+const H1 = styled.h1`
+  padding: 4rem 0 3rem 4rem;
+  margin: 0;
+
+  @media screen and (max-width: 430px) {
+    text-align: center;
+    padding: 2rem;
   }
 `;
 
