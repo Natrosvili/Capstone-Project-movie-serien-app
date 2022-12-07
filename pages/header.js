@@ -1,15 +1,15 @@
 import styled from "styled-components";
-import Image from "next/image";
 import logo from "../public/logo.png";
 import {Icon} from "@iconify/react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Header({children}) {
   return (
     <>
       <StyledHeader>
         <StyledLink href="/">
-          <Img src={logo} width="150" height="100" alt="search find go" />
+          <Img src={logo} alt="search find go" />
         </StyledLink>
         <StyledLink href="/movies">
           <StyledSpan>
@@ -46,7 +46,7 @@ export default function Header({children}) {
 // header element
 const StyledHeader = styled.header`
   height: 15%;
-  background-color: #000000;
+  background-color: #010101;
   display: flex;
   justify-content: space-around;
   flex-direction: row;
@@ -62,8 +62,9 @@ const StyledHeader = styled.header`
 
 const Img = styled(Image)`
   @media screen and (max-width: 430px) {
-    width: 80%;
-    height: 70%;
+    width: 34vw;
+    height: 12vh;
+    border-radius: 15px;
   }
 `;
 
@@ -101,6 +102,10 @@ const Input = styled.input`
   color: #ffffff;
   border: none;
   outline: none;
+
+  @media screen and (max-width: 430px) {
+    width: 15vw;
+  }
 `;
 
 const SearchIcon = styled(Icon)`
@@ -111,12 +116,12 @@ const SearchIcon = styled(Icon)`
 
 const LoginIcon = styled(Icon)`
   @media screen and (max-width: 430px) {
-    width: 100%;
+    width: 8vw;
   }
 `;
 
 const RegisterIcon = styled(Icon)`
   @media screen and (max-width: 430px) {
-    width: 100%;
+    width: 8vw;
   }
 `;

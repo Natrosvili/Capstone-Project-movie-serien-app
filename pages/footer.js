@@ -13,11 +13,12 @@ export default function Footer() {
   return (
     <>
       <StyledFooter>
-        <Par>
+        <p style={{padding: "0.0625em 0"}}>
           <em>Find the Onwer At:</em>
-        </Par>
+        </p>
         <Link href="mailto:georgenatro@gmail.com">
-          <StyledIcon
+          <Icon
+            style={{color: "#ffffff"}}
             icon="material-symbols:alternate-email"
             width="35"
             height="35"
@@ -27,14 +28,19 @@ export default function Footer() {
           <Icon icon="mdi:linkedin" width="35" height="35" />
         </Link>
         <Link href="https://github.com/Natrosvili">
-          <StyledIcon icon="mdi:github" width="35" height="35" />
+          <Icon
+            style={{color: "#ffffff"}}
+            icon="mdi:github"
+            width="35"
+            height="35"
+          />
         </Link>
-        <Par>
+        <p style={{padding: "0.0625em 0"}}>
           <em>
             ©{year} Search Find Go! --All external content remains the property
             of the righful owner.
           </em>
-        </Par>
+        </p>
       </StyledFooter>
     </>
   );
@@ -42,16 +48,8 @@ export default function Footer() {
 
 // footer element
 const StyledFooter = styled.footer`
-  background-color: #000000;
+  background-color: #010101;
   text-align: center;
   padding: 0.9375em;
   border-top: 2px solid;
-`;
-
-const StyledIcon = styled(Icon)`
-  color: #ffffff;
-`;
-
-const Par = styled.p`
-  padding: 0.0625em 0;
 `;

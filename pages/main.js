@@ -8,7 +8,7 @@ import {Icon} from "@iconify/react";
 export default function Main() {
   return (
     <>
-      <main style={{backgroundColor: "#1a1a1a"}}>
+      <main style={{backgroundColor: "#010101"}}>
         <FirstSection>
           <Image
             style={{width: "100%", height: "85vh"}}
@@ -88,7 +88,6 @@ export default function Main() {
           </ParentDiv>
           <hr />
         </SecondAndThirdSection>
-        <br />
         <ForthSection>
           <ImageContainer1>
             <Img1
@@ -110,7 +109,7 @@ export default function Main() {
           </ImageContainer3>
 
           <EditedDiv>
-            <H3>Share With Your Friends</H3>
+            <h3 style={{margin: 0}}>Share With Your Friends</h3>
             <p>Help me grow by sharing my website with your friends!</p>
             <StyledLink href="https://www.facebook.com">
               <StyledIcon icon="logos:facebook" width="35" />
@@ -297,10 +296,6 @@ const EditedDiv = styled.div`
   @media screen and (max-width: 430px) {
     font-size: 0.666rem;
   }
-`;
-
-const H3 = styled.h3`
-  margin: 0;
 `;
 
 const StyledIcon = styled(Icon)`

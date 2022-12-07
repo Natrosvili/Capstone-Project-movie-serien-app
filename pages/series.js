@@ -35,7 +35,6 @@ export default function Series() {
         </ParentDiv>
         <hr />
       </StyledSection>
-      <br />
       <StyledSection>
         <h2>Adventure</h2>
         <hr />
@@ -63,7 +62,6 @@ export default function Series() {
         </ParentDiv>
         <hr />
       </StyledSection>
-      <br />
       <StyledSection>
         <h2>Comedy</h2>
         <hr />
@@ -91,7 +89,6 @@ export default function Series() {
         </ParentDiv>
         <hr />
       </StyledSection>
-      <br />
       <StyledSection>
         <h2>Drama</h2>
         <hr />
@@ -115,7 +112,6 @@ export default function Series() {
         </ParentDiv>
         <hr />
       </StyledSection>
-      <br />
     </>
   );
 }
