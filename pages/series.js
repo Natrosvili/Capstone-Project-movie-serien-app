@@ -6,154 +6,238 @@ import Link from "next/link";
 export default function Series() {
   return (
     <>
-      <h1>Series</h1>
-      <br />
-      <StyledSection>
-        <h2>Action</h2>
-        <hr />
-        <ParentDiv>
-          <ChildDiv>
-            <Link href="">
-              <Photo src={neueFischePhoto} alt="recommended series" />
-            </Link>
-            <Link href="">
-              <h3>Name</h3>
-            </Link>
-            <span>SS Num</span>
-            <StyledSpan>EP Num</StyledSpan>
-          </ChildDiv>
-          <ChildDiv>
-            <Link href="">
-              <Photo src={neueFischePhoto} alt="recommended series" />
-            </Link>
-            <Link href="">
-              <h3>Name</h3>
-            </Link>
-            <span>SS Num</span>
-            <StyledSpan>EP Num</StyledSpan>
-          </ChildDiv>
-        </ParentDiv>
-        <hr />
-      </StyledSection>
-      <StyledSection>
-        <h2>Adventure</h2>
-        <hr />
-        <ParentDiv>
-          <ChildDiv>
-            <Link href="">
-              <Photo src={neueFischePhoto} alt="recommended series" />
-            </Link>
-            <Link href="">
-              <h3>Name</h3>
-            </Link>
-            <span>SS Num</span>
-            <StyledSpan>EP Num</StyledSpan>
-          </ChildDiv>
-          <ChildDiv>
-            <Link href="">
-              <Photo src={neueFischePhoto} alt="recommended series" />
-            </Link>
-            <Link href="">
-              <h3>Name</h3>
-            </Link>
-            <span>SS Num</span>
-            <StyledSpan>EP Num</StyledSpan>
-          </ChildDiv>
-        </ParentDiv>
-        <hr />
-      </StyledSection>
-      <StyledSection>
-        <h2>Comedy</h2>
-        <hr />
-        <ParentDiv>
-          <ChildDiv>
-            <Link href="">
-              <Photo src={neueFischePhoto} alt="recommended series" />
-            </Link>
-            <Link href="">
-              <h3>Name</h3>
-            </Link>
-            <span>SS Num</span>
-            <StyledSpan>EP Num</StyledSpan>
-          </ChildDiv>
-          <ChildDiv>
-            <Link href="">
-              <Photo src={neueFischePhoto} alt="recommended series" />
-            </Link>
-            <Link href="">
-              <h3>Name</h3>
-            </Link>
-            <span>SS Num</span>
-            <StyledSpan>EP Num</StyledSpan>
-          </ChildDiv>
-        </ParentDiv>
-        <hr />
-      </StyledSection>
-      <StyledSection>
-        <h2>Drama</h2>
-        <hr />
-        <ParentDiv>
-          <ChildDiv>
-            <Photo src={neueFischePhoto} alt="recommended series" />
-            <Link href="">
-              <h3>Name</h3>
-            </Link>
-            <span>SS Num</span>
-            <StyledSpan>EP Num</StyledSpan>
-          </ChildDiv>
-          <ChildDiv>
-            <Photo src={neueFischePhoto} alt="recommended series" />
-            <Link href="">
-              <h3>Name</h3>
-            </Link>
-            <span>SS Num</span>
-            <StyledSpan>EP Num</StyledSpan>
-          </ChildDiv>
-        </ParentDiv>
-        <hr />
-      </StyledSection>
+      <section style={{backgroundColor: "#010101"}}>
+        <H1>
+          <em>Series</em>
+        </H1>
+        <StyledSection>
+          <H2>
+            <em>Action</em>
+          </H2>
+          <hr />
+          <ParentDiv>
+            <div style={{color: "#d9d9d9"}}>
+              <Link style={{textDecoration: "none"}} href="#">
+                <Photo src={neueFischePhoto} alt="recommended series" />
+              </Link>
+              <Link style={{color: "grey", textDecoration: "none"}} href="#">
+                <h3>
+                  <em>Name</em>
+                </h3>
+              </Link>
+              <span>
+                <em>SS 2</em>
+              </span>
+              <StyledMain>
+                <em>EP 10</em>
+              </StyledMain>
+            </div>
+            <div style={{color: "#d9d9d9"}}>
+              <Link style={{textDecoration: "none"}} href="#">
+                <Photo src={neueFischePhoto} alt="recommended series" />
+              </Link>
+              <Link style={{color: "grey", textDecoration: "none"}} href="#">
+                <h3>
+                  <em>Name</em>
+                </h3>
+              </Link>
+              <span>
+                <em>SS 2</em>
+              </span>
+              <StyledMain>
+                <em>EP 10</em>
+              </StyledMain>
+            </div>
+          </ParentDiv>
+          <hr />
+        </StyledSection>
+        <StyledSection>
+          <H2>
+            <em>Adventure</em>
+          </H2>
+          <hr />
+          <ParentDiv>
+            <div style={{color: "#d9d9d9"}}>
+              <Link style={{textDecoration: "none"}} href="#">
+                <Photo src={neueFischePhoto} alt="recommended series" />
+              </Link>
+              <Link style={{color: "grey", textDecoration: "none"}} href="#">
+                <h3>
+                  <em>Name</em>
+                </h3>
+              </Link>
+              <span>
+                <em>SS 2</em>
+              </span>
+              <StyledMain>
+                <em>EP 10</em>
+              </StyledMain>
+            </div>
+            <div style={{color: "#d9d9d9"}}>
+              <Link style={{textDecoration: "none"}} href="#">
+                <Photo src={neueFischePhoto} alt="recommended series" />
+              </Link>
+              <Link style={{color: "grey", textDecoration: "none"}} href="#">
+                <h3>
+                  <em>Name</em>
+                </h3>
+              </Link>
+              <span>
+                <em>SS 2</em>
+              </span>
+              <StyledMain>
+                <em>EP 10</em>
+              </StyledMain>
+            </div>
+          </ParentDiv>
+          <hr />
+        </StyledSection>
+        <StyledSection>
+          <H2>
+            <em>Comedy</em>
+          </H2>
+          <hr />
+          <ParentDiv>
+            <div style={{color: "#d9d9d9"}}>
+              <Link style={{textDecoration: "none"}} href="#">
+                <Photo src={neueFischePhoto} alt="recommended series" />
+              </Link>
+              <Link style={{color: "grey", textDecoration: "none"}} href="#">
+                <h3>
+                  <em>Name</em>
+                </h3>
+              </Link>
+              <span>
+                <em>SS 2</em>
+              </span>
+              <StyledMain>
+                <em>EP 10</em>
+              </StyledMain>
+            </div>
+            <div style={{color: "#d9d9d9"}}>
+              <Link style={{textDecoration: "none"}} href="#">
+                <Photo src={neueFischePhoto} alt="recommended series" />
+              </Link>
+              <Link style={{color: "grey", textDecoration: "none"}} href="#">
+                <h3>
+                  <em>Name</em>
+                </h3>
+              </Link>
+              <span>
+                <em>SS 2</em>
+              </span>
+              <StyledMain>
+                <em>EP 10</em>
+              </StyledMain>
+            </div>
+          </ParentDiv>
+          <hr />
+        </StyledSection>
+        <StyledSection>
+          <H2>
+            <em>Drama</em>
+          </H2>
+          <hr />
+          <ParentDiv>
+            <div style={{color: "#d9d9d9"}}>
+              <Link style={{textDecoration: "none"}} href="#">
+                <Photo src={neueFischePhoto} alt="recommended series" />
+              </Link>
+              <Link style={{color: "grey", textDecoration: "none"}} href="#">
+                <h3>
+                  <em>Name</em>
+                </h3>
+              </Link>
+              <span>
+                <em>SS 2</em>
+              </span>
+              <StyledMain>
+                <em>EP 10</em>
+              </StyledMain>
+            </div>
+            <div style={{color: "#d9d9d9"}}>
+              <Link style={{textDecoration: "none"}} href="#">
+                <Photo src={neueFischePhoto} alt="recommended series" />
+              </Link>
+              <Link style={{color: "grey", textDecoration: "none"}} href="#">
+                <h3>
+                  <em>Name</em>
+                </h3>
+              </Link>
+              <span>
+                <em>SS 2</em>
+              </span>
+              <StyledMain>
+                <em>EP 10</em>
+              </StyledMain>
+            </div>
+          </ParentDiv>
+          <hr />
+        </StyledSection>
+      </section>
     </>
   );
 }
 
-const Photo = styled(Image)`
-  width: 34vw;
-  height: 30vh;
-  left: 2.125rem;
-  top: 34.5rem;
-  background: #d9d9d9;
-  border-radius: 15px;
+// second and third section of the main page
+const StyledSection = styled.section`
+  padding: 3rem 3.75rem;
 
-  @media screen and (max-width: 36rem) {
-    width: 28vw;
-    height: 26vh;
+  @media screen and (max-width: 430px) {
+    padding: 0 0 3rem;
   }
 `;
 
-const StyledSection = styled.section`
-  margin: 3.75em 2.5em;
+const H1 = styled.h1`
+  padding: 4rem 0 3rem 4rem;
+  margin: 0;
+
+  @media screen and (max-width: 430px) {
+    text-align: center;
+    padding: 2rem;
+  }
 `;
 
+const H2 = styled.h2`
+  @media screen and (max-width: 430px) {
+    text-align: center;
+  }
+`;
+
+// div (parent)
 const ParentDiv = styled.div`
   display: flex;
   justify-content: space-around;
   margin: 3.125em;
 
-  @media screen and (max-width: 36em) {
+  @media screen and (max-width: 430px) {
     justify-content: space-between;
+    text-align: center;
   }
 `;
 
-const ChildDiv = styled.div`
-  font-size: 1.25rem;
-  color: #d9d9d9;
+// Image element (for the movies and series)
+const Photo = styled(Image)`
+  width: 100%;
+  height: 75%;
+  left: 2rem;
+  top: 35rem;
+  background: #d9d9d9;
+  border-radius: 15px;
+
+  @media screen and (max-width: 430px) {
+    width: 80%;
+    height: 80%;
+  }
 `;
 
-const StyledSpan = styled.span`
+// span element (for the number of minutes of a movie)
+const StyledMain = styled.span`
   position: relative;
-  left: 6.25rem;
+  left: 9rem;
 
-  @media screen and (max-width: 36rem) {
-    left: 3.125rem;
+  @media screen and (max-width: 430px) {
+    left: 1.2rem;
+    font-size: 1rem;
   }
 `;
