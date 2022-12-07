@@ -165,6 +165,7 @@ const H1 = styled.h1`
   padding: 0.5em;
   bottom: 30rem;
   position: relative;
+  color: #000000;
 `;
 
 // first p element
@@ -176,6 +177,7 @@ const Info = styled.p`
   font-weight: 30rem;
   font-size: 1, 25rem;
   margin: 0 6.25rem;
+  color: #000000;
 
   @media screen and (max-width: 430px) {
     margin: 0 2rem;
@@ -237,6 +239,7 @@ const EditedSpanMin = styled.span`
 
 // span element (for the number of episodes in a series)
 const EditedSpanEp = styled.span`
+  color: #000000;
   position: relative;
   left: 6.25rem;
 
