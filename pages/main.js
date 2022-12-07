@@ -8,33 +8,51 @@ import {Icon} from "@iconify/react";
 export default function Main() {
   return (
     <>
-      <StyledMain>
+      <main style={{backgroundColor: "#1a1a1a"}}>
         <FirstSection>
-          <BackgroundImage src={seats} alt="seats as background image" />
-          <H1>Find Movies and Series</H1>
+          <Image
+            style={{width: "100%", height: "85vh"}}
+            src={seats}
+            alt="seats as background image"
+          />
+          <H1>
+            <em>Find Movies and Series</em>
+          </H1>
           <Info>
-            searchfind.go - Just a better place to find Movies and Series for
-            free. It allows you to find Movies and Series in high Quality. Just
-            open searchfind.go, find your favorite Series and Movies, and have
-            fun.
+            <em>
+              searchfind.go - Just a better place to find Movies and Series for
+              free. It allows you to find Movies and Series in high Quality.
+              Just open searchfind.go, find your favorite Series and Movies, and
+              have fun.
+            </em>
           </Info>
         </FirstSection>
         <SecondAndThirdSection>
           <H2>Recommended Movies</H2>
           <hr />
           <ParentDiv>
-            <ChildDiv>
+            <div style={{color: "#d9d9d9"}}>
               <Photo src={neueFischePhoto} alt="recommended series" />
-              <h3>Name</h3>
-              <span>Year</span>
-              <EditedSpanMin>no min</EditedSpanMin>
-            </ChildDiv>
-            <ChildDiv>
+              <h3>
+                <em>Name</em>
+              </h3>
+              <span>
+                <em>Name</em>
+              </span>
+              <EditedSpanMin>
+                <em>no min</em>
+              </EditedSpanMin>
+            </div>
+            <div style={{color: "#d9d9d9"}}>
               <Photo src={neueFischePhoto} alt="recommended series" />
-              <h3>Name</h3>
-              <span>Year</span>
+              <h3>
+                <em>Name</em>
+              </h3>
+              <span>
+                <em>Year</em>
+              </span>
               <EditedSpanMin>no min</EditedSpanMin>
-            </ChildDiv>
+            </div>
           </ParentDiv>
           <hr />
         </SecondAndThirdSection>
@@ -43,18 +61,30 @@ export default function Main() {
           <H2>Recommended Series</H2>
           <hr />
           <ParentDiv>
-            <ChildDiv>
+            <div style={{color: "#d9d9d9"}}>
               <Photo src={neueFischePhoto} alt="recommended series" />
-              <h3>Name</h3>
-              <span>SS Num</span>
-              <EditedSpanEp>EP Num</EditedSpanEp>
-            </ChildDiv>
-            <ChildDiv>
+              <h3>
+                <em>Name</em>
+              </h3>
+              <span>
+                <em>SS Num</em>
+              </span>
+              <EditedSpanEp>
+                <em>EP Num</em>
+              </EditedSpanEp>
+            </div>
+            <div style={{color: "#d9d9d9"}}>
               <Photo src={neueFischePhoto} alt="recommended series" />
-              <h3>Name</h3>
-              <span>SS Num</span>
-              <EditedSpanEp>EP Num</EditedSpanEp>
-            </ChildDiv>
+              <h3>
+                <em>Name</em>
+              </h3>
+              <span>
+                <em>SS Num</em>
+              </span>
+              <EditedSpanEp>
+                <em>EP Num</em>
+              </EditedSpanEp>
+            </div>
           </ParentDiv>
           <hr />
         </SecondAndThirdSection>
@@ -99,24 +129,17 @@ export default function Main() {
             </StyledLink>
           </EditedDiv>
         </ForthSection>
-      </StyledMain>
+      </main>
     </>
   );
 }
-
-// main element
-const StyledMain = styled.main`
-  font-style: italic;
-  background-color: #000000;
-  width: 100%;
-`;
 
 // first section of the main page
 const FirstSection = styled.section`
   text-align: center;
   height: 50rem;
 
-  @media screen and (max-width: 26.875rem) {
+  @media screen and (max-width: 430px) {
     height: 40rem;
   }
 `;
@@ -124,22 +147,13 @@ const FirstSection = styled.section`
 // h1 element
 const H1 = styled.h1`
   padding: 0.5em;
-  z-index: 1;
   bottom: 30rem;
   position: relative;
-`;
-
-// first Image element (it is used for background image)
-const BackgroundImage = styled(Image)`
-  width: 100vw;
-  height: 85vh;
-  z-index: 0;
 `;
 
 // first p element
 const Info = styled.p`
   position: relative;
-  z-index: 1;
   bottom: 32.5rem;
   line-height: 145.2%;
   padding: 3.125rem;
@@ -147,7 +161,7 @@ const Info = styled.p`
   font-size: 1, 25rem;
   margin: 0 6.25rem;
 
-  @media screen and (max-width: 26.875rem) {
+  @media screen and (max-width: 430px) {
     margin: 0 2rem;
   }
 `;
@@ -158,15 +172,10 @@ const ParentDiv = styled.div`
   justify-content: space-around;
   margin: 3.125em;
 
-  @media screen and (max-width: 26.875rem) {
+  @media screen and (max-width: 430px) {
     justify-content: space-between;
     text-align: center;
   }
-`;
-
-// div (child)
-const ChildDiv = styled.div`
-  color: #d9d9d9;
 `;
 
 // Image element (for the movies and series)
@@ -178,7 +187,7 @@ const Photo = styled(Image)`
   background: #d9d9d9;
   border-radius: 15px;
 
-  @media screen and (max-width: 26.875rem) {
+  @media screen and (max-width: 430px) {
     width: 80%;
     height: 80%;
   }
@@ -188,13 +197,13 @@ const Photo = styled(Image)`
 const SecondAndThirdSection = styled.section`
   margin: 0 3.75rem;
 
-  @media screen and (max-width: 36rem) {
+  @media screen and (max-width: 430px) {
     margin: 0;
   }
 `;
 
 const H2 = styled.h2`
-  @media screen and (max-width: 26.875rem) {
+  @media screen and (max-width: 430px) {
     text-align: center;
   }
 `;
@@ -204,10 +213,9 @@ const EditedSpanMin = styled.span`
   position: relative;
   left: 9rem;
 
-  @media screen and (max-width: 26.875rem) {
+  @media screen and (max-width: 430px) {
     left: 1.2rem;
     font-size: 1rem;
-    /* text-align: center; */
   }
 `;
 
@@ -216,7 +224,7 @@ const EditedSpanEp = styled.span`
   position: relative;
   left: 6.25rem;
 
-  @media screen and (max-width: 26.875rem) {
+  @media screen and (max-width: 430px) {
     left: 1rem;
     font-size: 1rem;
   }
@@ -239,7 +247,7 @@ const ForthSection = styled.section`
   width: 100%;
   height: auto;
 
-  @media screen and (max-width: 26.875rem) {
+  @media screen and (max-width: 430px) {
     grid-template-rows: repeat(4, 20%);
     grid-template-columns: repeat(3, 35%);
     row-gap: 2px;
@@ -286,7 +294,7 @@ const EditedDiv = styled.div`
   width: 100%;
   font-size: 1.21rem;
 
-  @media screen and (max-width: 26.875rem) {
+  @media screen and (max-width: 430px) {
     font-size: 0.666rem;
   }
 `;
@@ -296,7 +304,7 @@ const H3 = styled.h3`
 `;
 
 const StyledIcon = styled(Icon)`
-  @media screen and (max-width: 26.875rem) {
+  @media screen and (max-width: 430px) {
     width: 20%;
   }
 `;

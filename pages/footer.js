@@ -12,9 +12,10 @@ export default function Footer() {
 
   return (
     <>
-      <Hr />
       <StyledFooter>
-        <Par>Find the Onwer At:</Par>
+        <Par>
+          <em>Find the Onwer At:</em>
+        </Par>
         <Link href="mailto:georgenatro@gmail.com">
           <StyledIcon
             icon="material-symbols:alternate-email"
@@ -29,26 +30,22 @@ export default function Footer() {
           <StyledIcon icon="mdi:github" width="35" height="35" />
         </Link>
         <Par>
-          ©{year} Search Find Go! --All external content remains the property of
-          the righful owner.
+          <em>
+            ©{year} Search Find Go! --All external content remains the property
+            of the righful owner.
+          </em>
         </Par>
       </StyledFooter>
     </>
   );
 }
 
-const Hr = styled.hr`
-  width: 100vw;
-  margin: 0;
-  min-height: 2px;
-`;
-
 // footer element
 const StyledFooter = styled.footer`
   background-color: #000000;
   text-align: center;
   padding: 0.9375em;
-  font-style: italic;
+  border-top: 2px solid;
 `;
 
 const StyledIcon = styled(Icon)`

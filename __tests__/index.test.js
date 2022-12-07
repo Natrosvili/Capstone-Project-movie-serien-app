@@ -3,7 +3,7 @@ import "@testing-library/jest-dom";
 import Header from "../pages/header";
 
 describe("Home", () => {
-  it("renders an Anchor", () => {
+  it("renders the header", () => {
     render(<Header />);
 
     const text = screen.getByText(/Movies/i);
