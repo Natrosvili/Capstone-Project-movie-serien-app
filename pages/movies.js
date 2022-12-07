@@ -7,113 +7,159 @@ export default function Movies() {
   return (
     <>
       <h1>Movies</h1>
-      <br />
       <StyledSection>
-        <h2>Action</h2>
+        <H2>Action</H2>
         <hr />
         <ParentDiv>
-          <ChildDiv>
-            <ToMovie href="">
+          <div style={{color: "#d9d9d9"}}>
+            <Link style={{textDecoration: "none"}} href="#">
               <Photo src={neueFischePhoto} alt="recommended series" />
-            </ToMovie>
-            <ToMovie href="">
-              <h3>Name</h3>
-            </ToMovie>
-            <span>Year</span>
-            <StyledSpan>no min</StyledSpan>
-          </ChildDiv>
-          <ChildDiv>
-            <ToMovie href="">
+            </Link>
+            <Link style={{color: "grey", textDecoration: "none"}} href="#">
+              <h3>
+                <em>Name</em>
+              </h3>
+            </Link>
+            <span>
+              <em>Name</em>
+            </span>
+            <StyledMain>
+              <em>no min</em>
+            </StyledMain>
+          </div>
+          <div style={{color: "#d9d9d9"}}>
+            <Link style={{textDecoration: "none"}} href="#">
               <Photo src={neueFischePhoto} alt="recommended series" />
-            </ToMovie>
-            <ToMovie href="">
-              <h3>Name</h3>
-            </ToMovie>
-            <span>Year</span>
-            <StyledSpan>no min</StyledSpan>
-          </ChildDiv>
-        </ParentDiv>
-        <hr />
-      </StyledSection>
-      {/* <br /> */}
-      <StyledSection>
-        <h2>Adventure</h2>
-        <hr />
-        <ParentDiv>
-          <ChildDiv>
-            <ToMovie href="">
-              <Photo src={neueFischePhoto} alt="recommended series" />
-            </ToMovie>
-            <ToMovie href="">
-              <h3>Name</h3>
-            </ToMovie>
-            <span>Year</span>
-            <StyledSpan>no min</StyledSpan>
-          </ChildDiv>
-          <ChildDiv>
-            <ToMovie href="">
-              <Photo src={neueFischePhoto} alt="recommended series" />
-            </ToMovie>
-            <ToMovie href="">
-              <h3>Name</h3>
-            </ToMovie>
-            <span>Year</span>
-            <StyledSpan>no min</StyledSpan>
-          </ChildDiv>
+            </Link>
+            <Link style={{color: "grey", textDecoration: "none"}} href="#">
+              <h3>
+                <em>Name</em>
+              </h3>
+            </Link>
+            <span>
+              <em>Year</em>
+            </span>
+            <StyledMain>
+              <em>no min</em>
+            </StyledMain>
+          </div>
         </ParentDiv>
         <hr />
       </StyledSection>
       <StyledSection>
-        <h2>Comedy</h2>
+        <H2>Adventure</H2>
         <hr />
         <ParentDiv>
-          <ChildDiv>
-            <ToMovie href="">
+          <div style={{color: "#d9d9d9"}}>
+            <Link style={{textDecoration: "none"}} href="#">
               <Photo src={neueFischePhoto} alt="recommended series" />
-            </ToMovie>
-            <ToMovie href="">
-              <h3>Name</h3>
-            </ToMovie>
-            <span>Year</span>
-            <StyledSpan>no min</StyledSpan>
-          </ChildDiv>
-          <ChildDiv>
-            <ToMovie href="">
+            </Link>
+            <Link style={{color: "grey", textDecoration: "none"}} href="#">
+              <h3>
+                <em>Name</em>
+              </h3>
+            </Link>
+            <span>
+              <em>Name</em>
+            </span>
+            <StyledMain>
+              <em>no min</em>
+            </StyledMain>
+          </div>
+          <div style={{color: "#d9d9d9"}}>
+            <Link style={{textDecoration: "none"}} href="#">
               <Photo src={neueFischePhoto} alt="recommended series" />
-            </ToMovie>
-            <ToMovie href="">
-              <h3>Name</h3>
-            </ToMovie>
-            <span>Year</span>
-            <StyledSpan>no min</StyledSpan>
-          </ChildDiv>
+            </Link>
+            <Link style={{color: "grey", textDecoration: "none"}} href="#">
+              <h3>
+                <em>Name</em>
+              </h3>
+            </Link>
+            <span>
+              <em>Year</em>
+            </span>
+            <StyledMain>
+              <em>no min</em>
+            </StyledMain>
+          </div>
         </ParentDiv>
         <hr />
       </StyledSection>
       <StyledSection>
-        <h2>Drama</h2>
+        <H2>Comedy</H2>
         <hr />
         <ParentDiv>
-          <ChildDiv>
-            <ToMovie href="">
+          <div style={{color: "#d9d9d9"}}>
+            <Link style={{textDecoration: "none"}} href="#">
               <Photo src={neueFischePhoto} alt="recommended series" />
-            </ToMovie>
-            <ToMovie href="">
-              <h3>Name</h3>
-            </ToMovie>
-            <span>Year</span>
-            <StyledSpan>no min</StyledSpan>
-          </ChildDiv>
-          <ChildDiv>
-            <ToMovie href="">
+            </Link>
+            <Link style={{color: "grey", textDecoration: "none"}} href="#">
+              <h3>
+                <em>Name</em>
+              </h3>
+            </Link>
+            <span>
+              <em>Name</em>
+            </span>
+            <StyledMain>
+              <em>no min</em>
+            </StyledMain>
+          </div>
+          <div style={{color: "#d9d9d9"}}>
+            <Link style={{textDecoration: "none"}} href="#">
               <Photo src={neueFischePhoto} alt="recommended series" />
-            </ToMovie>
-            <ToMovie href="">
-              <h3>Name</h3>
-            </ToMovie>
-            <span>Year</span>
-            <StyledSpan>no min</StyledSpan>
-          </ChildDiv>
+            </Link>
+            <Link style={{color: "grey", textDecoration: "none"}} href="#">
+              <h3>
+                <em>Name</em>
+              </h3>
+            </Link>
+            <span>
+              <em>Year</em>
+            </span>
+            <StyledMain>
+              <em>no min</em>
+            </StyledMain>
+          </div>
+        </ParentDiv>
+        <hr />
+      </StyledSection>
+      <StyledSection>
+        <H2>Drama</H2>
+        <hr />
+        <ParentDiv>
+          <div style={{color: "#d9d9d9"}}>
+            <Link style={{textDecoration: "none"}} href="#">
+              <Photo src={neueFischePhoto} alt="recommended series" />
+            </Link>
+            <Link style={{color: "grey", textDecoration: "none"}} href="#">
+              <h3>
+                <em>Name</em>
+              </h3>
+            </Link>
+            <span>
+              <em>Name</em>
+            </span>
+            <StyledMain>
+              <em>no min</em>
+            </StyledMain>
+          </div>
+          <div style={{color: "#d9d9d9"}}>
+            <Link style={{textDecoration: "none"}} href="#">
+              <Photo src={neueFischePhoto} alt="recommended series" />
+            </Link>
+            <Link style={{color: "grey", textDecoration: "none"}} href="#">
+              <h3>
+                <em>Name</em>
+              </h3>
+            </Link>
+            <span>
+              <em>Year</em>
+            </span>
+            <StyledMain>
+              <em>no min</em>
+            </StyledMain>
+          </div>
         </ParentDiv>
         <hr />
       </StyledSection>
@@ -121,49 +167,55 @@ export default function Movies() {
   );
 }
 
+// second and third section of the main page
 const StyledSection = styled.section`
-  margin: 3.75rem 2.5rem;
+  margin: 3rem 3.75rem;
+
+  @media screen and (max-width: 430px) {
+    margin: 0 0 3rem;
+  }
 `;
 
+const H2 = styled.h2`
+  @media screen and (max-width: 430px) {
+    text-align: center;
+  }
+`;
+
+// div (parent)
 const ParentDiv = styled.div`
   display: flex;
   justify-content: space-around;
-  margin: 3.125rem;
+  margin: 3.125em;
 
-  @media screen and (max-width: 36rem) {
+  @media screen and (max-width: 430px) {
     justify-content: space-between;
+    text-align: center;
   }
 `;
 
-const ChildDiv = styled.div`
-  font-size: 1.25rem;
-  color: #d9d9d9;
-`;
-
-const ToMovie = styled(Link)`
-  text-decoration: none;
-`;
-
+// Image element (for the movies and series)
 const Photo = styled(Image)`
-  width: 26.5vw;
-  height: 30vh;
-  left: 2.125rem;
-  top: 34.5rem;
+  width: 100%;
+  height: 75%;
+  left: 2rem;
+  top: 35rem;
   background: #d9d9d9;
-
   border-radius: 15px;
 
-  @media screen and (max-width: 36rem) {
-    width: 26vw;
-    height: 21vh;
+  @media screen and (max-width: 430px) {
+    width: 80%;
+    height: 80%;
   }
 `;
 
-const StyledSpan = styled.span`
+// span element (for the number of minutes of a movie)
+const StyledMain = styled.span`
   position: relative;
-  left: 8.75rem;
+  left: 9rem;
 
-  @media screen and (max-width: 36rem) {
-    left: 5.5rem;
+  @media screen and (max-width: 430px) {
+    left: 1.2rem;
+    font-size: 1rem;
   }
 `;

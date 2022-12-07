@@ -128,21 +128,33 @@ export default function Main() {
           <EditedDiv>
             <h3 style={{margin: 0}}>Share With Your Friends</h3>
             <p>Help me grow by sharing my website with your friends!</p>
-            <StyledLink href="https://www.facebook.com">
+            <Link
+              style={{textDecoration: "none"}}
+              href="https://www.facebook.com"
+            >
               <StyledIcon icon="logos:facebook" width="35" />
-            </StyledLink>
-            <StyledLink href="https://www.instagram.com">
+            </Link>
+            <Link
+              style={{textDecoration: "none"}}
+              href="https://www.instagram.com"
+            >
               <StyledIcon icon="mdi:instagram" width="35" />
-            </StyledLink>
-            <StyledLink href="https://api.whatsapp.com">
+            </Link>
+            <Link
+              style={{textDecoration: "none"}}
+              href="https://api.whatsapp.com"
+            >
               <StyledIcon icon="logos:whatsapp-icon" width="35" />
-            </StyledLink>
-            <StyledLink href="https://www.pinterest.com/">
+            </Link>
+            <Link
+              style={{textDecoration: "none"}}
+              href="https://www.pinterest.com/"
+            >
               <StyledIcon icon="logos:pinterest" width="35" />
-            </StyledLink>
-            <StyledLink href="https://twitter.com">
+            </Link>
+            <Link style={{textDecoration: "none"}} href="https://twitter.com">
               <StyledIcon icon="logos:twitter" width="35" />
-            </StyledLink>
+            </Link>
           </EditedDiv>
         </ForthSection>
       </main>
