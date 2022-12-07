@@ -1,9 +1,9 @@
 import {render, screen} from "@testing-library/react";
 import "@testing-library/jest-dom";
-import Header from "../components/Header";
+import Header from "../pages/header";
 
 describe("Home", () => {
-  it("renders a button", () => {
+  it("renders the header", () => {
     render(<Header />);
 
     const text = screen.getByText(/Movies/i);
