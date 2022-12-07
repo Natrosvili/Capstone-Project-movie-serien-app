@@ -13,7 +13,7 @@ export default function Footer() {
   return (
     <>
       <StyledFooter>
-        <p style={{padding: "0.0625em 0"}}>
+        <p style={{padding: "0.0625em 0", color: "#ffffff"}}>
           <em>Find the Onwer At:</em>
         </p>
         <Link href="mailto:georgenatro@gmail.com">
@@ -35,7 +35,7 @@ export default function Footer() {
             height="35"
           />
         </Link>
-        <p style={{padding: "0.0625em 0"}}>
+        <p style={{padding: "0.0625em 0", color: "#ffffff"}}>
           <em>
             ©{year} Search Find Go! --All external content remains the property
             of the righful owner.

@@ -126,8 +126,12 @@ export default function Main() {
           </ImageContainer3>
 
           <EditedDiv>
-            <h3 style={{margin: 0}}>Share With Your Friends</h3>
-            <p>Help me grow by sharing my website with your friends!</p>
+            <h3 style={{margin: 0, color: "#ffffff"}}>
+              Share With Your Friends
+            </h3>
+            <p style={{color: "#ffffff"}}>
+              Help me grow by sharing my website with your friends!
+            </p>
             <StyledLink href="https://www.facebook.com">
               <StyledIcon icon="logos:facebook" width="35" />
             </StyledLink>
@@ -165,7 +169,7 @@ const H1 = styled.h1`
   padding: 0.5em;
   bottom: 30rem;
   position: relative;
-  color: #000000;
+  color: #ffffff;
 `;
 
 // first p element
@@ -177,7 +181,7 @@ const Info = styled.p`
   font-weight: 30rem;
   font-size: 1, 25rem;
   margin: 0 6.25rem;
-  color: #000000;
+  color: #ffffff;
 
   @media screen and (max-width: 430px) {
     margin: 0 2rem;
@@ -239,7 +243,7 @@ const EditedSpanMin = styled.span`
 
 // span element (for the number of episodes in a series)
 const EditedSpanEp = styled.span`
-  color: #000000;
+  color: #ffffff;
   position: relative;
   left: 6.25rem;
 
