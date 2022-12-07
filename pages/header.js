@@ -9,7 +9,7 @@ export default function Header({children}) {
     <>
       <StyledHeader>
         <StyledLink href="/">
-          <Img src={logo} alt="search find go" />
+          <Img src={logo} width="220" height="130" alt="search find go" />
         </StyledLink>
         <StyledLink href="/movies">
           <StyledSpan>
@@ -62,7 +62,7 @@ const StyledHeader = styled.header`
 
 const Img = styled(Image)`
   @media screen and (max-width: 430px) {
-    width: 34vw;
+    width: 30vw;
     height: 12vh;
     border-radius: 15px;
   }

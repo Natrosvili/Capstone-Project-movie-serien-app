@@ -32,10 +32,14 @@ export default function Main() {
           <hr />
           <ParentDiv>
             <div style={{color: "#d9d9d9"}}>
-              <Photo src={neueFischePhoto} alt="recommended series" />
-              <h3>
-                <em>Name</em>
-              </h3>
+              <StyledLink href="#">
+                <Photo src={neueFischePhoto} alt="recommended series" />
+              </StyledLink>
+              <Link style={{color: "grey", textDecoration: "none"}} href="#">
+                <h3>
+                  <em>Name</em>
+                </h3>
+              </Link>
               <span>
                 <em>Name</em>
               </span>
@@ -44,28 +48,37 @@ export default function Main() {
               </EditedSpanMin>
             </div>
             <div style={{color: "#d9d9d9"}}>
-              <Photo src={neueFischePhoto} alt="recommended series" />
-              <h3>
-                <em>Name</em>
-              </h3>
+              <StyledLink href="#">
+                <Photo src={neueFischePhoto} alt="recommended series" />
+              </StyledLink>
+              <Link style={{color: "grey", textDecoration: "none"}} href="#">
+                <h3>
+                  <em>Name</em>
+                </h3>
+              </Link>
               <span>
                 <em>Year</em>
               </span>
-              <EditedSpanMin>no min</EditedSpanMin>
+              <EditedSpanMin>
+                <em>no min</em>
+              </EditedSpanMin>
             </div>
           </ParentDiv>
           <hr />
         </SecondAndThirdSection>
-        <br />
         <SecondAndThirdSection>
           <H2>Recommended Series</H2>
           <hr />
           <ParentDiv>
             <div style={{color: "#d9d9d9"}}>
-              <Photo src={neueFischePhoto} alt="recommended series" />
-              <h3>
-                <em>Name</em>
-              </h3>
+              <Link href="#">
+                <Photo src={neueFischePhoto} alt="recommended series" />
+              </Link>
+              <Link style={{color: "grey", textDecoration: "none"}} href="#">
+                <h3>
+                  <em>Name</em>
+                </h3>
+              </Link>
               <span>
                 <em>SS Num</em>
               </span>
@@ -74,10 +87,14 @@ export default function Main() {
               </EditedSpanEp>
             </div>
             <div style={{color: "#d9d9d9"}}>
-              <Photo src={neueFischePhoto} alt="recommended series" />
-              <h3>
-                <em>Name</em>
-              </h3>
+              <Link href="#">
+                <Photo src={neueFischePhoto} alt="recommended series" />
+              </Link>
+              <Link style={{color: "grey", textDecoration: "none"}} href="#">
+                <h3>
+                  <em>Name</em>
+                </h3>
+              </Link>
               <span>
                 <em>SS Num</em>
               </span>
@@ -194,10 +211,10 @@ const Photo = styled(Image)`
 
 // second and third section of the main page
 const SecondAndThirdSection = styled.section`
-  margin: 0 3.75rem;
+  margin: 3rem 3.75rem;
 
   @media screen and (max-width: 430px) {
-    margin: 0;
+    margin: 0 0 3rem;
   }
 `;
 
