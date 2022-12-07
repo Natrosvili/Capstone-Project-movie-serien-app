@@ -170,6 +170,7 @@ export default function Movies() {
 // second and third section of the main page
 const StyledSection = styled.section`
   margin: 3rem 3.75rem;
+  backgroundcolor: #010101;
 
   @media screen and (max-width: 430px) {
     margin: 0 0 3rem;
