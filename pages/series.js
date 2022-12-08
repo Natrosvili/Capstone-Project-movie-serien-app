@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import neueFischePhoto from "../public/neuefische.jpeg";
 import Image from "next/image";
+import neueFischePhoto from "../public/neuefische.jpeg";
 import Link from "next/link";
 
 export default function Series() {
@@ -16,38 +16,38 @@ export default function Series() {
           </H2>
           <hr />
           <ParentDiv>
-            <div style={{color: "#d9d9d9"}}>
-              <Link style={{textDecoration: "none"}} href="#">
+            <ChildDiv>
+              <StyledLink href="#">
                 <Photo src={neueFischePhoto} alt="recommended series" />
-              </Link>
-              <Link style={{color: "grey", textDecoration: "none"}} href="#">
+              </StyledLink>
+              <StyledNameLink href="#">
                 <h3>
                   <em>Name</em>
                 </h3>
-              </Link>
+              </StyledNameLink>
               <span>
                 <em>SS 2</em>
               </span>
               <StyledMain>
                 <em>EP 10</em>
               </StyledMain>
-            </div>
-            <div style={{color: "#d9d9d9"}}>
-              <Link style={{textDecoration: "none"}} href="#">
+            </ChildDiv>
+            <ChildDiv>
+              <StyledLink href="#">
                 <Photo src={neueFischePhoto} alt="recommended series" />
-              </Link>
-              <Link style={{color: "grey", textDecoration: "none"}} href="#">
+              </StyledLink>
+              <StyledNameLink href="#">
                 <h3>
                   <em>Name</em>
                 </h3>
-              </Link>
+              </StyledNameLink>
               <span>
                 <em>SS 2</em>
               </span>
               <StyledMain>
                 <em>EP 10</em>
               </StyledMain>
-            </div>
+            </ChildDiv>
           </ParentDiv>
           <hr />
         </StyledSection>
@@ -57,79 +57,79 @@ export default function Series() {
           </H2>
           <hr />
           <ParentDiv>
-            <div style={{color: "#d9d9d9"}}>
-              <Link style={{textDecoration: "none"}} href="#">
+            <ChildDiv>
+              <StyledLink href="#">
                 <Photo src={neueFischePhoto} alt="recommended series" />
-              </Link>
-              <Link style={{color: "grey", textDecoration: "none"}} href="#">
+              </StyledLink>
+              <StyledNameLink href="#">
                 <h3>
                   <em>Name</em>
                 </h3>
-              </Link>
+              </StyledNameLink>
               <span>
                 <em>SS 2</em>
               </span>
               <StyledMain>
                 <em>EP 10</em>
               </StyledMain>
-            </div>
-            <div style={{color: "#d9d9d9"}}>
-              <Link style={{textDecoration: "none"}} href="#">
+            </ChildDiv>
+            <ChildDiv>
+              <StyledLink href="#">
                 <Photo src={neueFischePhoto} alt="recommended series" />
-              </Link>
-              <Link style={{color: "grey", textDecoration: "none"}} href="#">
+              </StyledLink>
+              <StyledNameLink href="#">
                 <h3>
                   <em>Name</em>
                 </h3>
-              </Link>
+              </StyledNameLink>
               <span>
                 <em>SS 2</em>
               </span>
               <StyledMain>
                 <em>EP 10</em>
               </StyledMain>
-            </div>
+            </ChildDiv>
           </ParentDiv>
           <hr />
         </StyledSection>
         <StyledSection>
           <H2>
-            <em>Comedy</em>
+            <em>Comendy</em>
           </H2>
           <hr />
           <ParentDiv>
-            <div style={{color: "#d9d9d9"}}>
-              <Link style={{textDecoration: "none"}} href="#">
+            <ChildDiv>
+              <StyledLink href="#">
                 <Photo src={neueFischePhoto} alt="recommended series" />
-              </Link>
-              <Link style={{color: "grey", textDecoration: "none"}} href="#">
+              </StyledLink>
+              <StyledNameLink href="#">
                 <h3>
                   <em>Name</em>
                 </h3>
-              </Link>
+              </StyledNameLink>
               <span>
                 <em>SS 2</em>
               </span>
               <StyledMain>
                 <em>EP 10</em>
               </StyledMain>
-            </div>
-            <div style={{color: "#d9d9d9"}}>
-              <Link style={{textDecoration: "none"}} href="#">
+            </ChildDiv>
+            <ChildDiv>
+              <StyledLink href="#">
                 <Photo src={neueFischePhoto} alt="recommended series" />
-              </Link>
-              <Link style={{color: "grey", textDecoration: "none"}} href="#">
+              </StyledLink>
+              <StyledNameLink href="#">
                 <h3>
                   <em>Name</em>
                 </h3>
-              </Link>
+              </StyledNameLink>
               <span>
                 <em>SS 2</em>
               </span>
               <StyledMain>
                 <em>EP 10</em>
               </StyledMain>
-            </div>
+            </ChildDiv>
           </ParentDiv>
           <hr />
         </StyledSection>
@@ -139,38 +139,38 @@ export default function Series() {
           </H2>
           <hr />
           <ParentDiv>
-            <div style={{color: "#d9d9d9"}}>
-              <Link style={{textDecoration: "none"}} href="#">
+            <ChildDiv>
+              <StyledLink href="#">
                 <Photo src={neueFischePhoto} alt="recommended series" />
-              </Link>
-              <Link style={{color: "grey", textDecoration: "none"}} href="#">
+              </StyledLink>
+              <StyledNameLink href="#">
                 <h3>
                   <em>Name</em>
                 </h3>
-              </Link>
+              </StyledNameLink>
               <span>
                 <em>SS 2</em>
               </span>
               <StyledMain>
                 <em>EP 10</em>
               </StyledMain>
-            </div>
-            <div style={{color: "#d9d9d9"}}>
-              <Link style={{textDecoration: "none"}} href="#">
+            </ChildDiv>
+            <ChildDiv>
+              <StyledLink href="#">
                 <Photo src={neueFischePhoto} alt="recommended series" />
-              </Link>
-              <Link style={{color: "grey", textDecoration: "none"}} href="#">
+              </StyledLink>
+              <StyledNameLink href="#">
                 <h3>
                   <em>Name</em>
                 </h3>
-              </Link>
+              </StyledNameLink>
               <span>
                 <em>SS 2</em>
               </span>
               <StyledMain>
                 <em>EP 10</em>
               </StyledMain>
-            </div>
+            </ChildDiv>
           </ParentDiv>
           <hr />
         </StyledSection>
@@ -179,7 +179,6 @@ export default function Series() {
   );
 }
 
-// second and third section of the main page
 const StyledSection = styled.section`
   padding: 3rem 3.75rem;
 
@@ -204,11 +203,11 @@ const H2 = styled.h2`
   }
 `;
 
-// div (parent)
 const ParentDiv = styled.div`
   display: flex;
   justify-content: space-around;
   margin: 3.125em;
+  color: #d9d9d9;
 
   @media screen and (max-width: 430px) {
     justify-content: space-between;
@@ -216,7 +215,19 @@ const ParentDiv = styled.div`
   }
 `;
 
-// Image element (for the movies and series)
+const StyledLink = styled(Link)`
+  text-decoration: none;
+`;
+
+const StyledNameLink = styled(Link)`
+  color: grey;
+  text-decoration: none;
+`;
+
+const ChildDiv = styled.div`
+  color: #d9d9d9;
+`;
+
 const Photo = styled(Image)`
   width: 100%;
   height: 75%;
@@ -231,7 +242,6 @@ const Photo = styled(Image)`
   }
 `;
 
-// span element (for the number of minutes of a movie)
 const StyledMain = styled.span`
   position: relative;
   left: 9rem;
