@@ -41,7 +41,7 @@ export default function Main() {
                 </h3>
               </Link>
               <span>
-                <em>Name</em>
+                <em>Year</em>
               </span>
               <EditedSpanMin>
                 <em>no min</em>
