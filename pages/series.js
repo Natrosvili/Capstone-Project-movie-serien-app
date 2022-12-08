@@ -190,6 +190,7 @@ const StyledSection = styled.section`
 const H1 = styled.h1`
   padding: 4rem 0 3rem 4rem;
   margin: 0;
+  color: #ffffff;
 
   @media screen and (max-width: 430px) {
     text-align: center;
@@ -198,6 +199,7 @@ const H1 = styled.h1`
 `;
 
 const H2 = styled.h2`
+  color: #ffffff;
   @media screen and (max-width: 430px) {
     text-align: center;
   }
