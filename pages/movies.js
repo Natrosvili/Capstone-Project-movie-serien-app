@@ -26,7 +26,7 @@ export default function Movies() {
                 </h3>
               </Link>
               <span>
-                <em>Name</em>
+                <em>Year</em>
               </span>
               <StyledMain>
                 <em>no min</em>
@@ -67,7 +67,7 @@ export default function Movies() {
                 </h3>
               </Link>
               <span>
-                <em>Name</em>
+                <em>Year</em>
               </span>
               <StyledMain>
                 <em>no min</em>
@@ -108,7 +108,7 @@ export default function Movies() {
                 </h3>
               </Link>
               <span>
-                <em>Name</em>
+                <em>Year</em>
               </span>
               <StyledMain>
                 <em>no min</em>
@@ -149,7 +149,7 @@ export default function Movies() {
                 </h3>
               </Link>
               <span>
-                <em>Name</em>
+                <em>Year</em>
               </span>
               <StyledMain>
                 <em>no min</em>
