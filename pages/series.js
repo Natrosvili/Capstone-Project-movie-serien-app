@@ -251,3 +251,7 @@ const StyledMain = styled.span`
     font-size: 1rem;
   }
 `;
+
+export default function Series() {
+  return <></>;
+}
