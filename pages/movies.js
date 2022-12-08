@@ -221,7 +221,7 @@ const StyledLink = styled(Link)`
 
 const StyledNameLink = styled(Link)`
   color: grey;
-  textdecoration: none;
+  text-decoration: none;
 `;
 
 const ChildDiv = styled.div`
