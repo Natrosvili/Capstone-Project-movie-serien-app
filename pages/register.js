@@ -1,8 +1,8 @@
-import Link from "next/link";
-import {useState} from "react";
 import styled from "styled-components";
+import {useState} from "react";
+import Link from "next/link";
 
-export default function LogIn() {
+export default function Register() {
   const [visible, setVisible] = useState("password");
   const [isTrue, setIsTrue] = useState(false);
 
@@ -20,30 +20,52 @@ export default function LogIn() {
   return (
     <>
       <StyledSection>
-        <StyledForm method="post" autoComplete="on">
+        <StyledForm>
           <H1>
-            <em>Sign In</em>
+            <em>Registration Form</em>
           </H1>
+          <StyledPar>
+            Please fill out this form with the required information
+          </StyledPar>
           <StyledDiv1>
-            <StyledLabel for="email">Your Account:</StyledLabel>
+            <StyledLabel for="email">Email adress:</StyledLabel>
             <br />
             <StyledInput
               type="email"
               id="email"
               name="email"
-              placeholder="Your Email"
+              placeholder="Your email"
               required
             />
             <br />
           </StyledDiv1>
           <StyledDiv2>
-            <StyledLabel for="password">Your password:</StyledLabel>
+            <StyledLabel for="password">Create Your Password:</StyledLabel>
             <br />
             <StyledInput
               type={visible}
               id="password"
               name="password"
-              placeholder="Password"
+              placeholder="Your password"
+              required
+            />
+            <br />
+            <input
+              onChange={handleVisibility}
+              type="checkbox"
+              id="passwordVisibility"
+              name="passwordVisibility"
+            />
+            <StyledLabel for="passwordVisibility">Show password</StyledLabel>
+          </StyledDiv2>
+          <StyledDiv2>
+            <label for="password">Confirm Password:</label>
+            <br />
+            <StyledInput
+              type={visible}
+              id="password"
+              name="password"
+              placeholder="Your password"
               required
             />
             <br />
@@ -56,15 +78,13 @@ export default function LogIn() {
             <StyledLabel for="passwordVisibility">Show password</StyledLabel>
           </StyledDiv2>
           <StyledDiv3>
-            <Styledbutton type="submit">
-              <em>Login</em>
-            </Styledbutton>
+            <Styledbutton type="submit">Register</Styledbutton>
           </StyledDiv3>
           <br />
           <StyledPar>
-            Don`t have an Account?{" "}
             <em>
-              <StyledLink href="/register">Register.</StyledLink>
+              Already have an account?{" "}
+              <StyledLink href="/login">Sign in</StyledLink>
             </em>
           </StyledPar>
         </StyledForm>
@@ -85,13 +105,15 @@ const StyledForm = styled.form`
   background-color: #9a9595;
   padding: 2rem 1rem 0;
   border-radius: 1.5rem;
-  height: 50vh;
+  height: 75vh;
 `;
 
 const H1 = styled.h1`
-  margin: 0;
-  color: #000000;
-  margin-bottom: 2rem;
+  text-align: center;
+`;
+
+const StyledPar = styled.p`
+  text-align: center;
 `;
 
 const StyledLabel = styled.label`
@@ -100,7 +122,7 @@ const StyledLabel = styled.label`
 `;
 
 const StyledInput = styled.input`
-  width: 50vw;
+  width: 60vw;
   height: 5vh;
   border: none;
   background-color: #d9d9d9;
@@ -113,11 +135,11 @@ const StyledInput = styled.input`
 `;
 
 const StyledDiv1 = styled.div`
-  margin: 1rem 0;
+  margin: 2rem 0;
 `;
 
 const StyledDiv2 = styled.div`
-  margin: 1rem 0;
+  margin: 2rem 0;
 `;
 
 const StyledDiv3 = styled.div`
@@ -130,14 +152,10 @@ const Styledbutton = styled.button`
   color: #ffffff;
   border: none;
   border-radius: 0.8rem;
-  width: 40vw;
+  width: 45vw;
   height: 5vh;
   cursor: pointer;
   margin-top: 0.5rem;
-`;
-
-const StyledPar = styled.p`
-  text-align: center;
 `;
 
 const StyledLink = styled(Link)`

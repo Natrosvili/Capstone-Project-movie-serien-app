@@ -34,7 +34,7 @@ export default function Header({children}) {
         <StyledLink href="/login">
           <LoginIcon icon="material-symbols:login" width="35" height="35" />
         </StyledLink>
-        <StyledLink href="#">
+        <StyledLink href="/register">
           <RegisterIcon icon="mdi:register" width="35" height="35" />
         </StyledLink>
       </StyledHeader>
