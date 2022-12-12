@@ -3,30 +3,15 @@ import {useState} from "react";
 import styled from "styled-components";
 
 export default function LogIn() {
-  const [visible, setVisible] = useState("password");
-  const [isTrue, setIsTrue] = useState(false);
-
-  function handleVisibility(event) {
-    if (event.target.value == "on") {
-      setVisible("text");
-      setIsTrue(!isTrue);
-    }
-
-    {
-      isTrue && setVisible("password");
-    }
-  }
+  const [visible, setVisible] = useState(false);
 
   return (
     <>
       <StyledSection>
         <StyledForm method="post" autoComplete="on">
-          <H1>
-            <em>Sign In</em>
-          </H1>
-          <StyledDiv1>
+          <H1>Sign In</H1>
+          <div style={{margin: "1rem 0"}}>
             <StyledLabel for="email">Your Account:</StyledLabel>
-            <br />
             <StyledInput
               type="email"
               id="email"
@@ -34,39 +19,33 @@ export default function LogIn() {
               placeholder="Your Email"
               required
             />
-            <br />
-          </StyledDiv1>
-          <StyledDiv2>
+          </div>
+          <div style={{margin: "1rem 0"}}>
             <StyledLabel for="password">Your password:</StyledLabel>
-            <br />
             <StyledInput
-              type={visible}
+              type={visible ? "text" : "password"}
               id="password"
               name="password"
               placeholder="Password"
               required
             />
-            <br />
             <input
-              onChange={handleVisibility}
+              onChange={() => setVisible(!visible)}
               type="checkbox"
               id="passwordVisibility"
               name="passwordVisibility"
             />
             <StyledLabel for="passwordVisibility">Show password</StyledLabel>
-          </StyledDiv2>
+          </div>
           <StyledDiv3>
             <Styledbutton type="submit">
               <em>Login</em>
             </Styledbutton>
           </StyledDiv3>
-          <br />
-          <StyledPar>
-            Don`t have an Account?{" "}
-            <em>
-              <StyledLink href="/register">Register.</StyledLink>
-            </em>
-          </StyledPar>
+          <p style={{textAlign: "center"}}>
+            Don`t have an Account?
+            <StyledLink href="/register"> Register.</StyledLink>
+          </p>
         </StyledForm>
       </StyledSection>
     </>
@@ -88,7 +67,7 @@ const StyledForm = styled.form`
   height: 50vh;
 
   @media screen and (max-width: 430px) {
-    height: 53vh;
+    height: 50vh;
   }
 `;
 
@@ -96,6 +75,7 @@ const H1 = styled.h1`
   margin: 0;
   color: #000000;
   margin-bottom: 2rem;
+  font-style: italic;
 `;
 
 const StyledLabel = styled.label`
@@ -116,14 +96,6 @@ const StyledInput = styled.input`
   }
 `;
 
-const StyledDiv1 = styled.div`
-  margin: 1rem 0;
-`;
-
-const StyledDiv2 = styled.div`
-  margin: 1rem 0;
-`;
-
 const StyledDiv3 = styled.div`
   display: flex;
   justify-content: center;
@@ -140,11 +112,8 @@ const Styledbutton = styled.button`
   margin-top: 0.5rem;
 `;
 
-const StyledPar = styled.p`
-  text-align: center;
-`;
-
 const StyledLink = styled(Link)`
   text-decoration: none;
   color: #d11818;
+  font-style: italic;
 `;

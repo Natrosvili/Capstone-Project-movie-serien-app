@@ -3,32 +3,8 @@ import {useState} from "react";
 import Link from "next/link";
 
 export default function Register() {
-  const [visible1, setVisible1] = useState("password");
-  const [visible2, setVisible2] = useState("password");
-  const [isTrue1, setIsTrue1] = useState(false);
-  const [isTrue2, setIsTrue2] = useState(false);
-
-  function handleVisibility1(event) {
-    if (event.target.value == "on") {
-      setVisible1("text");
-      setIsTrue1(!isTrue1);
-    }
-
-    {
-      isTrue1 && setVisible1("password");
-    }
-  }
-
-  function handleVisibility2(event) {
-    if (event.target.value == "on") {
-      setVisible2("text");
-      setIsTrue2(!isTrue2);
-    }
-
-    {
-      isTrue2 && setVisible2("password");
-    }
-  }
+  const [visible1, setVisible1] = useState(false);
+  const [visible2, setVisible2] = useState(false);
 
   return (
     <>
@@ -42,7 +18,6 @@ export default function Register() {
           </StyledPar>
           <StyledDiv1>
             <StyledLabel for="email">Email adress:</StyledLabel>
-            <br />
             <StyledInput
               type="email"
               id="email"
@@ -50,23 +25,20 @@ export default function Register() {
               placeholder="Your email"
               required
             />
-            <br />
           </StyledDiv1>
           <StyledDiv2>
             <StyledLabel for="createPassword">
               Create Your Password:
             </StyledLabel>
-            <br />
             <StyledInput
-              type={visible1}
+              type={visible1 ? "text" : "password"}
               id="createPassword"
               name="createPassword"
               placeholder="Your password"
               required
             />
-            <br />
             <input
-              onChange={handleVisibility1}
+              onChange={() => setVisible1(!visible1)}
               type="checkbox"
               id="passwordVisibility1"
               name="passwordVisibility1"
@@ -75,17 +47,15 @@ export default function Register() {
           </StyledDiv2>
           <StyledDiv2>
             <label for="confirmPassword">Confirm Password:</label>
-            <br />
             <StyledInput
-              type={visible2}
+              type={visible2 ? "text" : "password"}
               id="confirmPassword"
               name="confirmPassword"
               placeholder="Your password"
               required
             />
-            <br />
             <input
-              onChange={handleVisibility2}
+              onChange={() => setVisible2(!visible2)}
               type="checkbox"
               id="passwordVisibility2"
               name="passwordVisibility2"
@@ -95,7 +65,6 @@ export default function Register() {
           <StyledDiv3>
             <Styledbutton type="submit">Register</Styledbutton>
           </StyledDiv3>
-          <br />
           <StyledPar>
             <em>
               Already have an account?{" "}
