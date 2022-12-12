@@ -38,9 +38,7 @@ export default function LogIn() {
             <StyledLabel for="passwordVisibility">Show password</StyledLabel>
           </div>
           <StyledDiv3>
-            <Styledbutton type="submit">
-              <em>Login</em>
-            </Styledbutton>
+            <Styledbutton type="submit">Login</Styledbutton>
           </StyledDiv3>
           <p style={{textAlign: "center"}}>
             Don`t have an Account?
@@ -110,6 +108,7 @@ const Styledbutton = styled.button`
   height: 5vh;
   cursor: pointer;
   margin-top: 0.5rem;
+  font-style: italic;
 `;
 
 const StyledLink = styled(Link)`

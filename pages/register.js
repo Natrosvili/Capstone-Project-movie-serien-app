@@ -10,9 +10,7 @@ export default function Register() {
     <>
       <StyledSection>
         <StyledForm>
-          <H1>
-            <em>Registration Form</em>
-          </H1>
+          <H1>Registration Form</H1>
           <StyledPar>
             Please fill out this form with the required information
           </StyledPar>
@@ -66,10 +64,8 @@ export default function Register() {
             <Styledbutton type="submit">Register</Styledbutton>
           </StyledDiv3>
           <StyledPar>
-            <em>
-              Already have an account?{" "}
-              <StyledLink href="/login">Sign in</StyledLink>
-            </em>
+            Already have an account?
+            <StyledLink href="/login"> Sign in</StyledLink>
           </StyledPar>
         </StyledForm>
       </StyledSection>
@@ -92,17 +88,19 @@ const StyledForm = styled.form`
   height: 75vh;
 
   @media screen and (max-width: 430px) {
-    height: 82vh;
+    height: 80vh;
   }
 `;
 
 const H1 = styled.h1`
   text-align: center;
+  font-style: italic;
 `;
 
 const StyledPar = styled.p`
   text-align: center;
   margin: 0;
+  font-style: italic;
 `;
 
 const StyledLabel = styled.label`
@@ -144,7 +142,7 @@ const Styledbutton = styled.button`
   width: 45vw;
   height: 5vh;
   cursor: pointer;
-  margin-top: 0.5rem;
+  margin: 0.5rem 0 1.5rem;
 `;
 
 const StyledLink = styled(Link)`
