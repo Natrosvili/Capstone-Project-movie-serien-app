@@ -3,17 +3,30 @@ import {useState} from "react";
 import Link from "next/link";
 
 export default function Register() {
-  const [visible, setVisible] = useState("password");
-  const [isTrue, setIsTrue] = useState(false);
+  const [visible1, setVisible1] = useState("password");
+  const [visible2, setVisible2] = useState("password");
+  const [isTrue1, setIsTrue1] = useState(false);
+  const [isTrue2, setIsTrue2] = useState(false);
 
-  function handleVisibility(event) {
+  function handleVisibility1(event) {
     if (event.target.value == "on") {
-      setVisible("text");
-      setIsTrue(!isTrue);
+      setVisible1("text");
+      setIsTrue1(!isTrue1);
     }
 
     {
-      isTrue && setVisible("password");
+      isTrue1 && setVisible1("password");
+    }
+  }
+
+  function handleVisibility2(event) {
+    if (event.target.value == "on") {
+      setVisible2("text");
+      setIsTrue2(!isTrue2);
+    }
+
+    {
+      isTrue2 && setVisible2("password");
     }
   }
 
@@ -40,42 +53,44 @@ export default function Register() {
             <br />
           </StyledDiv1>
           <StyledDiv2>
-            <StyledLabel for="password">Create Your Password:</StyledLabel>
+            <StyledLabel for="createPassword">
+              Create Your Password:
+            </StyledLabel>
             <br />
             <StyledInput
-              type={visible}
-              id="password"
-              name="password"
+              type={visible1}
+              id="createPassword"
+              name="createPassword"
               placeholder="Your password"
               required
             />
             <br />
             <input
-              onChange={handleVisibility}
+              onChange={handleVisibility1}
               type="checkbox"
-              id="passwordVisibility"
-              name="passwordVisibility"
+              id="passwordVisibility1"
+              name="passwordVisibility1"
             />
-            <StyledLabel for="passwordVisibility">Show password</StyledLabel>
+            <StyledLabel for="passwordVisibility1">Show password</StyledLabel>
           </StyledDiv2>
           <StyledDiv2>
-            <label for="password">Confirm Password:</label>
+            <label for="confirmPassword">Confirm Password:</label>
             <br />
             <StyledInput
-              type={visible}
-              id="password"
-              name="password"
+              type={visible2}
+              id="confirmPassword"
+              name="confirmPassword"
               placeholder="Your password"
               required
             />
             <br />
             <input
-              onChange={handleVisibility}
+              onChange={handleVisibility2}
               type="checkbox"
-              id="passwordVisibility"
-              name="passwordVisibility"
+              id="passwordVisibility2"
+              name="passwordVisibility2"
             />
-            <StyledLabel for="passwordVisibility">Show password</StyledLabel>
+            <StyledLabel for="passwordVisibility2">Show password</StyledLabel>
           </StyledDiv2>
           <StyledDiv3>
             <Styledbutton type="submit">Register</Styledbutton>
@@ -106,6 +121,10 @@ const StyledForm = styled.form`
   padding: 2rem 1rem 0;
   border-radius: 1.5rem;
   height: 75vh;
+
+  @media screen and (max-width: 430px) {
+    height: 82vh;
+  }
 `;
 
 const H1 = styled.h1`
@@ -114,6 +133,7 @@ const H1 = styled.h1`
 
 const StyledPar = styled.p`
   text-align: center;
+  margin: 0;
 `;
 
 const StyledLabel = styled.label`
@@ -139,7 +159,7 @@ const StyledDiv1 = styled.div`
 `;
 
 const StyledDiv2 = styled.div`
-  margin: 2rem 0;
+  margin: 1.4rem 0;
 `;
 
 const StyledDiv3 = styled.div`

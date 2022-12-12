@@ -86,6 +86,10 @@ const StyledForm = styled.form`
   padding: 2rem 1rem 0;
   border-radius: 1.5rem;
   height: 50vh;
+
+  @media screen and (max-width: 430px) {
+    height: 53vh;
+  }
 `;
 
 const H1 = styled.h1`
