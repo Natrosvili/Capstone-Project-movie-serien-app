@@ -1,7 +1,3 @@
-export default function Checkbox({type, id, name, onChange}) {
-  return (
-    <>
-      <input onChange={onChange} type={type} id={id} name={name} />
-    </>
-  );
+export default function Checkbox({id, name, onChange}) {
+  return <input type="checkbox" onChange={onChange} id={id} name={name} />;
 }
