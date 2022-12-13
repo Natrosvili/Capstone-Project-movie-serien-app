@@ -1,6 +1,7 @@
 import styled from "styled-components";
-import {useState} from "react";
 import Link from "next/link";
+import {useState} from "react";
+import Checkbox from "../components/Checkbox";
 
 export default function Register() {
   const [visible1, setVisible1] = useState(false);
@@ -28,6 +29,7 @@ export default function Register() {
             <StyledLabel for="createPassword">
               Create Your Password:
             </StyledLabel>
+
             <StyledInput
               type={visible1 ? "text" : "password"}
               id="createPassword"
@@ -35,16 +37,17 @@ export default function Register() {
               placeholder="Your password"
               required
             />
-            <input
+            <Checkbox
               onChange={() => setVisible1(!visible1)}
-              type="checkbox"
-              id="passwordVisibility1"
-              name="passwordVisibility1"
+              type={"checkbox"}
+              id={"passwordVisibility1"}
+              name={"passwordVisibility1"}
             />
             <StyledLabel for="passwordVisibility1">Show password</StyledLabel>
           </StyledDiv2>
           <StyledDiv2>
-            <label for="confirmPassword">Confirm Password:</label>
+            <StyledLabel for="confirmPassword">Confirm Password:</StyledLabel>
+
             <StyledInput
               type={visible2 ? "text" : "password"}
               id="confirmPassword"
@@ -52,11 +55,11 @@ export default function Register() {
               placeholder="Your password"
               required
             />
-            <input
+            <Checkbox
               onChange={() => setVisible2(!visible2)}
-              type="checkbox"
-              id="passwordVisibility2"
-              name="passwordVisibility2"
+              type={"checkbox"}
+              id={"passwordVisibility2"}
+              name={"passwordVisibility2"}
             />
             <StyledLabel for="passwordVisibility2">Show password</StyledLabel>
           </StyledDiv2>

@@ -31,6 +31,7 @@ export default function LogIn() {
             />
             <input
               onChange={() => setVisible(!visible)}
+              checked={visible}
               type="checkbox"
               id="passwordVisibility"
               name="passwordVisibility"
