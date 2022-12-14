@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Image from "next/image";
+import {Photo} from "./main";
 import neueFischePhoto from "../public/neuefische.jpeg";
 import Link from "next/link";
 
@@ -7,19 +7,15 @@ export default function Movies() {
   return (
     <>
       <section style={{backgroundColor: "#010101"}}>
-        <H1>
-          <em>Movies</em>
-        </H1>
+        <H1>Movies</H1>
         <StyledSection>
-          <H2>
-            <em>Action</em>
-          </H2>
+          <H2>Action</H2>
           <hr />
-          <ParentDiv>
+          <StyledDiv>
             <ChildDiv>
-              <StyledLink href="#">
+              <Link style={{textDecoration: "none"}} href="#">
                 <Photo src={neueFischePhoto} alt="recommended series" />
-              </StyledLink>
+              </Link>
               <StyledNameLink href="#">
                 <h3>
                   <em>Name</em>
@@ -28,14 +24,14 @@ export default function Movies() {
               <span>
                 <em>Year</em>
               </span>
-              <StyledMain>
+              <StlyedSpan>
                 <em>no min</em>
-              </StyledMain>
+              </StlyedSpan>
             </ChildDiv>
             <ChildDiv>
-              <StyledLink href="#">
+              <Link style={{textDecoration: "none"}} href="#">
                 <Photo src={neueFischePhoto} alt="recommended series" />
-              </StyledLink>
+              </Link>
               <StyledNameLink href="#">
                 <h3>
                   <em>Name</em>
@@ -44,11 +40,11 @@ export default function Movies() {
               <span>
                 <em>Year</em>
               </span>
-              <StyledMain>
+              <StlyedSpan>
                 <em>no min</em>
-              </StyledMain>
+              </StlyedSpan>
             </ChildDiv>
-          </ParentDiv>
+          </StyledDiv>
           <hr />
         </StyledSection>
         <StyledSection>
@@ -56,11 +52,11 @@ export default function Movies() {
             <em>Adventure</em>
           </H2>
           <hr />
-          <ParentDiv>
+          <StyledDiv>
             <ChildDiv>
-              <StyledLink href="#">
+              <Link style={{textDecoration: "none"}} href="#">
                 <Photo src={neueFischePhoto} alt="recommended series" />
-              </StyledLink>
+              </Link>
               <StyledNameLink href="#">
                 <h3>
                   <em>Name</em>
@@ -69,14 +65,14 @@ export default function Movies() {
               <span>
                 <em>Year</em>
               </span>
-              <StyledMain>
+              <StlyedSpan>
                 <em>no min</em>
-              </StyledMain>
+              </StlyedSpan>
             </ChildDiv>
             <ChildDiv>
-              <StyledLink href="#">
+              <Link style={{textDecoration: "none"}} href="#">
                 <Photo src={neueFischePhoto} alt="recommended series" />
-              </StyledLink>
+              </Link>
               <StyledNameLink href="#">
                 <h3>
                   <em>Name</em>
@@ -85,11 +81,11 @@ export default function Movies() {
               <span>
                 <em>Year</em>
               </span>
-              <StyledMain>
+              <StlyedSpan>
                 <em>no min</em>
-              </StyledMain>
+              </StlyedSpan>
             </ChildDiv>
-          </ParentDiv>
+          </StyledDiv>
           <hr />
         </StyledSection>
         <StyledSection>
@@ -97,11 +93,11 @@ export default function Movies() {
             <em>Comendy</em>
           </H2>
           <hr />
-          <ParentDiv>
+          <StyledDiv>
             <ChildDiv>
-              <StyledLink href="#">
+              <Link style={{textDecoration: "none"}} href="#">
                 <Photo src={neueFischePhoto} alt="recommended series" />
-              </StyledLink>
+              </Link>
               <StyledNameLink href="#">
                 <h3>
                   <em>Name</em>
@@ -110,14 +106,14 @@ export default function Movies() {
               <span>
                 <em>Year</em>
               </span>
-              <StyledMain>
+              <StlyedSpan>
                 <em>no min</em>
-              </StyledMain>
+              </StlyedSpan>
             </ChildDiv>
             <ChildDiv>
-              <StyledLink href="#">
+              <Link style={{textDecoration: "none"}} href="#">
                 <Photo src={neueFischePhoto} alt="recommended series" />
-              </StyledLink>
+              </Link>
               <StyledNameLink href="#">
                 <h3>
                   <em>Name</em>
@@ -126,11 +122,11 @@ export default function Movies() {
               <span>
                 <em>Year</em>
               </span>
-              <StyledMain>
+              <StlyedSpan>
                 <em>no min</em>
-              </StyledMain>
+              </StlyedSpan>
             </ChildDiv>
-          </ParentDiv>
+          </StyledDiv>
           <hr />
         </StyledSection>
         <StyledSection>
@@ -138,11 +134,11 @@ export default function Movies() {
             <em>Drama</em>
           </H2>
           <hr />
-          <ParentDiv>
+          <StyledDiv>
             <ChildDiv>
-              <StyledLink href="#">
+              <Link style={{textDecoration: "none"}} href="#">
                 <Photo src={neueFischePhoto} alt="recommended series" />
-              </StyledLink>
+              </Link>
               <StyledNameLink href="#">
                 <h3>
                   <em>Name</em>
@@ -151,14 +147,14 @@ export default function Movies() {
               <span>
                 <em>Year</em>
               </span>
-              <StyledMain>
+              <StlyedSpan>
                 <em>no min</em>
-              </StyledMain>
+              </StlyedSpan>
             </ChildDiv>
             <ChildDiv>
-              <StyledLink href="#">
+              <Link style={{textDecoration: "none"}} href="#">
                 <Photo src={neueFischePhoto} alt="recommended series" />
-              </StyledLink>
+              </Link>
               <StyledNameLink href="#">
                 <h3>
                   <em>Name</em>
@@ -167,11 +163,11 @@ export default function Movies() {
               <span>
                 <em>Year</em>
               </span>
-              <StyledMain>
+              <StlyedSpan>
                 <em>no min</em>
-              </StyledMain>
+              </StlyedSpan>
             </ChildDiv>
-          </ParentDiv>
+          </StyledDiv>
           <hr />
         </StyledSection>
       </section>
@@ -179,7 +175,7 @@ export default function Movies() {
   );
 }
 
-const StyledSection = styled.section`
+export const StyledSection = styled.section`
   padding: 3rem 3.75rem;
 
   @media screen and (max-width: 430px) {
@@ -187,9 +183,10 @@ const StyledSection = styled.section`
   }
 `;
 
-const H1 = styled.h1`
+export const H1 = styled.h1`
   padding: 4rem 0 3rem 4rem;
   margin: 0;
+  font-style: italic;
 
   @media screen and (max-width: 430px) {
     text-align: center;
@@ -197,13 +194,14 @@ const H1 = styled.h1`
   }
 `;
 
-const H2 = styled.h2`
+export const H2 = styled.h2`
+  font-style: italic;
   @media screen and (max-width: 430px) {
     text-align: center;
   }
 `;
 
-const ParentDiv = styled.div`
+export const StyledDiv = styled.div`
   display: flex;
   justify-content: space-around;
   margin: 3.125em;
@@ -215,11 +213,7 @@ const ParentDiv = styled.div`
   }
 `;
 
-const StyledLink = styled(Link)`
-  text-decoration: none;
-`;
-
-const StyledNameLink = styled(Link)`
+export const StyledNameLink = styled(Link)`
   color: grey;
   text-decoration: none;
 `;
@@ -228,21 +222,7 @@ const ChildDiv = styled.div`
   color: #d9d9d9;
 `;
 
-const Photo = styled(Image)`
-  width: 100%;
-  height: 75%;
-  left: 2rem;
-  top: 35rem;
-  background: #d9d9d9;
-  border-radius: 15px;
-
-  @media screen and (max-width: 430px) {
-    width: 80%;
-    height: 80%;
-  }
-`;
-
-const StyledMain = styled.span`
+export const StlyedSpan = styled.span`
   position: relative;
   left: 9rem;
 

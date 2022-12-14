@@ -1,30 +1,15 @@
 import styled from "styled-components";
 import Image from "next/image";
 import seats from "../public/seats.png";
-import {
-  StyledSection,
-  MinSpan,
-  Photo,
-  H2,
-  GridSection,
-  ImageContainer,
-  Img,
-  StyledIcon,
-  StyledDiv,
-  EpSpan,
-} from "../components/MoviesSeriesSections";
 import neueFischePhoto from "../public/neuefische.jpeg";
 import Link from "next/link";
+import {Icon} from "@iconify/react";
 
 export default function Main() {
   return (
     <>
       <main style={{backgroundColor: "#010101"}}>
-        <StyledSection
-          textAlign={"center"}
-          height={"50rem"}
-          heightMedia={"40rem"}
-        >
+        <StyledSection heightMedia={"40rem"}>
           <Image
             style={{width: "100%", height: "75vh"}}
             src={seats}
@@ -38,214 +23,93 @@ export default function Main() {
             fun.
           </Info>
         </StyledSection>
-        <StyledSection margin={"3rem 3.75rem"} marginMedia={"0 0 3rem"}>
-          <H2 textAlignMedia={"center"}>Recommended Movies</H2>
-          <hr />
-          <StyledDiv
-            display={"flex"}
-            justifyContent={"space-around"}
-            margin={"3.125em"}
-            justifyContentMedia={"space-between"}
-            textAlignMedia={"center"}
-          >
-            <div style={{color: "#d9d9d9", fontStyle: "italic"}}>
-              <Link style={{textDecoration: "none"}} href="#">
-                <Photo
-                  width={"100%"}
-                  height={"75%"}
-                  left={"2rem"}
-                  top={"35rem"}
-                  background={"#d9d9d9"}
-                  borderRadius={"15px"}
-                  widthMedia={"90%"}
-                  heightMedia={"80%"}
-                  src={neueFischePhoto}
-                  alt="recommended series"
-                />
-              </Link>
-              <Link style={{color: "grey", textDecoration: "none"}} href="#">
-                <h3>Name</h3>
-              </Link>
-              <span>Year</span>
-              <MinSpan
-                position={"relative"}
-                left={"9rem"}
-                leftMedia={"1.2rem"}
-                fontSizeMedia={"1rem"}
-              >
-                no min
-              </MinSpan>
-            </div>
-            <div style={{color: "#d9d9d9", fontStyle: "italic"}}>
-              <Link style={{textDecoration: "none"}} href="#">
-                <Photo
-                  width={"100%"}
-                  height={"75%"}
-                  left={"2rem"}
-                  top={"35rem"}
-                  background={"#d9d9d9"}
-                  borderRadius={"15px"}
-                  widthMedia={"90%"}
-                  heightMedia={"80%"}
-                  src={neueFischePhoto}
-                  alt="recommended series"
-                />
-              </Link>
-              <Link style={{color: "grey", textDecoration: "none"}} href="#">
-                <h3>Name</h3>
-              </Link>
-              <span>Year</span>
-              <MinSpan
-                position={"relative"}
-                left={"9rem"}
-                leftMedia={"1.2rem"}
-                fontSizeMedia={"1rem"}
-              >
-                no min
-              </MinSpan>
-            </div>
-          </StyledDiv>
-          <hr />
-        </StyledSection>
-        <StyledSection margin={"3rem 3.75rem"} marginMedia={"0 0 3rem"}>
-          <H2 textAlignMedia={"center"}>Recommended Series</H2>
-          <hr />
-          <StyledDiv
-            display={"flex"}
-            justifyContent={"space-around"}
-            margin={"3.125rem"}
-            justifyContentMedia={"space-between"}
-            textAlignMedia={"center"}
-          >
-            <div style={{color: "#d9d9d9"}}>
-              <Link href="#">
-                <Photo
-                  width={"100%"}
-                  height={"75%"}
-                  left={"2rem"}
-                  top={"35rem"}
-                  background={"#d9d9d9"}
-                  borderRadius={"15px"}
-                  widthMedia={"90%"}
-                  heightMedia={"80%"}
-                  src={neueFischePhoto}
-                  alt="recommended series"
-                />
-              </Link>
-              <Link style={{color: "grey", textDecoration: "none"}} href="#">
-                <h3>
-                  <em>Name</em>
-                </h3>
-              </Link>
-              <span>
-                <em>SS Num</em>
-              </span>
-              <EpSpan
-                color={"#ffffff"}
-                position={"relative"}
-                left={"9rem"}
-                leftMedia={".4rem"}
-                fontStyle={"italic"}
-              >
-                EP Num
-              </EpSpan>
-            </div>
-            <div style={{color: "#d9d9d9"}}>
-              <Link href="#">
-                <Photo
-                  width={"100%"}
-                  height={"75%"}
-                  left={"2rem"}
-                  top={"35rem"}
-                  background={"#d9d9d9"}
-                  borderRadius={"15px"}
-                  widthMedia={"90%"}
-                  heightMedia={"80%"}
-                  src={neueFischePhoto}
-                  alt="recommended series"
-                />
-              </Link>
-              <Link style={{color: "grey", textDecoration: "none"}} href="#">
-                <h3>
-                  <em>Name</em>
-                </h3>
-              </Link>
-              <span>
-                <em>SS Num</em>
-              </span>
-              <EpSpan
-                color={"#ffffff"}
-                position={"relative"}
-                left={"9rem"}
-                leftMedia={".4rem"}
-                fontStyle={"italic"}
-              >
-                EP Num
-              </EpSpan>
-            </div>
-          </StyledDiv>
-          <hr />
-        </StyledSection>
-
-        <GridSection
-          textAlign={"center"}
-          display={"grid"}
-          placeContent={"center"}
-          templateRows={"repeat(4, 25%)"}
-          templateColumns={"repeat(3, 20%)"}
-          columnGap={"10px"}
-          padding={"2em 2em"}
-          width={"100%"}
-          height={"auto"}
-          templateRowsMedia={"repeat(4, 20%)"}
-          templateColumnsMedia={"repeat(3, 35%)"}
-          rowGapMedia={"2px"}
+        <StyledSection
+          margin={"2rem 3.75rem"}
+          marginMedia={"0"}
+          heightMedia={"30rem"}
         >
-          <ImageContainer
-            gridRow={"1 / span 2"}
-            gridColumn={"1 / 1"}
-            display={"flex"}
-            alignItems={"start"}
-          >
+          <H2>Recommended Movies</H2>
+          <hr />
+          <StyledDiv1>
+            <div style={{color: "#d9d9d9", fontStyle: "italic"}}>
+              <Link style={{textDecoration: "none"}} href="#">
+                <Photo src={neueFischePhoto} alt="recommended series" />
+              </Link>
+              <Link style={{color: "grey", textDecoration: "none"}} href="#">
+                <h3>Name</h3>
+              </Link>
+              <span>Year</span>
+              <MinSpan>no min</MinSpan>
+            </div>
+            <div style={{color: "#d9d9d9", fontStyle: "italic"}}>
+              <Link style={{textDecoration: "none"}} href="#">
+                <Photo src={neueFischePhoto} alt="recommended series" />
+              </Link>
+              <Link style={{color: "grey", textDecoration: "none"}} href="#">
+                <h3>Name</h3>
+              </Link>
+              <span>Year</span>
+              <MinSpan>no min</MinSpan>
+            </div>
+          </StyledDiv1>
+          <hr />
+        </StyledSection>
+        <StyledSection heightMedia={"25rem"}>
+          <H2>Recommended Series</H2>
+          <hr />
+          <StyledDiv1>
+            <div style={{color: "#d9d9d9"}}>
+              <Link href="#">
+                <Photo src={neueFischePhoto} alt="recommended series" />
+              </Link>
+              <Link style={{color: "grey", textDecoration: "none"}} href="#">
+                <h3>
+                  <em>Name</em>
+                </h3>
+              </Link>
+              <span>
+                <em>SS Num</em>
+              </span>
+              <EpSpan>EP Num</EpSpan>
+            </div>
+            <div style={{color: "#d9d9d9"}}>
+              <Link href="#">
+                <Photo src={neueFischePhoto} alt="recommended series" />
+              </Link>
+              <Link style={{color: "grey", textDecoration: "none"}} href="#">
+                <h3>
+                  <em>Name</em>
+                </h3>
+              </Link>
+              <span>
+                <em>SS Num</em>
+              </span>
+              <EpSpan>EP Num</EpSpan>
+            </div>
+          </StyledDiv1>
+          <hr />
+        </StyledSection>
+        <GridSection>
+          <ImageContainer1>
             <Img
-              width={"100%"}
               src="/coupleWatchingMovie1.jpg"
               alt="photo of friends watching a movie/series"
             />
-          </ImageContainer>
-          <ImageContainer
-            display={"flex"}
-            alignItems={"center"}
-            justifyContent={"center"}
-            height={"auto"}
-            gridRow={"2 / span 2"}
-            gridColumn={"2/3"}
-          >
+          </ImageContainer1>
+          <ImageContainer2>
             <Img
-              width={"100%"}
               src="/coupleWatchingMovie2.jpg"
               alt="photo of friends watching a movie/series"
             />
-          </ImageContainer>
-          <ImageContainer
-            display={"flex"}
-            justifyContent={"end"}
-            gridRow={"3 / span 2"}
-          >
+          </ImageContainer2>
+          <ImageContainer3>
             <Img
-              width={"100%"}
               src="/twoBoysOneGirl.jpg"
               alt="photo of friends watching a movie/series"
             />
-          </ImageContainer>
+          </ImageContainer3>
 
-          <StyledDiv
-            gridColumn={"3 /3"}
-            gridRow={"2 / span 2"}
-            width={"100%"}
-            fontSize={"1.21rem"}
-            fontSizeMedia={"0.666rem"}
-          >
+          <StyledDiv2>
             <h3 style={{margin: 0, color: "#ffffff"}}>
               Share With Your Friends
             </h3>
@@ -256,38 +120,30 @@ export default function Main() {
               style={{textDecoration: "none"}}
               href="https://www.facebook.com"
             >
-              <StyledIcon widthMedia={"20%"} icon="logos:facebook" width="35" />
+              <StyledIcon icon="logos:facebook" width="35" />
             </Link>
             <Link
               style={{textDecoration: "none"}}
               href="https://www.instagram.com"
             >
-              <StyledIcon widthMedia={"20%"} icon="mdi:instagram" width="35" />
+              <StyledIcon icon="mdi:instagram" width="35" />
             </Link>
             <Link
               style={{textDecoration: "none"}}
               href="https://api.whatsapp.com"
             >
-              <StyledIcon
-                widthMedia={"20%"}
-                icon="logos:whatsapp-icon"
-                width="35"
-              />
+              <StyledIcon icon="logos:whatsapp-icon" width="35" />
             </Link>
             <Link
               style={{textDecoration: "none"}}
               href="https://www.pinterest.com/"
             >
-              <StyledIcon
-                widthMedia={"20%"}
-                icon="logos:pinterest"
-                width="35"
-              />
+              <StyledIcon icon="logos:pinterest" width="35" />
             </Link>
             <Link style={{textDecoration: "none"}} href="https://twitter.com">
-              <StyledIcon widthMedia={"20%"} icon="logos:twitter" width="35" />
+              <StyledIcon icon="logos:twitter" width="35" />
             </Link>
-          </StyledDiv>
+          </StyledDiv2>
         </GridSection>
       </main>
     </>
@@ -303,6 +159,14 @@ const H1 = styled.h1`
   font-style: italic;
 `;
 
+export const H2 = styled.h2`
+  color: #ffffff;
+  font-style: italic;
+  @media screen and (max-width: 430px) {
+    text-align: center;
+  }
+`;
+
 const Info = styled.p`
   position: relative;
   bottom: 32.5rem;
@@ -316,5 +180,124 @@ const Info = styled.p`
 
   @media screen and (max-width: 430px) {
     margin: 0 2rem;
+  }
+`;
+
+export const StyledSection = styled.section`
+  text-align: center;
+  margin: ${props => props.margin};
+  height: 50rem;
+
+  @media screen and (max-width: 430px) {
+    margin: ${props => props.marginMedia};
+    height: ${props => props.heightMedia};
+  }
+`;
+
+export const Photo = styled(Image)`
+  width: 100%;
+  height: 75%;
+  left: 2rem;
+  top: 35rem;
+  background: #d9d9d9;
+  border-radius: 15px;
+
+  @media screen and (max-width: 430px) {
+    width: 90%;
+    height: 80%;
+  }
+`;
+
+export const StyledDiv1 = styled.div`
+  grid-column: 3 / 3;
+  display: flex;
+  justify-content: space-around;
+  margin: 3.125em;
+
+  @media screen and (max-width: 430px) {
+    justify-content: space-between;
+    text-align: center;
+  }
+`;
+
+export const StyledDiv2 = styled.div`
+  grid-column: 3 / 3;
+  grid-row: 2 / span 2;
+  width: 100%;
+  font-size: 1.21rem;
+
+  @media screen and (max-width: 430px) {
+    font-size: 0.666rem;
+  }
+`;
+
+export const MinSpan = styled.span`
+  position: relative;
+  left: 9rem;
+
+  @media screen and (max-width: 430px) {
+    left: 1.2rem;
+    font-size: 1rem;
+  }
+`;
+
+export const EpSpan = styled.span`
+  color: #ffffff;
+  position: relative;
+  left: 6.25rem;
+  font-style: italic;
+
+  @media screen and (max-width: 430px) {
+    left: 0.4rem;
+    font-size: 1rem;
+  }
+`;
+
+export const Img = styled.img`
+  width: 100%;
+`;
+
+export const StyledIcon = styled(Icon)`
+  @media screen and (max-width: 430px) {
+    width: 20%;
+  }
+`;
+
+export const ImageContainer1 = styled.div`
+  grid-row: 1 / span 2;
+  grid-column: 1 / 1;
+  display: flex;
+  align-items: start;
+`;
+
+export const ImageContainer2 = styled.div`
+  display: flex;
+align-items: center;
+justify-content: center
+height: auto;
+grid-row: 2 / span 2;
+grid-column: 2 / 3;
+`;
+
+export const ImageContainer3 = styled.div`
+  display: flex;
+  justify-content: end;
+  grid-row: 3 / span 2;
+`;
+export const GridSection = styled.section`
+  text-align: center;
+  display: grid;
+  place-content: center;
+  grid-template-rows: repeat(4, 25%);
+  grid-template-columns: repeat(3, 20%);
+  column-gap: 10px;
+  padding: 2em 2em;
+  width: 100%;
+  height: auto;
+
+  @media screen and (max-width: 430px) {
+    grid-template-rows: repeat(4, 20%);
+    grid-template-columns: repeat(3, 35%);
+    row-gap: 2px;
   }
 `;
