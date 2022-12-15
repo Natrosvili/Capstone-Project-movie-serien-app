@@ -9,67 +9,55 @@ export default function Main() {
   return (
     <>
       <main style={{backgroundColor: "#010101"}}>
-        <FirstSection>
+        <StyledSection heightMedia={"40rem"}>
           <Image
-            style={{width: "100%", height: "85vh"}}
+            style={{width: "100%", height: "75vh"}}
             src={seats}
             alt="seats as background image"
           />
-          <H1>
-            <em>Find Movies and Series</em>
-          </H1>
+          <H1>Find Movies and Series</H1>
           <Info>
-            <em>
-              searchfind.go - Just a better place to find Movies and Series for
-              free. It allows you to find Movies and Series in high Quality.
-              Just open searchfind.go, find your favorite Series and Movies, and
-              have fun.
-            </em>
+            searchfind.go - Just a better place to find Movies and Series for
+            free. It allows you to find Movies and Series in high Quality. Just
+            open searchfind.go, find your favorite Series and Movies, and have
+            fun.
           </Info>
-        </FirstSection>
-        <SecondAndThirdSection>
+        </StyledSection>
+        <StyledSection
+          margin={"2rem 3.75rem"}
+          marginMedia={"0"}
+          heightMedia={"30rem"}
+        >
           <H2>Recommended Movies</H2>
           <hr />
-          <ParentDiv>
-            <div style={{color: "#d9d9d9"}}>
-              <StyledLink href="#">
+          <StyledDiv1>
+            <div style={{color: "#d9d9d9", fontStyle: "italic"}}>
+              <Link style={{textDecoration: "none"}} href="#">
                 <Photo src={neueFischePhoto} alt="recommended series" />
-              </StyledLink>
-              <Link style={{color: "grey", textDecoration: "none"}} href="#">
-                <h3>
-                  <em>Name</em>
-                </h3>
               </Link>
-              <span>
-                <em>Year</em>
-              </span>
-              <EditedSpanMin>
-                <em>no min</em>
-              </EditedSpanMin>
+              <Link style={{color: "grey", textDecoration: "none"}} href="#">
+                <h3>Name</h3>
+              </Link>
+              <span>Year</span>
+              <MinSpan>no min</MinSpan>
             </div>
-            <div style={{color: "#d9d9d9"}}>
-              <StyledLink href="#">
+            <div style={{color: "#d9d9d9", fontStyle: "italic"}}>
+              <Link style={{textDecoration: "none"}} href="#">
                 <Photo src={neueFischePhoto} alt="recommended series" />
-              </StyledLink>
-              <Link style={{color: "grey", textDecoration: "none"}} href="#">
-                <h3>
-                  <em>Name</em>
-                </h3>
               </Link>
-              <span>
-                <em>Year</em>
-              </span>
-              <EditedSpanMin>
-                <em>no min</em>
-              </EditedSpanMin>
+              <Link style={{color: "grey", textDecoration: "none"}} href="#">
+                <h3>Name</h3>
+              </Link>
+              <span>Year</span>
+              <MinSpan>no min</MinSpan>
             </div>
-          </ParentDiv>
+          </StyledDiv1>
           <hr />
-        </SecondAndThirdSection>
-        <SecondAndThirdSection>
+        </StyledSection>
+        <StyledSection heightMedia={"25rem"}>
           <H2>Recommended Series</H2>
           <hr />
-          <ParentDiv>
+          <StyledDiv1>
             <div style={{color: "#d9d9d9"}}>
               <Link href="#">
                 <Photo src={neueFischePhoto} alt="recommended series" />
@@ -82,9 +70,7 @@ export default function Main() {
               <span>
                 <em>SS Num</em>
               </span>
-              <EditedSpanEp>
-                <em>EP Num</em>
-              </EditedSpanEp>
+              <EpSpan>EP Num</EpSpan>
             </div>
             <div style={{color: "#d9d9d9"}}>
               <Link href="#">
@@ -98,81 +84,89 @@ export default function Main() {
               <span>
                 <em>SS Num</em>
               </span>
-              <EditedSpanEp>
-                <em>EP Num</em>
-              </EditedSpanEp>
+              <EpSpan>EP Num</EpSpan>
             </div>
-          </ParentDiv>
+          </StyledDiv1>
           <hr />
-        </SecondAndThirdSection>
-        <ForthSection>
+        </StyledSection>
+        <GridSection>
           <ImageContainer1>
-            <Img1
+            <Img
               src="/coupleWatchingMovie1.jpg"
               alt="photo of friends watching a movie/series"
             />
           </ImageContainer1>
           <ImageContainer2>
-            <Img2
+            <Img
               src="/coupleWatchingMovie2.jpg"
               alt="photo of friends watching a movie/series"
             />
           </ImageContainer2>
           <ImageContainer3>
-            <Img3
+            <Img
               src="/twoBoysOneGirl.jpg"
               alt="photo of friends watching a movie/series"
             />
           </ImageContainer3>
 
-          <EditedDiv>
+          <StyledDiv2>
             <h3 style={{margin: 0, color: "#ffffff"}}>
               Share With Your Friends
             </h3>
             <p style={{color: "#ffffff"}}>
               Help me grow by sharing my website with your friends!
             </p>
-            <StyledLink href="https://www.facebook.com">
+            <Link
+              style={{textDecoration: "none"}}
+              href="https://www.facebook.com"
+            >
               <StyledIcon icon="logos:facebook" width="35" />
-            </StyledLink>
-            <StyledLink href="https://www.instagram.com">
+            </Link>
+            <Link
+              style={{textDecoration: "none"}}
+              href="https://www.instagram.com"
+            >
               <StyledIcon icon="mdi:instagram" width="35" />
-            </StyledLink>
-            <StyledLink href="https://api.whatsapp.com">
+            </Link>
+            <Link
+              style={{textDecoration: "none"}}
+              href="https://api.whatsapp.com"
+            >
               <StyledIcon icon="logos:whatsapp-icon" width="35" />
-            </StyledLink>
-            <StyledLink href="https://www.pinterest.com/">
+            </Link>
+            <Link
+              style={{textDecoration: "none"}}
+              href="https://www.pinterest.com/"
+            >
               <StyledIcon icon="logos:pinterest" width="35" />
-            </StyledLink>
-            <StyledLink href="https://twitter.com">
+            </Link>
+            <Link style={{textDecoration: "none"}} href="https://twitter.com">
               <StyledIcon icon="logos:twitter" width="35" />
-            </StyledLink>
-          </EditedDiv>
-        </ForthSection>
+            </Link>
+          </StyledDiv2>
+        </GridSection>
       </main>
     </>
   );
 }
 
-// first section of the main page
-const FirstSection = styled.section`
-  text-align: center;
-  height: 50rem;
-
-  @media screen and (max-width: 430px) {
-    height: 40rem;
-  }
-`;
-
-// h1 element
 const H1 = styled.h1`
   padding: 0.5em;
   bottom: 30rem;
   position: relative;
   color: #ffffff;
+  text-align: center;
+  font-style: italic;
 `;
 
-// first p element
+export const H2 = styled.h2`
+  color: #ffffff;
+  font-style: italic;
+  @media screen and (max-width: 430px) {
+    text-align: center;
+  }
+`;
+
 const Info = styled.p`
   position: relative;
   bottom: 32.5rem;
@@ -182,14 +176,40 @@ const Info = styled.p`
   font-size: 1, 25rem;
   margin: 0 6.25rem;
   color: #ffffff;
+  font-style: italic;
 
   @media screen and (max-width: 430px) {
     margin: 0 2rem;
   }
 `;
 
-// div (parent)
-const ParentDiv = styled.div`
+export const StyledSection = styled.section`
+  text-align: center;
+  margin: ${props => props.margin};
+  height: 50rem;
+
+  @media screen and (max-width: 430px) {
+    margin: ${props => props.marginMedia};
+    height: ${props => props.heightMedia};
+  }
+`;
+
+export const Photo = styled(Image)`
+  width: 100%;
+  height: 75%;
+  left: 2rem;
+  top: 35rem;
+  background: #d9d9d9;
+  border-radius: 15px;
+
+  @media screen and (max-width: 430px) {
+    width: 90%;
+    height: 80%;
+  }
+`;
+
+export const StyledDiv1 = styled.div`
+  grid-column: 3 / 3;
   display: flex;
   justify-content: space-around;
   margin: 3.125em;
@@ -200,38 +220,18 @@ const ParentDiv = styled.div`
   }
 `;
 
-// Image element (for the movies and series)
-const Photo = styled(Image)`
+export const StyledDiv2 = styled.div`
+  grid-column: 3 / 3;
+  grid-row: 2 / span 2;
   width: 100%;
-  height: 75%;
-  left: 2rem;
-  top: 35rem;
-  background: #d9d9d9;
-  border-radius: 15px;
+  font-size: 1.21rem;
 
   @media screen and (max-width: 430px) {
-    width: 80%;
-    height: 80%;
+    font-size: 0.666rem;
   }
 `;
 
-// second and third section of the main page
-const SecondAndThirdSection = styled.section`
-  margin: 3rem 3.75rem;
-
-  @media screen and (max-width: 430px) {
-    margin: 0 0 3rem;
-  }
-`;
-
-const H2 = styled.h2`
-  @media screen and (max-width: 430px) {
-    text-align: center;
-  }
-`;
-
-// span element (for the number of minutes of a movie)
-const EditedSpanMin = styled.span`
+export const MinSpan = styled.span`
   position: relative;
   left: 9rem;
 
@@ -241,25 +241,50 @@ const EditedSpanMin = styled.span`
   }
 `;
 
-// span element (for the number of episodes in a series)
-const EditedSpanEp = styled.span`
+export const EpSpan = styled.span`
   color: #ffffff;
   position: relative;
   left: 6.25rem;
+  font-style: italic;
 
   @media screen and (max-width: 430px) {
-    left: 1rem;
+    left: 0.4rem;
     font-size: 1rem;
   }
 `;
 
-// Link element (for removing the underline)
-const StyledLink = styled(Link)`
-  text-decoration: none;
+export const Img = styled.img`
+  width: 100%;
 `;
 
-// forth section element of the main page
-const ForthSection = styled.section`
+export const StyledIcon = styled(Icon)`
+  @media screen and (max-width: 430px) {
+    width: 20%;
+  }
+`;
+
+export const ImageContainer1 = styled.div`
+  grid-row: 1 / span 2;
+  grid-column: 1 / 1;
+  display: flex;
+  align-items: start;
+`;
+
+export const ImageContainer2 = styled.div`
+  display: flex;
+align-items: center;
+justify-content: center
+height: auto;
+grid-row: 2 / span 2;
+grid-column: 2 / 3;
+`;
+
+export const ImageContainer3 = styled.div`
+  display: flex;
+  justify-content: end;
+  grid-row: 3 / span 2;
+`;
+export const GridSection = styled.section`
   text-align: center;
   display: grid;
   place-content: center;
@@ -274,56 +299,5 @@ const ForthSection = styled.section`
     grid-template-rows: repeat(4, 20%);
     grid-template-columns: repeat(3, 35%);
     row-gap: 2px;
-  }
-`;
-
-const ImageContainer1 = styled.div`
-  grid-row: 1 / span 2;
-  grid-column: 1 / 1;
-  display: flex;
-  align-items: start;
-`;
-
-const Img1 = styled.img`
-  width: 100%;
-`;
-
-const ImageContainer2 = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center
-  height: auto;
-  grid-row: 2 / span 2;
-  grid-column: 2 / 3;
-`;
-
-const Img2 = styled.img`
-  width: 100%;
-`;
-
-const ImageContainer3 = styled.div`
-  display: flex;
-  justify-content: end;
-  grid-row: 3 / span 2;
-`;
-
-const Img3 = styled.img`
-  width: 100%;
-`;
-
-const EditedDiv = styled.div`
-  grid-column: 3 / 3;
-  grid-row: 2 / span 2;
-  width: 100%;
-  font-size: 1.21rem;
-
-  @media screen and (max-width: 430px) {
-    font-size: 0.666rem;
-  }
-`;
-
-const StyledIcon = styled(Icon)`
-  @media screen and (max-width: 430px) {
-    width: 20%;
   }
 `;
