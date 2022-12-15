@@ -5,7 +5,7 @@ import {
   StyledForm,
   StyledLabel,
   StyledInput,
-  StyledDiv3,
+  StyledDiv,
   StyledButton,
   StyledLink,
 } from "./login";
@@ -15,16 +15,78 @@ export default function Register() {
   const [visible1, setVisible1] = useState(false);
   const [visible2, setVisible2] = useState(false);
 
+  const [input, setInput] = useState({
+    email: "",
+    createPassword: "",
+    confirmPassword: "",
+  });
+
+  const [error, setError] = useState({
+    email: "",
+    createPassword: "",
+    confirmPassword: "",
+  });
+
+  const onInputChange = event => {
+    const {name, value} = event.target;
+    setInput(prev => ({
+      ...prev,
+      [name]: value,
+    }));
+    validateInput(event);
+  };
+
+  const validateInput = event => {
+    let {name, value} = event.target;
+    setError(prev => {
+      const stateObj = {...prev, [name]: ""};
+
+      switch (name) {
+        case "createPassword":
+          if (!value) {
+            stateObj[name] = "Please enter Password.";
+          } else if (input.confirmPassword && value !== input.confirmPassword) {
+            stateObj["confirmPassword"] =
+              "Password and confirm password do not match";
+          } else {
+            stateObj["confirmPassword"] = input.confirmPassword
+              ? ""
+              : error.confirmPassword;
+          }
+          break;
+
+        case "confirmPassword":
+          if (!value) {
+            stateObj[name] = "Please enter confirm Password.";
+          } else if (input.createPassword && value !== input.createPassword) {
+            stateObj[name] = "Password and confirm Password do not match.";
+          }
+          break;
+
+        default:
+          break;
+      }
+      return stateObj;
+    });
+  };
+
+  function handleSubmitRegister(event) {
+    event.preventDefault();
+  }
+
   return (
     <StyledSection>
-      <StyledForm primary>
+      <StyledForm onSubmit={handleSubmitRegister} primary>
         <H1>Registration Form</H1>
         <StyledPar>
           Please fill out this form with the required information
         </StyledPar>
         <div style={{margin: "2rem 0"}}>
-          <StyledLabel for="email">Email adress:</StyledLabel>
+          <StyledLabel htmlFor="email">Email adress:</StyledLabel>
           <StyledInput
+            onChange={onInputChange}
+            onBlur={validateInput}
+            value={input.email}
             primary
             type="email"
             id="email"
@@ -32,11 +94,18 @@ export default function Register() {
             placeholder="Your email"
             required
           />
+          {error.email && <ErrorSpan>{error.email}</ErrorSpan>}
         </div>
         <div style={{margin: "1.4rem 0"}}>
-          <StyledLabel for="createPassword">Create Your Password:</StyledLabel>
+          <StyledLabel htmlFor="createPassword">
+            Create Your Password:
+          </StyledLabel>
 
           <StyledInput
+            onChange={onInputChange}
+            onBlur={validateInput}
+            value={input.createPassword}
+            primary
             type={visible1 ? "text" : "password"}
             id="createPassword"
             name="createPassword"
@@ -48,11 +117,19 @@ export default function Register() {
             id={"passwordVisibility1"}
             name={"passwordVisibility1"}
           />
-          <StyledLabel for="passwordVisibility1">Show password</StyledLabel>
+          <StyledLabel htmlFor="passwordVisibility1">Show password</StyledLabel>
+          {error.createPassword && (
+            <ErrorSpan>{error.createPassword}</ErrorSpan>
+          )}
         </div>
         <div style={{margin: "1.4rem 0"}}>
-          <StyledLabel for="confirmPassword">Confirm Password:</StyledLabel>
+          <StyledLabel htmlFor="confirmPassword">Confirm Password:</StyledLabel>
+
           <StyledInput
+            onChange={onInputChange}
+            value={input.confirmPassword}
+            onBlur={validateInput}
+            primary
             type={visible2 ? "text" : "password"}
             id="confirmPassword"
             name="confirmPassword"
@@ -64,21 +141,30 @@ export default function Register() {
             id={"passwordVisibility2"}
             name={"passwordVisibility2"}
           />
-          <StyledLabel for="passwordVisibility2">Show password</StyledLabel>
+          <StyledLabel htmlFor="passwordVisibility2">Show password</StyledLabel>
+          {error.confirmPassword && (
+            <ErrorSpan>{error.confirmPassword}</ErrorSpan>
+          )}
         </div>
-        <StyledDiv3>
+        <StyledDiv>
           <StyledButton primary type="submit">
             Register
           </StyledButton>
-        </StyledDiv3>
+        </StyledDiv>
         <StyledPar>
           Already have an account?
-          <StyledLink href="/login"> Sign in</StyledLink>
+          <StyledLink href="/login"> Sign in.</StyledLink>
         </StyledPar>
       </StyledForm>
     </StyledSection>
   );
 }
+
+const ErrorSpan = styled.p`
+  font-size: 0.8rem;
+  color: #d11818;
+  margin: 0;
+`;
 
 const H1 = styled.h1`
   text-align: center;

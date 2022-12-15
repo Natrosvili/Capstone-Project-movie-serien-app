@@ -6,9 +6,13 @@ import Checkbox from "../components/Checkbox";
 export default function LogIn() {
   const [visible, setVisible] = useState(false);
 
+  function handleSubmit(event) {
+    event.preventDefault();
+  }
+
   return (
     <StyledSection>
-      <StyledForm>
+      <StyledForm onSubmit={handleSubmit}>
         <H1>Sign In</H1>
         <div style={{margin: "1rem 0"}}>
           <StyledLabel for="email">Your Account:</StyledLabel>
@@ -30,17 +34,19 @@ export default function LogIn() {
             required
           />
           <Checkbox
-            onChange={() => setVisible(!visible)}
+            onChange={() => {
+              setVisible(!visible);
+            }}
             id={"passwordVisibility"}
             name={"paswordVisibility"}
           />
           <StyledLabel for="passwordVisibility">Show password</StyledLabel>
         </div>
-        <StyledDiv3>
+        <StyledDiv>
           <StyledButton type="submit">Login</StyledButton>
-        </StyledDiv3>
+        </StyledDiv>
         <p style={{textAlign: "center", fontStyle: "italic"}}>
-          Don`t have an Account?
+          Don&apos;t have an Account?
           <StyledLink href="/register"> Register.</StyledLink>
         </p>
       </StyledForm>
@@ -67,24 +73,17 @@ export const StyledForm = styled.form`
   background-color: #9a9595;
   padding: 2rem 1rem 0;
   border-radius: 1.5rem;
-  height: ${props => (props.primary ? "75vh" : "50vh")} @media screen and
-    (max-width: 430px) {
-    height: ${props => (props.primary ? "75vh" : "43vh")};
+  width: ${props => (props.primary ? "62vw" : "40vw")};
+  height: ${props => (props.primary ? "75vh" : "50vh")};
+
+  @media screen and (max-width: 430px) {
+    width: ${props => (props.primary ? "75vw" : "70vw")};
+    height: ${props => (props.primary ? "71vh" : "43vh")};
   }
 `;
 
-export const StyledDiv3 = styled.div`
-  display: flex;
-  justify-content: center;
-`;
-
-export const StyledLabel = styled.label`
-  color: #000000;
-  cursor: pointer;
-`;
-
 export const StyledInput = styled.input`
-  width: ${props => (props.primary ? "80vw" : "75vw")};
+  width: ${props => (props.primary ? "60vw" : "37vw")};
   height: 5vh;
   border: none;
   background-color: #d9d9d9;
@@ -92,7 +91,7 @@ export const StyledInput = styled.input`
   padding-left: 0.8rem;
 
   @media screen and (max-width: 430px) {
-    width: ${props => (props.primary ? "" : "80vw")};
+    width: ${props => (props.primary ? "65vw" : "60vw")};
   }
 `;
 
@@ -101,12 +100,22 @@ export const StyledButton = styled.button`
   color: #ffffff;
   border: none;
   border-radius: 0.8rem;
-  width: ${props => (props.primary ? "45vw" : "40vw")};
+  width: ${props => (props.primary ? "45vw" : "28vw")};
   height: 5vh;
   cursor: pointer;
   margin: ${props => (props.primary ? "0.5rem 0 1.5rem" : props.margin)};
   margin-top: ${props => (props.primary ? "" : "0.5rem")};
   font-style: italic;
+`;
+
+export const StyledDiv = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
+export const StyledLabel = styled.label`
+  color: #000000;
+  cursor: pointer;
 `;
 
 export const StyledLink = styled(Link)`
