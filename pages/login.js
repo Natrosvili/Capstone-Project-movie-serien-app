@@ -13,9 +13,9 @@ export default function LogIn() {
   return (
     <StyledSection>
       <StyledForm onSubmit={handleSubmit}>
-        <H1>Sign In</H1>
-        <div style={{margin: "1rem 0"}}>
-          <StyledLabel for="email">Your Account:</StyledLabel>
+        <h1>Sign In</h1>
+        <div>
+          <StyledLabel htmlFor="email">Your Account:</StyledLabel>
           <StyledInput
             type="email"
             id="email"
@@ -24,8 +24,8 @@ export default function LogIn() {
             required
           />
         </div>
-        <div style={{margin: "1rem 0"}}>
-          <StyledLabel for="password">Your password:</StyledLabel>
+        <div>
+          <StyledLabel htmlFor="password">Your password:</StyledLabel>
           <StyledInput
             type={visible ? "text" : "password"}
             id="password"
@@ -40,7 +40,7 @@ export default function LogIn() {
             id={"passwordVisibility"}
             name={"paswordVisibility"}
           />
-          <StyledLabel for="passwordVisibility">Show password</StyledLabel>
+          <StyledLabel htmlFor="passwordVisibility">Show password</StyledLabel>
         </div>
         <StyledDiv>
           <StyledButton type="submit">Login</StyledButton>
@@ -53,13 +53,6 @@ export default function LogIn() {
     </StyledSection>
   );
 }
-
-const H1 = styled.h1`
-  margin: 0;
-  color: #000000;
-  margin-bottom: 2rem;
-  font-style: italic;
-`;
 
 export const StyledSection = styled.section`
   background-color: #000000;
@@ -79,6 +72,17 @@ export const StyledForm = styled.form`
   @media screen and (max-width: 430px) {
     width: ${props => (props.primary ? "75vw" : "70vw")};
     height: ${props => (props.primary ? "72vh" : "43vh")};
+  }
+
+  & h1 {
+    margin: 0;
+    color: #000000;
+    margin-bottom: 2rem;
+    font-style: italic;
+  }
+
+  & div {
+    margin: 1rem 0;
   }
 `;
 

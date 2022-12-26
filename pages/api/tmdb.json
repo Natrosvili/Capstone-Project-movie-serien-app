@@ -1,0 +1,63 @@
+{
+  "movie": [
+    {
+      "id": 1,
+      "title": "Prey",
+      "year": "2022",
+      "trailer": "https://youtube.com/embed/wZ7LytagKlc",
+      "plot": "The Northern Great Plains, North America, 1719. Determined to prove her worth and join the ranks of the tribe's warriors, Naru, an expert Comanche tracker and healer, hones her combat skills. Constantly in the shadow of her skilled hunter brother Taabe, Naru gets the chance to shine when a brutal mountain lion attack brings to light something far more sinister than the virgin habitat's savage beasts of prey. And after seeing a sign in the morning sky, Naru realises she is ready for the big hunt--her rite of passage. However, does sharp-witted Naru have what it takes to confront the Predator (1987)?",
+      "country": "United States",
+      "genre": ["Drama", "Action", "Horror"],
+      "release": "2022-08-05",
+      "director": "Dan Trachtenberg",
+      "production": "20th Century Studios, Davis Entertainment",
+      "image": "/images/movies/prey.jpg",
+      "providerRent": [
+        "https://www.disneyplus.com/en-gb/movies/prey/5Y0VIrKjUDWm?irclickid=xvAUieUTkxyNTCGw4XR3FxkWUkA2-wW9gTo9XQ0&irgwc=1&cid=DSS-Affiliate-Impact-Content-JustWatch+GmbH-705874&tgclid=0c01001d-9ca9-4104-9000-0b2b63a977af&dclid=CJrxl_SJl_wCFVae_Qcd_nINBA",
+        ""
+      ],
+      "providerBuy": ["", ""]
+    },
+    {
+      "id": 2,
+      "title": "The Woman King",
+      "year": "2022",
+      "trailer": "https://youtube.com/embed/3RDaPV_rJ1Y",
+      "plot": "The Kingdom of Dahomey, West Africa, 1823. Having sworn to risk life and limb to protect the land, formidable General Nanisca and the Agojie, the elite, all-female military regiment of King Ghezo, keep the bellicose Oyo Empire at bay. In the meantime, as the unbroken sisterhood trains a new generation of fearless warriors, their battle-scarred leader seeks alternative sources of profit. However, Ghezo's participation in the slave trade paves the way for the inevitable violent confrontation between the Agojie, the Oyo, and the slavers that will compromise the kingdom's future.",
+      "country": "United States, Canada",
+      "genre": ["Drama", "Action", "History"],
+      "release": "2022-09-16",
+      "director": "Gina Prince-Bythewood",
+      "production": "TriStar Pictures, Welle Entertainment",
+      "image": "/images/movies/womanKing.jpeg",
+      "providerRent": [
+        "https://www.amazon.de/gp/video/detail/0OXW2YZUOM7GP9234N65IM29GI/ref=atv_dl_rdr?tag=movie0c6-21",
+        "https://play.google.com/store/movies/details/The_Woman_King?gl=DE&hl=en&id=cJ6OjWaEOes.P",
+        "https://www.youtube.com/results?search_query=The+Woman+King%2Bmovie",
+        "https://tv.apple.com/de/movie/the-woman-king/umc.cmc.5av1wo84gd2pj5vsx1m3fbok8?at=1000l3V2&ct=justwatch_tv&playableId=tvs.sbd.9001%3A1643239728"
+      ],
+      "providerBuy": [
+        "https://tv.apple.com/de/movie/the-woman-king/umc.cmc.5av1wo84gd2pj5vsx1m3fbok8?at=1000l3V2&ct=justwatch_tv&playableId=tvs.sbd.9001%3A1643239728",
+        "https://www.youtube.com/results?search_query=The+Woman+King%2Bmovie",
+        "https://www.amazon.de/gp/video/detail/0OXW2YZUOM7GP9234N65IM29GI/ref=atv_dl_rdr?tag=movie0c6-21",
+        "https://play.google.com/store/movies/details/The_Woman_King?gl=DE&hl=en&id=cJ6OjWaEOes.P&pli=1"
+      ]
+    }
+  ],
+  "series": [
+    {
+      "id": "",
+      "title": "",
+      "year": "YEAR",
+      "plot": "here goes the plot",
+      "country": "country",
+      "genre": ["", ""],
+      "release": "",
+      "director": "",
+      "production": "",
+      "image": "imagePath",
+      "providerRent": ["", ""],
+      "providerBuy": ["", ""]
+    }
+  ]
+}
