@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import {Icon} from "@iconify/react";
-import Link from "next/link";
+import SocialMediaSection2 from "./SocialMediaSection2";
 
 export default function ShareSection() {
   return (
@@ -24,23 +24,7 @@ export default function ShareSection() {
             alt="photo of friends watching a movie/series"
           />
         </ImageContainer3>
-
-        <StyledDiv>
-          <h3>Share With Your Friends</h3>
-          <p>Help me grow by sharing my website with your friends!</p>
-          <Link href="https://www.facebook.com">
-            <StyledIcon icon="logos:facebook" width="35" />
-          </Link>
-          <Link href="https://api.whatsapp.com">
-            <StyledIcon icon="logos:whatsapp-icon" width="35" />
-          </Link>
-          <Link href="https://www.pinterest.com/">
-            <StyledIcon icon="logos:pinterest" width="35" />
-          </Link>
-          <Link href="https://twitter.com">
-            <StyledIcon icon="logos:twitter" width="35" />
-          </Link>
-        </StyledDiv>
+        <SocialMediaSection2 />
       </GridSection>
     </>
   );
@@ -61,30 +45,6 @@ const GridSection = styled.section`
     grid-template-rows: repeat(4, 20%);
     grid-template-columns: repeat(3, 35%);
     row-gap: 2px;
-  }
-`;
-
-const StyledDiv = styled.div`
-  grid-column: 3 / 3;
-  grid-row: 2 / span 2;
-  width: 100%;
-  font-size: 1.21rem;
-
-  @media screen and (max-width: 430px) {
-    font-size: 0.666rem;
-  }
-
-  & h3 {
-    margin: 0;
-    color: #ffffff;
-  }
-
-  & p {
-    color: #ffffff;
-  }
-
-  & Link {
-    text-decoration: none;
   }
 `;
 
@@ -116,6 +76,6 @@ const Img = styled.img`
 
 export const StyledIcon = styled(Icon)`
   @media screen and (max-width: 430px) {
-    width: ${props => (props.primary ? "10vw" : "5vw")};
+    width: ${props => (props.primary ? "9vw" : "5vw")};
   }
 `;

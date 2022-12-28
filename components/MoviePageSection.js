@@ -3,6 +3,7 @@ import {BackgroundImage} from "../pages/main";
 import curtains from "../public/images/other/curtains.jpg";
 import styled from "styled-components";
 import {StyledIcon} from "./ShareSection";
+import SocialMediaSection1 from "./SocialMediaSection1";
 
 export default function Moviepage({
   trailerUrl,
@@ -41,27 +42,14 @@ export default function Moviepage({
       <MainSection>
         <div>
           <BackgroundImage primary src={curtains} alt="curtains" />
-          <StyledDiv>
+          <StyledSection>
             <FlexContainer>
               <iframe src={trailerUrl} title="video"></iframe>
             </FlexContainer>
-            <ShareDiv>
-              <Link href="https://www.facebook.com">
-                <StyledIcon primary icon="logos:facebook" width="35" />
-              </Link>
-              <Link href="https://api.whatsapp.com">
-                <StyledIcon primary icon="logos:whatsapp-icon" width="35" />
-              </Link>
-              <Link href="https://www.pinterest.com/">
-                <StyledIcon primary icon="logos:pinterest" width="35" />
-              </Link>
-              <Link href="https://twitter.com">
-                <StyledIcon primary icon="logos:twitter" width="35" />
-              </Link>
-            </ShareDiv>
-          </StyledDiv>
+            <SocialMediaSection1 />
+          </StyledSection>
         </div>
-        <InfoDiv>
+        <InfoSection>
           <Container1>
             <ImageMovie src={img} alt="movie's Image" />
           </Container1>
@@ -97,8 +85,8 @@ export default function Moviepage({
               </tbody>
             </table>
           </Container3>
-        </InfoDiv>
-        <StreamingDiv>
+        </InfoSection>
+        <StreamingSection>
           <H2>Watch Now</H2>
           <section>
             <GridContainer>
@@ -138,7 +126,7 @@ export default function Moviepage({
               </StyledLink>
             </GridContainer>
           </section>
-        </StreamingDiv>
+        </StreamingSection>
       </MainSection>
     </>
   );
@@ -149,12 +137,12 @@ const MainSection = styled.section`
   padding-bottom: 1rem;
 `;
 
-const FlexContainer = styled.div`
+const FlexContainer = styled.section`
   display: flex;
   justify-content: center;
 `;
 
-const StyledDiv = styled.div`
+const StyledSection = styled.section`
   width: 100vw;
   position: absolute;
   top: 12rem;
@@ -183,18 +171,7 @@ const StyledDiv = styled.div`
   }
 `;
 
-const ShareDiv = styled.div`
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  font-size: 1.21rem;
-
-  @media screen and (max-width: 430px) {
-    font-size: 0.666rem;
-  }
-`;
-
-const InfoDiv = styled.div`
+const InfoSection = styled.section`
   display: grid;
   grid-template-rows: 60% 30%;
   grid-template-columns: repeat(2, 30%);
@@ -208,7 +185,7 @@ const InfoDiv = styled.div`
   }
 `;
 
-const Container1 = styled.div`
+const Container1 = styled.section`
   border-radius: 10px;
   display: grid;
   place-content: center;
@@ -229,7 +206,7 @@ const ImageMovie = styled.img`
   }
 `;
 
-const Container2 = styled.div`
+const Container2 = styled.section`
   & p {
     margin: 0;
     color: #808080;
@@ -253,7 +230,7 @@ const Container2 = styled.div`
   }
 `;
 
-const Container3 = styled.div`
+const Container3 = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -276,7 +253,7 @@ const Container3 = styled.div`
   }
 `;
 
-const StreamingDiv = styled.div`
+const StreamingSection = styled.section`
   text-align: center;
   padding: 0;
   margin: 4rem;
@@ -298,7 +275,7 @@ const H2 = styled.h2`
   padding: 0;
 `;
 
-const GridContainer = styled.div`
+const GridContainer = styled.article`
   border: 2px solid #ffe600;
   color: #ffe600;
 `;

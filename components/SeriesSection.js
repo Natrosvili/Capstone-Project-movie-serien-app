@@ -1,5 +1,5 @@
 import Link from "next/link";
-import {StyledSection, H2, StyledDiv, Photo} from "./MoviesSection";
+import {StyledSection, H2, StyledArticle, Photo} from "./MoviesSection";
 
 export default function SeriesSection({
   genre,
@@ -17,7 +17,7 @@ export default function SeriesSection({
       <StyledSection>
         <H2>{genre}</H2>
         <hr />
-        <StyledDiv>
+        <StyledArticle>
           <div>
             <Link className="link" href={href1}>
               <Photo
@@ -46,7 +46,7 @@ export default function SeriesSection({
             </Link>
             <span>{year2}</span>
           </div>
-        </StyledDiv>
+        </StyledArticle>
         <hr />
       </StyledSection>
     </>

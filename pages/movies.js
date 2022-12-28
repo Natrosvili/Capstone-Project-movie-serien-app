@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import neueFischePhoto from "../public/images/other/neuefische.jpeg";
 import MoviesSection from "../components/MoviesSection";
+import data from "./api/tmdb.json";
 
 export default function Movies() {
   return (
@@ -9,13 +10,13 @@ export default function Movies() {
         <H1>Movies</H1>
         <MoviesSection
           genre={"Action"}
-          imgSrc1={neueFischePhoto}
+          imgSrc1={data.movie[1].image}
           imgSrc2={neueFischePhoto}
-          href1={""}
+          href1={"/moviePages/womanking"}
           href2={""}
-          name1={"Name"}
+          name1={data.movie[1].title}
           name2={"Name"}
-          year1={"Year"}
+          year1={data.movie[1].year}
           year2={"Year"}
         />
         <MoviesSection
@@ -30,7 +31,7 @@ export default function Movies() {
           year2={"Year"}
         />
         <MoviesSection
-          genre={"Comendy"}
+          genre={"Comedy"}
           imgSrc1={neueFischePhoto}
           imgSrc2={neueFischePhoto}
           href1={""}
@@ -43,13 +44,13 @@ export default function Movies() {
         <MoviesSection
           genre={"Drama"}
           imgSrc1={neueFischePhoto}
-          imgSrc2={neueFischePhoto}
+          imgSrc2={data.movie[0].image}
           href1={""}
-          href2={""}
+          href2={"/moviePages/predator"}
           name1={"Name"}
-          name2={"Name"}
+          name2={data.movie[0].title}
           year1={"Year"}
-          year2={"Year"}
+          year2={data.movie[0].year}
         />
       </section>
     </>

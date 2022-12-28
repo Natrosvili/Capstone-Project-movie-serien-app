@@ -13,7 +13,7 @@ export default function Footer() {
   return (
     <>
       <StyledFooter>
-        <p>Find the Onwer At:</p>
+        <p>Find the Owner At:</p>
         <Link href="mailto:georgenatro@gmail.com">
           <Icon
             style={{color: "#ffffff"}}

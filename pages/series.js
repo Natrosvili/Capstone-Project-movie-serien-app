@@ -30,7 +30,7 @@ export default function Series() {
           year2={"Year"}
         />
         <SeriesSection
-          genre={"Comendy"}
+          genre={"Comedy"}
           imgSrc1={neueFischePhoto}
           imgSrc2={neueFischePhoto}
           href1={""}

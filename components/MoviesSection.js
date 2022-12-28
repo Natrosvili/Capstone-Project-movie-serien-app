@@ -18,7 +18,7 @@ export default function MoviesSection({
       <StyledSection>
         <H2>{genre}</H2>
         <hr />
-        <StyledDiv>
+        <StyledArticle>
           <div>
             <Link className="link" href={href1}>
               <Photo src={imgSrc1} width={100} height={100} alt="movie image" />
@@ -37,7 +37,7 @@ export default function MoviesSection({
             </Link>
             <span>{year2}</span>
           </div>
-        </StyledDiv>
+        </StyledArticle>
         <hr />
       </StyledSection>
     </>
@@ -77,7 +77,7 @@ export const Photo = styled(Image)`
   }
 `;
 
-export const StyledDiv = styled.div`
+export const StyledArticle = styled.article`
   grid-column: 3 / 3;
   display: flex;
   justify-content: space-around;
