@@ -46,7 +46,7 @@
   ],
   "series": [
     {
-      "id": "",
+      "id": null,
       "title": "",
       "year": "YEAR",
       "plot": "here goes the plot",

@@ -19,21 +19,12 @@ export default function Predator() {
       buy3={""}
       buy4={""}
       buy5={""}
-      buyIcon1={""}
-      buyIcon2={""}
-      buyIcon3={""}
-      buyIcon4={""}
-      buyIcon5={""}
       stream1={data.movie[0].providerRent[0]}
       stream2={""}
       stream3={""}
       stream4={""}
       stream5={""}
       streamIcon1={"tabler:brand-disney"}
-      streamIcon2={""}
-      streamIcon3={""}
-      streamIcon4={""}
-      streamIcon5={""}
     />
   );
 }
