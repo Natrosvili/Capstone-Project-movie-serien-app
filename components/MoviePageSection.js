@@ -148,14 +148,14 @@ const StyledSection = styled.section`
 
 const InfoSection = styled.section`
   display: grid;
-  grid-template-rows: 60% 30%;
+  grid-template-rows: 60% 40%;
   grid-template-columns: repeat(2, 30%);
   place-content: center;
-  height: 65vh;
+  height: 55vh;
   margin-top: 2rem;
 
   @media screen and (max-width: 430px) {
-    grid-template-rows: 40% 38%;
+    grid-template-rows: 50% 45%;
     grid-template-columns: repeat(2, 50%);
     margin: 1rem;
     column-gap: 10px;
@@ -209,7 +209,7 @@ const Container2 = styled.section`
 
 const Container3 = styled.section`
   display: flex;
-  justify-content: start;
+  justify-content: center;
   flex-direction: column;
   line-height: 1rem;
   color: #808080;
