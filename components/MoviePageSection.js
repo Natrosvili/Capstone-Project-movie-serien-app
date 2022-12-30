@@ -209,7 +209,7 @@ const Container2 = styled.section`
 
 const Container3 = styled.section`
   display: flex;
-  justify-content: flex-end;
+  justify-content: start;
   flex-direction: column;
   line-height: 1rem;
   color: #808080;

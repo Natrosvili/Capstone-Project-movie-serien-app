@@ -1,10 +1,8 @@
 import styled from "styled-components";
-// import neueFischePhoto from "../public/images/other/neuefische.jpeg";
 import MoviesSection from "../components/MoviesSection";
 import data from "./api/tmdb.json";
 
 export default function Movies() {
-  console.log(data);
   return (
     <>
       <section style={{backgroundColor: "#010101"}}>

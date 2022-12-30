@@ -7,7 +7,6 @@ export default function MoviesSection({genre}) {
   const [filter, setFilter] = useState([]);
 
   useEffect(() => {
-    console.log(genre);
     if (genre !== "Recommended Movies" && genre !== "Recommended Series") {
       setFilter(
         data.movie.filter(item => {
