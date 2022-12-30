@@ -1,42 +1,43 @@
 import Link from "next/link";
 import styled from "styled-components";
-import Image from "next/image";
+import {useEffect, useState} from "react";
+import data from "../pages/api/tmdb.json";
 
-export default function MoviesSection({
-  genre,
-  imgSrc1,
-  imgSrc2,
-  href1,
-  href2,
-  name1,
-  name2,
-  year1,
-  year2,
-}) {
+export default function MoviesSection({genre}) {
+  const [filter, setFilter] = useState([]);
+
+  useEffect(() => {
+    console.log(genre);
+    if (genre !== "Recommended Movies" && genre !== "Recommended Series") {
+      setFilter(
+        data.movie.filter(item => {
+          return item.genre.includes(genre);
+        })
+      );
+    } else {
+      setFilter(data.movie);
+    }
+  }, [genre]);
+
   return (
     <>
       <StyledSection>
         <H2>{genre}</H2>
         <hr />
         <StyledArticle>
-          <div>
-            <Link className="link" href={href1}>
-              <Photo src={imgSrc1} width={100} height={100} alt="movie image" />
-            </Link>
-            <Link className="link" href={href1}>
-              <h3>{name1}</h3>
-            </Link>
-            <span>{year1}</span>
-          </div>
-          <div>
-            <Link className="link" href={href2}>
-              <Photo src={imgSrc2} width={100} height={100} alt="movie image" />
-            </Link>
-            <Link className="link" href={href2}>
-              <h3>{name2}</h3>
-            </Link>
-            <span>{year2}</span>
-          </div>
+          {filter.map((object, index) => {
+            return (
+              <MovieContainer key={index}>
+                <StyledLink href={`/moviePages/${object.id}`}>
+                  <Photo src={object.image} alt="movie image" />
+                </StyledLink>
+                <StyledLink href={`/moviePages/${object.id}`}>
+                  <h3>{object.title}</h3>
+                </StyledLink>
+                <span>{object.year}</span>
+              </MovieContainer>
+            );
+          })}
         </StyledArticle>
         <hr />
       </StyledSection>
@@ -46,55 +47,59 @@ export default function MoviesSection({
 
 export const StyledSection = styled.section`
   text-align: center;
-  margin: 0 3.75rem;
-  height: 50rem;
+  margin: 0 1.75rem;
 
   @media screen and (max-width: 430px) {
-    margin: 0;
-    height: 35rem;
+    padding: 4rem 0;
   }
 `;
 
 export const H2 = styled.h2`
   color: #ffffff;
   font-style: italic;
+
   @media screen and (max-width: 430px) {
     text-align: center;
+    margin: 0;
   }
 `;
 
-export const Photo = styled(Image)`
-  width: 28vw;
-  height: 75%;
-  left: 2rem;
-  top: 35rem;
+export const Photo = styled.img`
+  width: 100%;
+  object-fit: contain;
   background: #d9d9d9;
   border-radius: 15px;
-
-  @media screen and (max-width: 430px) {
-    width: 34vw;
-    height: 26vh;
-  }
 `;
 
 export const StyledArticle = styled.article`
-  grid-column: 3 / 3;
+  gap: 10%;
   display: flex;
-  justify-content: space-around;
-  margin: 3.125em;
+  overflow: scroll;
 
   @media screen and (max-width: 430px) {
     justify-content: space-between;
     text-align: center;
   }
+`;
 
-  & div {
-    color: #ffffff;
-    font-style: italic;
-  }
+const MovieContainer = styled.div`
+  margin: 0 1rem;
+  padding-bottom: 2rem;
+  min-width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 8%;
+  box-sizing: content-box;
+  color: #ffffff;
+  font-style: italic;
 
-  & .link {
-    color: #ffffff;
-    text-decoration: none;
+  & span {
+    margin-top: auto;
   }
+`;
+
+const StyledLink = styled(Link)`
+  color: #ffffff;
+  width: 100%;
+  text-decoration: none;
 `;

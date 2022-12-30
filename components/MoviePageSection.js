@@ -5,38 +5,29 @@ import styled from "styled-components";
 import {StyledIcon} from "./ShareSection";
 import SocialMediaSection1 from "./SocialMediaSection1";
 
-export default function Moviepage({
-  trailerUrl,
-  img,
-  title,
-  year,
-  plot,
-  country,
-  genre,
-  release,
-  director,
-  production,
-  buy1,
-  buy2,
-  buy3,
-  buy4,
-  buy5,
-  buyIcon1,
-  buyIcon2,
-  buyIcon3,
-  buyIcon4,
-  buyIcon5,
-  stream1,
-  stream2,
-  stream3,
-  stream4,
-  stream5,
-  streamIcon1,
-  streamIcon2,
-  streamIcon3,
-  streamIcon4,
-  streamIcon5,
-}) {
+export default function Moviepage({data}) {
+  function getIcon(provider) {
+    if (provider.includes("apple")) {
+      return "simple-icons:appletv";
+    } else if (provider.includes("amazon")) {
+      return "ri:amazon-fill";
+    } else if (provider.includes("youtube")) {
+      return "carbon:logo-youtube";
+    } else if (provider.includes("google")) {
+      return "mdi:google-play";
+    } else if (provider.includes("netflix")) {
+      return "mdi:netflix";
+    } else if (provider.includes("rakuten")) {
+      return "simple-icons:rakuten";
+    } else if (provider.includes("sky")) {
+      return "simple-icons:sky";
+    } else if (provider.includes("disneyplus")) {
+      return "tabler:brand-disney";
+    } else {
+      return "";
+    }
+  }
+
   return (
     <>
       <MainSection>
@@ -44,43 +35,43 @@ export default function Moviepage({
           <BackgroundImage primary src={curtains} alt="curtains" />
           <StyledSection>
             <FlexContainer>
-              <iframe src={trailerUrl} title="video"></iframe>
+              <iframe src={data?.trailer} title="video"></iframe>
             </FlexContainer>
             <SocialMediaSection1 />
           </StyledSection>
         </div>
         <InfoSection>
           <Container1>
-            <ImageMovie src={img} alt="movie's Image" />
+            <ImageMovie src={data?.image} alt="movie's Image" />
           </Container1>
           <Container2>
             <h1>
-              {title} ({year})
+              {data?.title} ({data?.year})
             </h1>
-            <p>{plot}</p>
+            <p>{data?.plot}</p>
           </Container2>
           <Container3>
             <table>
               <tbody>
                 <tr>
                   <th>Country:</th>
-                  <td>{country}</td>
+                  <td>{data?.country}</td>
                 </tr>
                 <tr>
                   <th>Genre:</th>
-                  <td>{genre}</td>
+                  <td>{data?.genre}</td>
                 </tr>
                 <tr>
                   <th>Release:</th>
-                  <td>{release}</td>
+                  <td>{data?.release}</td>
                 </tr>
                 <tr>
                   <th>Director:</th>
-                  <td>{director}</td>
+                  <td>{data?.director}</td>
                 </tr>
                 <tr>
                   <th>Production:</th>
-                  <td>{production}</td>
+                  <td>{data?.production}</td>
                 </tr>
               </tbody>
             </table>
@@ -91,39 +82,23 @@ export default function Moviepage({
           <section>
             <GridContainer>
               <h3>Buy</h3>
-              <StyledLink href={buy1}>
-                <StyledIcon primary icon={buyIcon1} width="45" />
-              </StyledLink>
-              <StyledLink href={buy2}>
-                <StyledIcon primary icon={buyIcon2} width="45" />
-              </StyledLink>
-              <StyledLink href={buy3}>
-                <StyledIcon primary icon={buyIcon3} width="45" />
-              </StyledLink>
-              <StyledLink href={buy4}>
-                <StyledIcon primary icon={buyIcon4} width="45" />
-              </StyledLink>
-              <StyledLink href={buy5}>
-                <StyledIcon primary icon={buyIcon5} width="45" />
-              </StyledLink>
+              {data?.providerBuy?.map((link, index) => {
+                return (
+                  <StyledLink key={index} href={link}>
+                    <StyledIcon primary icon={getIcon(link)} width="50" />
+                  </StyledLink>
+                );
+              })}
             </GridContainer>
             <GridContainer>
               <h3>Stream</h3>
-              <StyledLink href={stream1}>
-                <StyledIcon primary icon={streamIcon1} width="45" />
-              </StyledLink>
-              <StyledLink href={stream2}>
-                <StyledIcon primary icon={streamIcon2} width="45" />
-              </StyledLink>
-              <StyledLink href={stream3}>
-                <StyledIcon primary icon={streamIcon3} width="45" />
-              </StyledLink>
-              <StyledLink href={stream4}>
-                <StyledIcon primary icon={streamIcon4} width="45" />
-              </StyledLink>
-              <StyledLink href={stream5}>
-                <StyledIcon primary icon={streamIcon5} width="45" />
-              </StyledLink>
+              {data?.providerRent?.map((link, index) => {
+                return (
+                  <StyledLink key={index} href={link}>
+                    <StyledIcon primary icon={getIcon(link)} width="50" />
+                  </StyledLink>
+                );
+              })}
             </GridContainer>
           </section>
         </StreamingSection>
@@ -180,8 +155,10 @@ const InfoSection = styled.section`
   margin-top: 2rem;
 
   @media screen and (max-width: 430px) {
-    grid-template-rows: 50% 32%;
+    grid-template-rows: 40% 38%;
     grid-template-columns: repeat(2, 50%);
+    margin: 1rem;
+    column-gap: 10px;
   }
 `;
 
@@ -232,10 +209,9 @@ const Container2 = styled.section`
 
 const Container3 = styled.section`
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
   flex-direction: column;
-  grid-column: 2 / -1;
+  line-height: 1rem;
   color: #808080;
   font-style: italic;
   font-size: 0.95rem;
@@ -256,7 +232,7 @@ const Container3 = styled.section`
 const StreamingSection = styled.section`
   text-align: center;
   padding: 0;
-  margin: 4rem;
+  margin: 1.2rem;
 
   & section {
     display: grid;

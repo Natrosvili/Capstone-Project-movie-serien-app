@@ -21,17 +21,7 @@ export default function Main() {
             fun.
           </p>
         </StyledSection>
-        <MoviesSection
-          genre={"Recommended Movies"}
-          imgSrc1={data.movie[0].image}
-          imgSrc2={data.movie[1].image}
-          href1="/moviePages/predator"
-          href2="/moviePages/womanking"
-          name1={data.movie[0].title}
-          name2={data.movie[1].title}
-          year1={data.movie[0].year}
-          year2={data.movie[1].year}
-        />
+        <MoviesSection data={data} genre={"Recommended Movies"} />
         <SeriesSection
           genre={"Recommended Series"}
           imgSrc1={neueFischePhoto}

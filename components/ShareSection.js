@@ -76,6 +76,6 @@ const Img = styled.img`
 
 export const StyledIcon = styled(Icon)`
   @media screen and (max-width: 430px) {
-    width: ${props => (props.primary ? "9vw" : "5vw")};
+    width: ${props => (props.primary ? "10vw" : "5vw")};
   }
 `;
