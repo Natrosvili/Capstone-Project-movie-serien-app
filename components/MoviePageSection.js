@@ -148,17 +148,17 @@ const StyledSection = styled.section`
 
 const InfoSection = styled.section`
   display: grid;
-  grid-template-rows: 60% 40%;
   grid-template-columns: repeat(2, 30%);
+  grid-template-rows: 55% 80%;
   place-content: center;
-  height: 55vh;
-  margin-top: 2rem;
+  height: 70vh;
+  margin: 10rem 0;
 
   @media screen and (max-width: 430px) {
-    grid-template-rows: 50% 45%;
+    grid-template-rows: 40% 30%;
     grid-template-columns: repeat(2, 50%);
     margin: 1rem;
-    column-gap: 10px;
+    column-gap: 1rem;
   }
 `;
 
@@ -172,8 +172,6 @@ const ImageMovie = styled.img`
   width: 20rem;
   position: relative;
   top: 5rem;
-  height: auto;
-  z-index: 1;
   border-radius: 12px;
 
   @media screen and (max-width: 430px) {
@@ -209,36 +207,39 @@ const Container2 = styled.section`
 
 const Container3 = styled.section`
   display: flex;
-  justify-content: center;
+  justify-content: end;
+  align-items: end;
   flex-direction: column;
-  line-height: 1rem;
+  line-height: 2rem;
   color: #808080;
   font-style: italic;
   font-size: 0.95rem;
 
   @media screen and (max-width: 430px) {
     font-size: 0.7rem;
+    line-height: 1.2rem;
+    justify-content: start;
   }
 
   & td {
-    padding-left: 4rem;
-
-    @media screen and (max-width: 430px) {
-      padding-left: 2rem;
-    }
+    padding-left: 2rem;
   }
 `;
 
 const StreamingSection = styled.section`
   text-align: center;
   padding: 0;
-  margin: 1.2rem;
+  margin: 8rem;
 
   & section {
     display: grid;
     grid-template-columns: repeat(2, 50%);
     border: 2px solid #ffe600;
     height: 12rem;
+  }
+
+  @media screen and (max-width: 430px) {
+    margin: 1.5rem;
   }
 `;
 

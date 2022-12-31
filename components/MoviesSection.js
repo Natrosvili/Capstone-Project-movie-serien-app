@@ -46,7 +46,7 @@ export default function MoviesSection({genre}) {
 
 export const StyledSection = styled.section`
   text-align: center;
-  margin: 0 1.75rem;
+  padding: 4rem 12rem;
 
   @media screen and (max-width: 430px) {
     padding: 4rem 0;
@@ -82,7 +82,7 @@ export const StyledArticle = styled.article`
 `;
 
 const MovieContainer = styled.div`
-  margin: 0 1rem;
+  margin: 0 1.5rem;
   padding-bottom: 2rem;
   min-width: 30%;
   display: flex;
