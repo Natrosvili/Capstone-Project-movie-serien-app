@@ -1,11 +1,23 @@
-import Link from "next/link";
 import {BackgroundImage} from "../pages/main";
 import curtains from "../public/images/other/curtains.jpg";
-import styled from "styled-components";
 import {StyledIcon} from "./ShareSection";
 import SocialMediaSection1 from "./SocialMediaSection1";
+import {
+  MainSection,
+  FlexContainer,
+  StyledSection,
+  InfoSection,
+  Container1,
+  Container2,
+  Container3,
+  ImageMovie,
+  StreamingSection,
+  H2,
+  GridContainer,
+  StyledLink,
+} from "./MoviePageSection";
 
-export default function MoviePageSection({data}) {
+export default function SeriesPageSection({data}) {
   function getIcon(provider) {
     if (provider.includes("apple")) {
       return "simple-icons:appletv";
@@ -78,7 +90,7 @@ export default function MoviePageSection({data}) {
           </Container3>
         </InfoSection>
         <StreamingSection>
-          <H2>Watch Now</H2>
+          <H2>Watch The Latest Season</H2>
           <section>
             <GridContainer>
               <h3>Buy</h3>
@@ -106,159 +118,3 @@ export default function MoviePageSection({data}) {
     </>
   );
 }
-
-export const MainSection = styled.section`
-  background-color: #000000;
-  padding-bottom: 1rem;
-`;
-
-export const FlexContainer = styled.section`
-  display: flex;
-  justify-content: center;
-`;
-
-export const StyledSection = styled.section`
-  width: 100vw;
-  position: absolute;
-  top: 12rem;
-  display: grid;
-  place-content: center;
-  grid-template-columns: 100%;
-  grid-template-row: 100%;
-  row-gap: 5px;
-
-  @media screen and (max-width: 430px) {
-    top: 15rem;
-  }
-
-  & iframe {
-    width: 60vw;
-    height: 55vh;
-    border-radius: 12px;
-    border: none;
-    z-index: 2;
-    overflow: hidden;
-
-    @media screen and (max-width: 430px) {
-      width: 85vw;
-      height: 30vh;
-    }
-  }
-`;
-
-export const InfoSection = styled.section`
-  display: grid;
-  grid-template-columns: repeat(2, 30%);
-  grid-template-rows: 55% 80%;
-  place-content: center;
-  height: 70vh;
-  margin: 10rem 0;
-
-  @media screen and (max-width: 430px) {
-    grid-template-rows: 40% 30%;
-    grid-template-columns: repeat(2, 50%);
-    margin: 1rem;
-    column-gap: 1rem;
-  }
-`;
-
-export const Container1 = styled.section`
-  border-radius: 10px;
-  display: grid;
-  place-content: center;
-`;
-
-export const ImageMovie = styled.img`
-  width: 20rem;
-  position: relative;
-  top: 5rem;
-  border-radius: 12px;
-  object-fit: cover;
-
-  @media screen and (max-width: 430px) {
-    width: 12rem;
-    height: 15rem;
-    top: 0;
-  }
-`;
-
-export const Container2 = styled.section`
-  & p {
-    margin: 0;
-    color: #808080;
-    font-style: italic;
-    font-size: 0.95rem;
-
-    @media screen and (max-width: 430px) {
-      font-size: 0.7rem;
-    }
-  }
-
-  & H1 {
-    margin: 0.8rem 0;
-    font-style: italic;
-    color: #808080;
-    font-size: 1.35rem;
-
-    @media screen and (max-width: 430px) {
-      font-size: 1.25rem;
-    }
-  }
-`;
-
-export const Container3 = styled.section`
-  display: flex;
-  justify-content: end;
-  align-items: end;
-  flex-direction: column;
-  line-height: 2rem;
-  color: #808080;
-  font-style: italic;
-  font-size: 0.95rem;
-  margin-top: 4rem;
-
-  @media screen and (max-width: 430px) {
-    font-size: 0.6rem;
-    line-height: 1.2rem;
-    justify-content: start;
-  }
-
-  & td {
-    padding-left: 1rem;
-  }
-`;
-
-export const StreamingSection = styled.section`
-  text-align: center;
-  padding: 0;
-  margin: 8rem;
-
-  & section {
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    border: 2px solid #ffe600;
-    height: 12rem;
-  }
-
-  @media screen and (max-width: 430px) {
-    margin: 1.5rem;
-  }
-`;
-
-export const H2 = styled.h2`
-  color: #ffe600;
-  font-size: 2rem;
-  font-style: italic;
-  font-weight: 2rem;
-  margin: 2rem 0;
-  padding: 0;
-`;
-
-export const GridContainer = styled.article`
-  border: 2px solid #ffe600;
-  color: #ffe600;
-`;
-
-export const StyledLink = styled(Link)`
-  color: #ffe600;
-`;

@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import Image from "next/image";
 import seats2 from "../public/images/other/seats2.jpg";
-import neueFischePhoto from "../public/images/other/neuefische.jpeg";
 import ShareSection from "../components/ShareSection";
 import MoviesSection from "../components/MoviesSection";
 import data from "./api/tmdb.json";
@@ -21,18 +20,8 @@ export default function Main() {
             fun.
           </p>
         </StyledSection>
-        <MoviesSection data={data} genre={"Recommended Movies"} />
-        <SeriesSection
-          genre={"Recommended Series"}
-          imgSrc1={neueFischePhoto}
-          imgSrc2={neueFischePhoto}
-          href1="/"
-          href2="/"
-          name1={"Name"}
-          name2={"Name"}
-          year1={"Year"}
-          year2={"Year"}
-        />
+        <MoviesSection data={data} genre="Recommended Movies" />
+        <SeriesSection genre="Recommended Series" data={data} />
         <ShareSection />
       </main>
     </>

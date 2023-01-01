@@ -28,7 +28,7 @@ export default function MoviesSection({genre}) {
             return (
               <MovieContainer key={index}>
                 <StyledLink href={`/moviePages/${object.id}`}>
-                  <Photo src={object.image} alt="movie image" />
+                  <Photo src={object.image} alt="movie's image" />
                 </StyledLink>
                 <StyledLink href={`/moviePages/${object.id}`}>
                   <h3>{object.title}</h3>
@@ -81,7 +81,7 @@ export const StyledArticle = styled.article`
   }
 `;
 
-const MovieContainer = styled.div`
+export const MovieContainer = styled.div`
   margin: 0 1.5rem;
   padding-bottom: 2rem;
   min-width: 30%;
@@ -97,7 +97,7 @@ const MovieContainer = styled.div`
   }
 `;
 
-const StyledLink = styled(Link)`
+export const StyledLink = styled(Link)`
   color: #ffffff;
   width: 100%;
   text-decoration: none;
