@@ -13,9 +13,7 @@ export default function Footer() {
   return (
     <>
       <StyledFooter>
-        <p style={{padding: "0.0625em 0", color: "#ffffff"}}>
-          <em>Find the Onwer At:</em>
-        </p>
+        <p>Find the Owner At:</p>
         <Link href="mailto:georgenatro@gmail.com">
           <Icon
             style={{color: "#ffffff"}}
@@ -35,21 +33,24 @@ export default function Footer() {
             height="35"
           />
         </Link>
-        <p style={{padding: "0.0625em 0", color: "#ffffff"}}>
-          <em>
-            ©{year} Search Find Go! --All external content remains the property
-            of the righful owner.
-          </em>
+        <p>
+          ©{year} Search Find Go! --All external content remains the property of
+          the righful owner.
         </p>
       </StyledFooter>
     </>
   );
 }
 
-// footer element
 const StyledFooter = styled.footer`
   background-color: #010101;
   text-align: center;
   padding: 0.9375em;
   border-top: 2px solid;
+
+  & p {
+    padding: 0.0625em 0;
+    color: #ffffff;
+    font-style: italic;
+  }
 `;

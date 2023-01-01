@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import logo from "../public/logo.png";
+import logo from "../public/images/other/logo.png";
 import {Icon} from "@iconify/react";
 import Link from "next/link";
 import Image from "next/image";
@@ -9,33 +9,29 @@ export default function Header({children}) {
     <>
       <StyledHeader>
         <StyledLink href="/">
-          <Img src={logo} width="220" height="130" alt="search find go" />
+          <Image src={logo} width="150" height="100" alt="search find go" />
         </StyledLink>
         <StyledLink href="/movies">
-          <StyledSpan>
-            <em>Movies</em>
-          </StyledSpan>
+          <span>Movies</span>
         </StyledLink>
         <StyledLink href="/series">
-          <StyledSpan>
-            <em>Series</em>
-          </StyledSpan>
+          <span>Series</span>
         </StyledLink>
 
         <form>
           <label>
             <SearchComponent>
-              <SearchIcon icon="ic:baseline-search" width="35" height="35" />
-              <Input type="search" id="search" />
+              <Icon icon="ic:baseline-search" width="35" height="35" />
+              <input type="search" id="search" />
             </SearchComponent>
           </label>
         </form>
 
         <StyledLink href="/login">
-          <LoginIcon icon="material-symbols:login" width="35" height="35" />
+          <Icon icon="material-symbols:login" width="30" height="30" />
         </StyledLink>
         <StyledLink href="/register">
-          <RegisterIcon icon="mdi:register" width="35" height="35" />
+          <Icon icon="mdi:register" width="30" height="30" />
         </StyledLink>
       </StyledHeader>
       {children}
@@ -43,7 +39,6 @@ export default function Header({children}) {
   );
 }
 
-// header element
 const StyledHeader = styled.header`
   height: 15%;
   background-color: #010101;
@@ -60,15 +55,6 @@ const StyledHeader = styled.header`
   }
 `;
 
-const Img = styled(Image)`
-  @media screen and (max-width: 430px) {
-    width: 30vw;
-    height: 12vh;
-    border-radius: 15px;
-  }
-`;
-
-// div behind input element
 const SearchComponent = styled.div`
   display: flex;
   border: 2px solid white;
@@ -77,51 +63,51 @@ const SearchComponent = styled.div`
   border-radius: 20px;
   background-color: #9a9595;
   align-items: center;
+
+  & Icon {
+    @media screen and (max-width: 430px) {
+      width: 40%;
+    }
+  }
+
+  & input {
+    border-radius: 15px;
+    height: 5%;
+    width: 14%;
+    background-color: #9a9595;
+    color: #ffffff;
+    border: none;
+    outline: none;
+
+    @media screen and (max-width: 430px) {
+      width: 15vw;
+    }
+  }
 `;
 
-// Link element
 const StyledLink = styled(Link)`
   list-style: none;
   text-decoration: none;
   color: #ffffff;
-`;
 
-// span element
-const StyledSpan = styled.span`
-  @media screen and (max-width: 430px) {
-    font-size: 0.85rem;
+  & Image {
+    @media screen and (max-width: 430px) {
+      width: 20vw;
+      height: 12vh;
+      border-radius: 15px;
+    }
   }
-`;
 
-// input element
-const Input = styled.input`
-  border-radius: 15px;
-  height: 5%;
-  width: 14%;
-  background-color: #9a9595;
-  color: #ffffff;
-  border: none;
-  outline: none;
+  & span {
+    font-style: italic;
+    @media screen and (max-width: 430px) {
+      font-size: 0.85rem;
+    }
 
-  @media screen and (max-width: 430px) {
-    width: 15vw;
-  }
-`;
-
-const SearchIcon = styled(Icon)`
-  @media screen and (max-width: 430px) {
-    width: 40%;
-  }
-`;
-
-const LoginIcon = styled(Icon)`
-  @media screen and (max-width: 430px) {
-    width: 8vw;
-  }
-`;
-
-const RegisterIcon = styled(Icon)`
-  @media screen and (max-width: 430px) {
-    width: 8vw;
+    & Icon {
+      @media screen and (max-width: 430px) {
+        width: 8vw;
+      }
+    }
   }
 `;

@@ -87,7 +87,7 @@ export default function Register() {
             onChange={onInputChange}
             onBlur={validateInput}
             value={input.email}
-            primary
+            primary="true"
             type="email"
             id="email"
             name="email"
@@ -105,7 +105,7 @@ export default function Register() {
             onChange={onInputChange}
             onBlur={validateInput}
             value={input.createPassword}
-            primary
+            primary="true"
             type={visible1 ? "text" : "password"}
             id="createPassword"
             name="createPassword"
@@ -129,7 +129,7 @@ export default function Register() {
             onChange={onInputChange}
             value={input.confirmPassword}
             onBlur={validateInput}
-            primary
+            primary="true"
             type={visible2 ? "text" : "password"}
             id="confirmPassword"
             name="confirmPassword"
@@ -147,7 +147,7 @@ export default function Register() {
           )}
         </div>
         <StyledDiv>
-          <StyledButton primary type="submit">
+          <StyledButton primary="true" type="submit">
             Register
           </StyledButton>
         </StyledDiv>
