@@ -1,51 +1,48 @@
-import Link from "next/link";
-import {StyledSection, H2, StyledArticle, Photo} from "./MoviesSection";
+import {
+  StyledSection,
+  H2,
+  StyledArticle,
+  Photo,
+  MovieContainer,
+  StyledLink,
+} from "./MoviesSection";
+import {useEffect, useState} from "react";
+import data from "../pages/api/tmdb.json";
 
-export default function SeriesSection({
-  genre,
-  imgSrc1,
-  imgSrc2,
-  href1,
-  href2,
-  name1,
-  name2,
-  year1,
-  year2,
-}) {
+export default function SeriesSection({genre}) {
+  const [filter, setFilter] = useState([]);
+
+  useEffect(() => {
+    if (genre !== "Recommended Movies" && genre !== "Recommended Series") {
+      setFilter(
+        data.series.filter(item => {
+          return item.genre.includes(genre);
+        })
+      );
+    } else {
+      setFilter(data.series);
+    }
+  }, [genre]);
+
   return (
     <>
       <StyledSection>
         <H2>{genre}</H2>
         <hr />
         <StyledArticle>
-          <div>
-            <Link className="link" href={href1}>
-              <Photo
-                src={imgSrc1}
-                width={100}
-                height={100}
-                alt="series's image"
-              />
-            </Link>
-            <Link className="link" href={href1}>
-              <h3>{name1}</h3>
-            </Link>
-            <span>{year1}</span>
-          </div>
-          <div>
-            <Link className="link" href={href2}>
-              <Photo
-                src={imgSrc2}
-                width={100}
-                height={100}
-                alt="series's image"
-              />
-            </Link>
-            <Link className="link" href={href2}>
-              <h3>{name2}</h3>
-            </Link>
-            <span>{year2}</span>
-          </div>
+          {filter.map((object, index) => {
+            return (
+              <MovieContainer key={index}>
+                <StyledLink href={`/seriesPages/${object.id}`}>
+                  <Photo src={object.image} alt="series' image" />
+                </StyledLink>
+                <StyledLink href={`/seriesPages/${object.id}`}>
+                  <h3>{object.title}</h3>
+                </StyledLink>
+                <span>{object.year}</span>
+              </MovieContainer>
+            );
+          })}
         </StyledArticle>
         <hr />
       </StyledSection>

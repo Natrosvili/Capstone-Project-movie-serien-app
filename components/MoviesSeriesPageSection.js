@@ -1,11 +1,11 @@
-import Link from "next/link";
-import {BackgroundImage} from "../pages/main";
-import curtains from "../public/images/other/curtains.jpg";
 import styled from "styled-components";
+import {BackgroundImage} from "../pages/main";
+import Link from "next/link";
+import curtains from "../public/images/other/curtains.jpg";
 import {StyledIcon} from "./ShareSection";
 import SocialMediaSection1 from "./SocialMediaSection1";
 
-export default function Moviepage({data}) {
+export default function MoviesSeriesPageSection({data, altImage, text}) {
   function getIcon(provider) {
     if (provider.includes("apple")) {
       return "simple-icons:appletv";
@@ -42,7 +42,7 @@ export default function Moviepage({data}) {
         </div>
         <InfoSection>
           <Container1>
-            <ImageMovie src={data?.image} alt="movie's Image" />
+            <ImageMovie src={data?.image} alt={altImage} />
           </Container1>
           <Container2>
             <h1>
@@ -78,7 +78,7 @@ export default function Moviepage({data}) {
           </Container3>
         </InfoSection>
         <StreamingSection>
-          <H2>Watch Now</H2>
+          <H2>{text}</H2>
           <section>
             <GridContainer>
               <h3>Buy</h3>
@@ -162,7 +162,7 @@ const InfoSection = styled.section`
   }
 `;
 
-const Container1 = styled.section`
+const Container1 = styled.div`
   border-radius: 10px;
   display: grid;
   place-content: center;
@@ -173,6 +173,7 @@ const ImageMovie = styled.img`
   position: relative;
   top: 5rem;
   border-radius: 12px;
+  object-fit: cover;
 
   @media screen and (max-width: 430px) {
     width: 12rem;
@@ -214,15 +215,16 @@ const Container3 = styled.section`
   color: #808080;
   font-style: italic;
   font-size: 0.95rem;
+  margin-top: 4rem;
 
   @media screen and (max-width: 430px) {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     line-height: 1.2rem;
     justify-content: start;
   }
 
   & td {
-    padding-left: 2rem;
+    padding-left: 1rem;
   }
 `;
 
@@ -248,7 +250,7 @@ const H2 = styled.h2`
   font-size: 2rem;
   font-style: italic;
   font-weight: 2rem;
-  margin: 2rem 0;
+  margin: 0.5rem 0;
   padding: 0;
 `;
 

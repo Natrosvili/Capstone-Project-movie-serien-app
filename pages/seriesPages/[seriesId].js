@@ -3,9 +3,9 @@ import MoviesSeriesPageSection from "../../components/MoviesSeriesPageSection";
 import {useRouter} from "next/router";
 import {useState, useEffect} from "react";
 
-export default function MoviePage() {
+export default function SeriesPage() {
   const router = useRouter();
-  const {movieId} = router.query;
+  const {seriesId} = router.query;
   const [reload, setReload] = useState(false);
 
   useEffect(() => {
@@ -18,9 +18,9 @@ export default function MoviePage() {
     <>
       {reload && (
         <MoviesSeriesPageSection
-          data={data.movie[movieId - 1]}
-          altImage="movie's image"
-          text="Watch Now"
+          data={data.series[seriesId - 1]}
+          altImage="series' image"
+          text="Watch The Latest Season"
         />
       )}
     </>
