@@ -20,6 +20,7 @@ export default function MoviePage() {
         <MoviesSeriesPageSection
           data={data.movie[movieId - 1]}
           altImage="movie's image"
+          text="Watch Now"
         />
       )}
     </>

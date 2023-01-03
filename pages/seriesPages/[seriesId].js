@@ -20,6 +20,7 @@ export default function SeriesPage() {
         <MoviesSeriesPageSection
           data={data.series[seriesId - 1]}
           altImage="series' image"
+          text="Watch The Latest Season"
         />
       )}
     </>

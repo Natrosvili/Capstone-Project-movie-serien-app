@@ -256,18 +256,18 @@
     },
     {
       "id": 4,
-      "title": "Star Wars: The Bad Batch",
+      "title": "WandaVision",
       "year": 2021,
-      "trailer": "https://youtube.com/embed/BsOmYpP4UDU",
-      "plot": "The Clone Wars are over; now The Galactic Empire has taken over The Republic. But from the embers of The Clone Wars is The Bad Batch: a ragtag group of 'defective' clones whose skills are off-the-charts for any breed of soldier. In order to stand up to The Empire, The Bad Batch must get up to speed with the rest of the Galaxy, or die with the past.",
+      "trailer": "https://youtube.com/embed/sj9J2ecsSpo",
+      "plot": "Blends the style of classic sitcoms with the MCU, in which Wanda Maximoff and Vision - two super-powered beings living their ideal suburban lives - begin to suspect that everything is not as it seems.",
       "country": "United States",
-      "genre": "Drama, Animation, Sci-Fi, Adventure, Action, Fantasy",
-      "release": "2021-05-04",
+      "genre": "Drama, Comedy, Sci-Fi, Adventure, Action, Fantasy",
+      "release": "2021-01-15",
       "director": "N/A",
-      "production": "Disney+, Lucasfilm Animation, Lucasfilm",
-      "image": "/images/series/starWars.jpg",
+      "production": "Marvel Studios",
+      "image": "/images/series/wanda.jpg",
       "providerRent": [
-        "https://www.disneyplus.com/en-gb/series/star-wars-the-bad-batch/4gMliqFxxqXC?irclickid=xvAUieUTkxyNTCGw4XR3FxkWUkAzCn2tgTo9XQ0&irgwc=1&cid=DSS-Affiliate-Impact-Content-JustWatch+GmbH-705874&tgclid=01010036-19b7-4907-b500-1be663b1c929&dclid=CLv3_934pvwCFczHuwgdSSwIBA"
+        "https://www.disneyplus.com/series/wandavision/4SrN28ZjDLwH?irclickid=xvAUieUTkxyNTCGw4XR3FxkWUkAzCuURgTo9XQ0&irgwc=1&cid=DSS-Affiliate-Impact-Content-JustWatch+GmbH-705874&tgclid=0101002f-fb92-4526-a600-1e7463b1d582&dclid=CJ7essGEp_wCFU2Q_QcdL1UEBA"
       ],
       "providerBuy": [""]
     },
@@ -366,6 +366,23 @@
     },
     {
       "id": 10,
+      "title": "Star Wars: The Bad Batch",
+      "year": 2021,
+      "trailer": "https://youtube.com/embed/BsOmYpP4UDU",
+      "plot": "The Clone Wars are over; now The Galactic Empire has taken over The Republic. But from the embers of The Clone Wars is The Bad Batch: a ragtag group of 'defective' clones whose skills are off-the-charts for any breed of soldier. In order to stand up to The Empire, The Bad Batch must get up to speed with the rest of the Galaxy, or die with the past.",
+      "country": "United States",
+      "genre": "Drama, Animation, Sci-Fi, Adventure, Action, Fantasy",
+      "release": "2021-05-04",
+      "director": "N/A",
+      "production": "Disney+, Lucasfilm Animation, Lucasfilm",
+      "image": "/images/series/starWars.jpg",
+      "providerRent": [
+        "https://www.disneyplus.com/en-gb/series/star-wars-the-bad-batch/4gMliqFxxqXC?irclickid=xvAUieUTkxyNTCGw4XR3FxkWUkAzCn2tgTo9XQ0&irgwc=1&cid=DSS-Affiliate-Impact-Content-JustWatch+GmbH-705874&tgclid=01010036-19b7-4907-b500-1be663b1c929&dclid=CLv3_934pvwCFczHuwgdSSwIBA"
+      ],
+      "providerBuy": [""]
+    },
+    {
+      "id": 11,
       "title": "Vincenzo",
       "year": 2021,
       "trailer": "https://youtube.com/embed/_J8tYxYB_YU",
@@ -380,7 +397,7 @@
       "providerBuy": [""]
     },
     {
-      "id": 11,
+      "id": 12,
       "title": "Peacemaker",
       "year": 2022,
       "trailer": "https://youtube.com/embed/WHXq62VCaCM",
@@ -397,23 +414,6 @@
         "https://tv.apple.com/de/show/peacemaker/umc.cmc.29be4iil4rn1ov8vrdxhh4375",
         "https://www.amazon.de/gp/video/detail/0KFTNI9QHYNEE9ZSM73N8WEA8G/ref=atv_dl_rdr?tag=movie0c6-21"
       ]
-    },
-    {
-      "id": 12,
-      "title": "WandaVision",
-      "year": 2021,
-      "trailer": "https://youtube.com/embed/sj9J2ecsSpo",
-      "plot": "Blends the style of classic sitcoms with the MCU, in which Wanda Maximoff and Vision - two super-powered beings living their ideal suburban lives - begin to suspect that everything is not as it seems.",
-      "country": "United States",
-      "genre": "Drama, Comedy, Sci-Fi, Adventure, Action, Fantasy",
-      "release": "2021-01-15",
-      "director": "N/A",
-      "production": "Marvel Studios",
-      "image": "/images/series/wanda.jpg",
-      "providerRent": [
-        "https://www.disneyplus.com/series/wandavision/4SrN28ZjDLwH?irclickid=xvAUieUTkxyNTCGw4XR3FxkWUkAzCuURgTo9XQ0&irgwc=1&cid=DSS-Affiliate-Impact-Content-JustWatch+GmbH-705874&tgclid=0101002f-fb92-4526-a600-1e7463b1d582&dclid=CJ7essGEp_wCFU2Q_QcdL1UEBA"
-      ],
-      "providerBuy": [""]
     },
     {
       "id": 13,

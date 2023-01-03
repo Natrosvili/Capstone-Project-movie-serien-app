@@ -5,7 +5,7 @@ import curtains from "../public/images/other/curtains.jpg";
 import {StyledIcon} from "./ShareSection";
 import SocialMediaSection1 from "./SocialMediaSection1";
 
-export default function MoviesSeriesPageSection({data, altImage}) {
+export default function MoviesSeriesPageSection({data, altImage, text}) {
   function getIcon(provider) {
     if (provider.includes("apple")) {
       return "simple-icons:appletv";
@@ -78,7 +78,7 @@ export default function MoviesSeriesPageSection({data, altImage}) {
           </Container3>
         </InfoSection>
         <StreamingSection>
-          <H2>Watch Now</H2>
+          <H2>{text}</H2>
           <section>
             <GridContainer>
               <h3>Buy</h3>
@@ -250,7 +250,7 @@ const H2 = styled.h2`
   font-size: 2rem;
   font-style: italic;
   font-weight: 2rem;
-  margin: 2rem 0;
+  margin: 0.5rem 0;
   padding: 0;
 `;
 

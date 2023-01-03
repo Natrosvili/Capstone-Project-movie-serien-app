@@ -1,15 +1,13 @@
 import styled from "styled-components";
-import logo from "../public/images/other/logo.png";
 import {Icon} from "@iconify/react";
 import Link from "next/link";
-import Image from "next/image";
 
 export default function Header({children}) {
   return (
     <>
       <StyledHeader>
         <StyledLink href="/">
-          <Image src={logo} width="150" height="100" alt="search find go" />
+          <Image src="/images/other/logo.png" alt="search find go" />
         </StyledLink>
         <StyledLink href="/movies">
           <span>Movies</span>
@@ -28,10 +26,10 @@ export default function Header({children}) {
         </form>
 
         <StyledLink href="/login">
-          <Icon icon="material-symbols:login" width="30" height="30" />
+          <Icon icon="material-symbols:login" width="28" height="28" />
         </StyledLink>
         <StyledLink href="/register">
-          <Icon icon="mdi:register" width="30" height="30" />
+          <Icon icon="mdi:register" width="28" height="28" />
         </StyledLink>
       </StyledHeader>
       {children}
@@ -80,7 +78,7 @@ const SearchComponent = styled.div`
     outline: none;
 
     @media screen and (max-width: 430px) {
-      width: 15vw;
+      width: 17vw;
     }
   }
 `;
@@ -90,24 +88,21 @@ const StyledLink = styled(Link)`
   text-decoration: none;
   color: #ffffff;
 
-  & Image {
-    @media screen and (max-width: 430px) {
-      width: 20vw;
-      height: 12vh;
-      border-radius: 15px;
-    }
-  }
-
   & span {
     font-style: italic;
+    font-size: 1.5rem;
     @media screen and (max-width: 430px) {
-      font-size: 0.85rem;
+      font-size: 1rem;
     }
+  }
+`;
 
-    & Icon {
-      @media screen and (max-width: 430px) {
-        width: 8vw;
-      }
-    }
+const Image = styled.img`
+  width: 20vw;
+
+  @media screen and (max-width: 430px) {
+    width: 28vw;
+    height: 10vh;
+    border-radius: 15px;
   }
 `;
