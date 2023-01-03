@@ -1,5 +1,5 @@
 import data from "../api/tmdb.json";
-import SeriesPageSection from "../../components/SeriesPageSection";
+import MoviesSeriesPageSection from "../../components/MoviesSeriesPageSection";
 import {useRouter} from "next/router";
 import {useState, useEffect} from "react";
 
@@ -15,6 +15,13 @@ export default function SeriesPage() {
   }, [router.isReady]);
 
   return (
-    <>{reload && <SeriesPageSection data={data.series[seriesId - 1]} />}</>
+    <>
+      {reload && (
+        <MoviesSeriesPageSection
+          data={data.series[seriesId - 1]}
+          altImage="series' image"
+        />
+      )}
+    </>
   );
 }

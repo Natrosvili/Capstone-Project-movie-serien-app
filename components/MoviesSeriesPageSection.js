@@ -1,11 +1,11 @@
-import Link from "next/link";
-import {BackgroundImage} from "../pages/main";
-import curtains from "../public/images/other/curtains.jpg";
 import styled from "styled-components";
+import {BackgroundImage} from "../pages/main";
+import Link from "next/link";
+import curtains from "../public/images/other/curtains.jpg";
 import {StyledIcon} from "./ShareSection";
 import SocialMediaSection1 from "./SocialMediaSection1";
 
-export default function MoviePageSection({data}) {
+export default function MoviesSeriesPageSection({data, altImage}) {
   function getIcon(provider) {
     if (provider.includes("apple")) {
       return "simple-icons:appletv";
@@ -42,7 +42,7 @@ export default function MoviePageSection({data}) {
         </div>
         <InfoSection>
           <Container1>
-            <ImageMovie src={data?.image} alt="movie's Image" />
+            <ImageMovie src={data?.image} alt={altImage} />
           </Container1>
           <Container2>
             <h1>
@@ -107,17 +107,17 @@ export default function MoviePageSection({data}) {
   );
 }
 
-export const MainSection = styled.section`
+const MainSection = styled.section`
   background-color: #000000;
   padding-bottom: 1rem;
 `;
 
-export const FlexContainer = styled.section`
+const FlexContainer = styled.section`
   display: flex;
   justify-content: center;
 `;
 
-export const StyledSection = styled.section`
+const StyledSection = styled.section`
   width: 100vw;
   position: absolute;
   top: 12rem;
@@ -146,7 +146,7 @@ export const StyledSection = styled.section`
   }
 `;
 
-export const InfoSection = styled.section`
+const InfoSection = styled.section`
   display: grid;
   grid-template-columns: repeat(2, 30%);
   grid-template-rows: 55% 80%;
@@ -162,13 +162,13 @@ export const InfoSection = styled.section`
   }
 `;
 
-export const Container1 = styled.section`
+const Container1 = styled.div`
   border-radius: 10px;
   display: grid;
   place-content: center;
 `;
 
-export const ImageMovie = styled.img`
+const ImageMovie = styled.img`
   width: 20rem;
   position: relative;
   top: 5rem;
@@ -182,7 +182,7 @@ export const ImageMovie = styled.img`
   }
 `;
 
-export const Container2 = styled.section`
+const Container2 = styled.section`
   & p {
     margin: 0;
     color: #808080;
@@ -206,7 +206,7 @@ export const Container2 = styled.section`
   }
 `;
 
-export const Container3 = styled.section`
+const Container3 = styled.section`
   display: flex;
   justify-content: end;
   align-items: end;
@@ -228,7 +228,7 @@ export const Container3 = styled.section`
   }
 `;
 
-export const StreamingSection = styled.section`
+const StreamingSection = styled.section`
   text-align: center;
   padding: 0;
   margin: 8rem;
@@ -245,7 +245,7 @@ export const StreamingSection = styled.section`
   }
 `;
 
-export const H2 = styled.h2`
+const H2 = styled.h2`
   color: #ffe600;
   font-size: 2rem;
   font-style: italic;
@@ -254,11 +254,11 @@ export const H2 = styled.h2`
   padding: 0;
 `;
 
-export const GridContainer = styled.article`
+const GridContainer = styled.article`
   border: 2px solid #ffe600;
   color: #ffe600;
 `;
 
-export const StyledLink = styled(Link)`
+const StyledLink = styled(Link)`
   color: #ffe600;
 `;
