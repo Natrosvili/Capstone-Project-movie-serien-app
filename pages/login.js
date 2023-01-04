@@ -71,7 +71,7 @@ export const StyledForm = styled.form`
 
   @media screen and (max-width: 430px) {
     width: ${props => (props.primary ? "75vw" : "70vw")};
-    height: ${props => (props.primary ? "72vh" : "43vh")};
+    height: ${props => (props.primary ? "88vh" : "55vh")};
   }
 
   & h1 {
@@ -104,7 +104,7 @@ export const StyledButton = styled.button`
   color: #ffffff;
   border: none;
   border-radius: 0.8rem;
-  width: ${props => (props.primary ? "45vw" : "28vw")};
+  width: ${props => (props.primary ? "52vw" : "50vw")};
   height: 5vh;
   cursor: pointer;
   margin: ${props => (props.primary ? "0.5rem 0 1.5rem" : props.margin)};

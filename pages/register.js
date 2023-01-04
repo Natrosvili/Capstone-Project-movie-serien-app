@@ -94,7 +94,7 @@ export default function Register() {
             placeholder="Your email"
             required
           />
-          {error.email && <ErrorSpan>{error.email}</ErrorSpan>}
+          {error.email && <ErrorPar>{error.email}</ErrorPar>}
         </div>
         <div style={{margin: "1.4rem 0"}}>
           <StyledLabel htmlFor="createPassword">
@@ -118,9 +118,7 @@ export default function Register() {
             name={"passwordVisibility1"}
           />
           <StyledLabel htmlFor="passwordVisibility1">Show password</StyledLabel>
-          {error.createPassword && (
-            <ErrorSpan>{error.createPassword}</ErrorSpan>
-          )}
+          {error.createPassword && <ErrorPar>{error.createPassword}</ErrorPar>}
         </div>
         <div style={{margin: "1.4rem 0"}}>
           <StyledLabel htmlFor="confirmPassword">Confirm Password:</StyledLabel>
@@ -143,7 +141,7 @@ export default function Register() {
           />
           <StyledLabel htmlFor="passwordVisibility2">Show password</StyledLabel>
           {error.confirmPassword && (
-            <ErrorSpan>{error.confirmPassword}</ErrorSpan>
+            <ErrorPar>{error.confirmPassword}</ErrorPar>
           )}
         </div>
         <StyledDiv>
@@ -160,7 +158,7 @@ export default function Register() {
   );
 }
 
-const ErrorSpan = styled.p`
+const ErrorPar = styled.p`
   font-size: 0.8rem;
   color: #d11818;
   margin: 0;

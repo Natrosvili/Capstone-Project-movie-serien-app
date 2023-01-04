@@ -7,22 +7,44 @@ import {
   StyledLink,
 } from "./MoviesSection";
 import {useEffect, useState} from "react";
-import data from "../pages/api/tmdb.json";
+// import data from "../pages/api/tmdb.json";
 
 export default function SeriesSection({genre}) {
   const [filter, setFilter] = useState([]);
+  const [data, setData] = useState(false);
 
   useEffect(() => {
-    if (genre !== "Recommended Movies" && genre !== "Recommended Series") {
-      setFilter(
-        data.series.filter(item => {
-          return item.genre.includes(genre);
-        })
-      );
-    } else {
-      setFilter(data.series);
+    const getData = async () => {
+      try {
+        const response = await fetch("/api/data");
+        if (response.ok) {
+          const data = await response.json();
+          setData(data);
+        } else {
+          throw new Error(
+            `Fetch fehlgeschlagen mit Status: ${response.status}`
+          );
+        }
+      } catch (error) {
+        alert(error.message);
+      }
+    };
+    getData();
+  }, []);
+
+  useEffect(() => {
+    if (data) {
+      if (genre !== "Recommended Movies" && genre !== "Recommended Series") {
+        setFilter(
+          data.series.filter(item => {
+            return item.genre.includes(genre);
+          })
+        );
+      } else {
+        setFilter(data.series);
+      }
     }
-  }, [genre]);
+  }, [genre, data]);
 
   return (
     <>

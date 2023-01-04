@@ -1,16 +1,16 @@
 import styled from "styled-components";
 import MoviesSection from "../components/MoviesSection";
-import data from "./api/tmdb.json";
+// import data from "./api/tmdb.json";
 
 export default function Movies() {
   return (
     <>
       <section style={{backgroundColor: "#010101"}}>
         <H1>Movies</H1>
-        <MoviesSection genre="Action" data={data} />
-        <MoviesSection genre="Adventure" data={data} />
-        <MoviesSection genre="Comedy" data={data} />
-        <MoviesSection genre="Drama" data={data} />
+        <MoviesSection genre="Action" />
+        <MoviesSection genre="Adventure" />
+        <MoviesSection genre="Comedy" />
+        <MoviesSection genre="Drama" />
       </section>
     </>
   );

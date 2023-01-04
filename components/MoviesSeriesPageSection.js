@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
 import {BackgroundImage} from "../pages/main";
 import Link from "next/link";
 import curtains from "../public/images/other/curtains.jpg";
@@ -117,6 +117,15 @@ const FlexContainer = styled.section`
   justify-content: center;
 `;
 
+const iframeAnimation = keyframes`
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+`;
+
 const StyledSection = styled.section`
   width: 100vw;
   position: absolute;
@@ -128,7 +137,7 @@ const StyledSection = styled.section`
   row-gap: 5px;
 
   @media screen and (max-width: 430px) {
-    top: 15rem;
+    top: 11.5rem;
   }
 
   & iframe {
@@ -138,6 +147,8 @@ const StyledSection = styled.section`
     border: none;
     z-index: 2;
     overflow: hidden;
+    animation: ${iframeAnimation};
+    animatin-duration: 1s;
 
     @media screen and (max-width: 430px) {
       width: 85vw;
@@ -155,9 +166,9 @@ const InfoSection = styled.section`
   margin: 10rem 0;
 
   @media screen and (max-width: 430px) {
-    grid-template-rows: 40% 30%;
+    grid-template-rows: 50% 40%;
     grid-template-columns: repeat(2, 50%);
-    margin: 1rem;
+    margin: 6rem 1rem;
     column-gap: 1rem;
   }
 `;
@@ -215,12 +226,12 @@ const Container3 = styled.section`
   color: #808080;
   font-style: italic;
   font-size: 0.95rem;
-  margin-top: 4rem;
+  margin-top: 2.2rem;
 
   @media screen and (max-width: 430px) {
     font-size: 0.6rem;
     line-height: 1.2rem;
-    justify-content: start;
+    justify-content: center;
   }
 
   & td {
@@ -241,13 +252,13 @@ const StreamingSection = styled.section`
   }
 
   @media screen and (max-width: 430px) {
-    margin: 1.5rem;
+    margin: 3rem 1.5rem;
   }
 `;
 
 const H2 = styled.h2`
   color: #ffe600;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-style: italic;
   font-weight: 2rem;
   margin: 0.5rem 0;
@@ -257,6 +268,10 @@ const H2 = styled.h2`
 const GridContainer = styled.article`
   border: 2px solid #ffe600;
   color: #ffe600;
+
+  /* @media screen and (max-width: 430px){
+    margin-top: 2rem;
+  } */
 `;
 
 const StyledLink = styled(Link)`
