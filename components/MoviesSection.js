@@ -1,22 +1,45 @@
 import Link from "next/link";
 import styled from "styled-components";
 import {useEffect, useState} from "react";
-import data from "../pages/api/tmdb.json";
+// import data from "../pages/api/tmdb.json";
 
 export default function MoviesSection({genre}) {
   const [filter, setFilter] = useState([]);
+  const [data, setData] = useState(false);
 
   useEffect(() => {
-    if (genre !== "Recommended Movies" && genre !== "Recommended Series") {
-      setFilter(
-        data.movie.filter(item => {
-          return item.genre.includes(genre);
-        })
-      );
-    } else {
-      setFilter(data.movie);
+    const getData = async () => {
+      try {
+        const response = await fetch("/api/data");
+        if (response.ok) {
+          const data = await response.json();
+          console.log(data);
+          setData(data);
+        } else {
+          throw new Error(
+            `Fetch fehlgeschlagen mit Status: ${response.status}`
+          );
+        }
+      } catch (error) {
+        alert(error.message);
+      }
+    };
+    getData();
+  }, []);
+
+  useEffect(() => {
+    if (data) {
+      if (genre !== "Recommended Movies" && genre !== "Recommended Series") {
+        setFilter(
+          data.movie.filter(item => {
+            return item.genre.includes(genre);
+          })
+        );
+      } else {
+        setFilter(data.movie);
+      }
     }
-  }, [genre]);
+  }, [genre, data]);
 
   return (
     <>

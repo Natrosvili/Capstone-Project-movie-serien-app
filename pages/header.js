@@ -26,10 +26,10 @@ export default function Header({children}) {
         </form>
 
         <StyledLink href="/login">
-          <Icon icon="material-symbols:login" width="28" height="28" />
+          <Icon icon="material-symbols:login" width="25" height="25" />
         </StyledLink>
         <StyledLink href="/register">
-          <Icon icon="mdi:register" width="28" height="28" />
+          <Icon icon="mdi:register" width="25" height="25" />
         </StyledLink>
       </StyledHeader>
       {children}
@@ -91,8 +91,18 @@ const StyledLink = styled(Link)`
   & span {
     font-style: italic;
     font-size: 1.5rem;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      font-size: 1.7rem;
+    }
+
     @media screen and (max-width: 430px) {
-      font-size: 1rem;
+      font-size: 0.9rem;
+
+      &:hover {
+        font-size: 1.2rem;
+      }
     }
   }
 `;
@@ -101,7 +111,7 @@ const Image = styled.img`
   width: 20vw;
 
   @media screen and (max-width: 430px) {
-    width: 28vw;
+    width: 27vw;
     height: 10vh;
     border-radius: 15px;
   }

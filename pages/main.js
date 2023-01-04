@@ -1,9 +1,9 @@
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
 import Image from "next/image";
 import seats2 from "../public/images/other/seats2.jpg";
 import ShareSection from "../components/ShareSection";
 import MoviesSection from "../components/MoviesSection";
-import data from "./api/tmdb.json";
+// import data from "./api/tmdb.json";
 import SeriesSection from "../components/SeriesSection";
 
 export default function Main() {
@@ -20,13 +20,22 @@ export default function Main() {
             fun.
           </p>
         </StyledSection>
-        <MoviesSection data={data} genre="Recommended Movies" />
-        <SeriesSection genre="Recommended Series" data={data} />
+        <MoviesSection genre="Recommended Movies" />
+        <SeriesSection genre="Recommended Series" />
         <ShareSection />
       </main>
     </>
   );
 }
+
+const infoAnimation = keyframes`
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+`;
 
 const StyledSection = styled.section`
   text-align: center;
@@ -45,6 +54,8 @@ const StyledSection = styled.section`
     color: #ffffff;
     text-align: center;
     font-style: italic;
+    animation: ${infoAnimation};
+    animation-duration: 2.5s;
   }
 
   & p {
@@ -57,6 +68,8 @@ const StyledSection = styled.section`
     margin: 0 6.25rem;
     color: #ffffff;
     font-style: italic;
+    animation: ${infoAnimation};
+    animation-duration: 2.5s;
 
     @media screen and (max-width: 430px) {
       margin: 0 2rem;
