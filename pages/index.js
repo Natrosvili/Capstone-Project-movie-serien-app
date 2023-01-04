@@ -10,7 +10,7 @@ export default function Home() {
           name="description"
           content="Find Your Favourite Movies and Series in Milliseconds"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/images/other/favicon.ico" />
       </Head>
       <Main />
     </>

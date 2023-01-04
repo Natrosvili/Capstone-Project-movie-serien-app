@@ -3,12 +3,12 @@ import Image from "next/image";
 import seats2 from "../public/images/other/seats2.jpg";
 import ShareSection from "../components/ShareSection";
 import MoviesSection from "../components/MoviesSection";
-// import data from "./api/tmdb.json";
 import SeriesSection from "../components/SeriesSection";
 
 export default function Main() {
   return (
     <>
+      <link rel="icon" href="/images/other/favicon.ico" />
       <main style={{backgroundColor: "#010101"}}>
         <StyledSection heightMedia={"40rem"}>
           <BackgroundImage src={seats2} alt="seats as background image" />
