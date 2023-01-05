@@ -1,6 +1,5 @@
 import SeriesSection from "../components/SeriesSection";
 import {H1} from "./movies";
-// import data from "./api/tmdb.json";
 
 export default function Series() {
   return (

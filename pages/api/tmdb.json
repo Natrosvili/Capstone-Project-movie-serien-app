@@ -1,434 +1,436 @@
-{
-  "movie": [
-    {
-      "id": 1,
-      "title": "Prey",
-      "year": "2022",
-      "trailer": "https://youtube.com/embed/wZ7LytagKlc",
-      "plot": "The Northern Great Plains, North America, 1719. Determined to prove her worth and join the ranks of the tribe's warriors, Naru, an expert Comanche tracker and healer, hones her combat skills. Constantly in the shadow of her skilled hunter brother Taabe, Naru gets the chance to shine when a brutal mountain lion attack brings to light something far more sinister than the virgin habitat's savage beasts of prey. And after seeing a sign in the morning sky, Naru realises she is ready for the big hunt--her rite of passage. However, does sharp-witted Naru have what it takes to confront the Predator (1987)?",
-      "country": "United States",
-      "genre": "Drama, Action, Horror",
-      "release": "2022-08-05",
-      "director": "Dan Trachtenberg",
-      "production": "20th Century Studios, Davis Entertainment",
-      "image": "/images/movies/prey.jpg",
-      "providerRent": [
-        "https://www.disneyplus.com/en-gb/movies/prey/5Y0VIrKjUDWm?irclickid=xvAUieUTkxyNTCGw4XR3FxkWUkA2-wW9gTo9XQ0&irgwc=1&cid=DSS-Affiliate-Impact-Content-JustWatch+GmbH-705874&tgclid=0c01001d-9ca9-4104-9000-0b2b63a977af&dclid=CJrxl_SJl_wCFVae_Qcd_nINBA",
-        ""
-      ],
-      "providerBuy": ["", ""]
-    },
-    {
-      "id": 2,
-      "title": "The Woman King",
-      "year": "2022",
-      "trailer": "https://youtube.com/embed/3RDaPV_rJ1Y",
-      "plot": "The Kingdom of Dahomey, West Africa, 1823. Having sworn to risk life and limb to protect the land, formidable General Nanisca and the Agojie, the elite, all-female military regiment of King Ghezo, keep the bellicose Oyo Empire at bay. In the meantime, as the unbroken sisterhood trains a new generation of fearless warriors, their battle-scarred leader seeks alternative sources of profit. However, Ghezo's participation in the slave trade paves the way for the inevitable violent confrontation between the Agojie, the Oyo, and the slavers that will compromise the kingdom's future.",
-      "country": "United States, Canada",
-      "genre": "Drama, Action, History",
-      "release": "2022-09-16",
-      "director": "Gina Prince-Bythewood",
-      "production": "TriStar Pictures, Welle Entertainment",
-      "image": "/images/movies/womanKing.jpeg",
-      "providerRent": [
-        "https://www.amazon.de/gp/video/detail/0OXW2YZUOM7GP9234N65IM29GI/ref=atv_dl_rdr?tag=movie0c6-21",
-        "https://play.google.com/store/movies/details/The_Woman_King?gl=DE&hl=en&id=cJ6OjWaEOes.P",
-        "https://www.youtube.com/results?search_query=The+Woman+King%2Bmovie",
-        "https://tv.apple.com/de/movie/the-woman-king/umc.cmc.5av1wo84gd2pj5vsx1m3fbok8?at=1000l3V2&ct=justwatch_tv&playableId=tvs.sbd.9001%3A1643239728"
-      ],
-      "providerBuy": [
-        "https://tv.apple.com/de/movie/the-woman-king/umc.cmc.5av1wo84gd2pj5vsx1m3fbok8?at=1000l3V2&ct=justwatch_tv&playableId=tvs.sbd.9001%3A1643239728",
-        "https://www.youtube.com/results?search_query=The+Woman+King%2Bmovie",
-        "https://www.amazon.de/gp/video/detail/0OXW2YZUOM7GP9234N65IM29GI/ref=atv_dl_rdr?tag=movie0c6-21",
-        "https://play.google.com/store/movies/details/The_Woman_King?gl=DE&hl=en&id=cJ6OjWaEOes.P&pli=1"
-      ]
-    },
-    {
-      "id": 3,
-      "title": "Nobody",
-      "year": "2021",
-      "trailer": "https://youtube.com/embed/wZti8QKBWPo",
-      "plot": "Emmy winner Bob Odenkirk (Better Call Saul, The Post, Nebraska) stars as Hutch Mansell, an underestimated and overlooked dad and husband, taking life's indignities on the chin and never pushing back. A nobody. When two thieves break into his suburban home one night, Hutch declines to defend himself or his family, hoping to prevent serious violence. His teenage son, Blake (Gage Munroe, The Shack), is disappointed in him and his wife, Becca (Connie Nielsen, Wonder Woman), seems to pull only further away. The aftermath of the incident strikes a match to Hutch's long-simmering rage, triggering dormant instincts and propelling him on a brutal path that will surface dark secrets and lethal skills. In a barrage of fists, gunfire and squealing tires, Hutch must save his family from a dangerous adversary (famed Russian actor Aleksey Serebryakov, Amazon's McMafia)-and ensure that he will never be underestimated as a nobody again.",
-      "country": "United States, Japan",
-      "genre": "Thriller, Action Crime",
-      "release": "2021-03-18",
-      "director": "Ilya Naishuller",
-      "production": "Dentsu, 87North, Eighty Two Films",
-      "image": "/images/movies/nobody.jpg",
-      "providerRent": [""],
-      "providerBuy": [
-        "https://www.amazon.de/gp/video/detail/0PI0PIMDNFHA5G0KBU1WSCGNQK/ref=atv_dl_rdr?tag=movie0c6-21",
-        "https://store.sky.de/product/nobody/d633aff9-404b-4412-b2f4-1c6e312512af",
-        "https://tv.apple.com/de/movie/nobody/umc.cmc.13jp9vo70kqo642fafrkr07z2?at=1000l3V2&ct=justwatch_tv&playableId=tvs.sbd.9001%3A1558942987",
-        "https://www.youtube.com/results?search_query=Nobody%2Bmovie"
-      ]
-    },
-    {
-      "id": 4,
-      "title": "Outside the Wire",
-      "year": "2021",
-      "trailer": "https://youtube.com/embed/u8ZsUivELbs",
-      "plot": "2036, Ukraine. Pro-Russian terrorists detonated a dirty nuclear bomb in the center of Kyiv, killing 25,000 people, and the Ukrainian government no longer exists. There is a 'civil war' going on between the pro-Russian 'reds' who are trying to annex Ukraine to the Russian Federation, and the Resistance, which is fighting for a united and independent country.",
-      "country": "United States, Hungary",
-      "genre": "Sci-Fi, Adventure, Action, Fantasy",
-      "release": "2021-01-15",
-      "director": "Mikael Håfström",
-      "production": "Netflix, 42, Automatik Entertainment",
-      "image": "/images/movies/outsideTheWire.jpg",
-      "providerRent": ["https://www.netflix.com/de-en/title/81074110"],
-      "providerBuy": [""]
-    },
-    {
-      "id": 5,
-      "title": "Doctor Strange in the Multiverse of Madness",
-      "year": "2022",
-      "trailer": "https://youtube.com/embed/aWzlQ2N6qqg",
-      "plot": "Bizarre visions of a mysterious teenage girl stranded in an unfamiliar dimension haunt Dr Stephen Strange shortly after the events of Spider-Man: No Way Home (2021) and Eternals (2021). Indeed, a lot has changed since Doctor Strange (2016). But when Strange encounters the extraordinary girl from his dreams, the delicate boundaries between the current reality and an unfathomable alternate world start to collapse. Before long, horrific creatures working for nefarious forces wreak chaos, fusing parallel universes into a dangerous reality. Can Sorcerer Supreme Wong and invincible Wanda Maximoff help Strange stop the new adversary before the Multiverse of Madness consumes everything?",
-      "country": "United States",
-      "genre": "Adventure, Action, Fantasy",
-      "release": "2022-05-06",
-      "director": "Sam Raimi",
-      "production": "Marvel Studios",
-      "image": "/images/movies/doctorStrange.jpg",
-      "providerRent": [
-        "https://www.disneyplus.com/en-gb/movies/doctor-strange-in-the-multiverse-of-madness/27EiqSW4jIyH?irclickid=xvAUieUTkxyNTCGw4XR3FxkWUkAzSiXJgTo9XQ0&irgwc=1&cid=DSS-Affiliate-Impact-Content-JustWatch+GmbH-705874&tgclid=0a01003b-b923-4b87-9b00-1e9663adcaeb&dclid=CJ6IwOypn_wCFYTIuwgdx64GRA"
-      ],
-      "providerBuy": [
-        "https://tv.apple.com/de/movie/doctor-strange-in-the-multiverse-of-madness/umc.cmc.5f0mydwzevgd47pqxidz6sjf9?playableId=tvs.sbd.9001%3A1626574466",
-        "https://www.amazon.de/gp/video/detail/0IEJKNCZXR12ELCHBZCQW8G8ZR/ref=atv_dl_rdr?tag=movie0c6-21",
-        "https://play.google.com/store/movies/details/Doctor_Strange_In_The_Multiverse_Of_Madness?gl=DE&hl=en&id=_Y7R7-38IJU.P",
-        "https://www.youtube.com/results?search_query=Doctor+Strange+in+the+Multiverse+of+Madness%2Bmovie"
-      ]
-    },
-    {
-      "id": 6,
-      "title": "Ticket to Paradise",
-      "year": "2022",
-      "trailer": "https://youtube.com/embed/hkP4tVTdsz8",
-      "plot": "After an ill-starred five-year marriage, former college sweethearts David and Georgia divorced and have been dealing with loathing and resentment for the past 19 years. And as the bitter antagonists enjoy a carefree life away from each other, their daughter Lily, newly graduated from law school, drops a bombshell: she's getting married in four days to handsome Gede, eager to start afresh in Bali, Indonesia. As a result, simmering with restless irritation, Georgia and David agree to play along and devise a secret plan to sabotage the young couple's traditional Balinese wedding. However, there's something mysterious about exotic Bali. Can David and Georgia bury the hatchet for old times' sake?",
-      "country": "United States",
-      "genre": "Comedy, Romance",
-      "release": "2022-10-21",
-      "director": "Ol Parker",
-      "production": "Universal Pictures, Working Title Films, Smokehouse Pictures",
-      "image": "/images/movies/ticketToParadise.jpg",
-      "providerRent": [""],
-      "providerBuy": [
-        "https://tv.apple.com/de/movie/ticket-ins-paradies/umc.cmc.pwsdtg0wa0xdersf7m76q4vc?at=1000l3V2&ct=justwatch_tv&playableId=tvs.sbd.9001%3A1644969354",
-        "https://www.amazon.de/gp/video/detail/0FTSR9V69MM62XJU95WDBN4DQ4/ref=atv_dl_rdr?tag=movie0c6-21",
-        "https://play.google.com/store/movies/details/Ticket_to_Paradise?gl=DE&hl=en&id=X2R54fLjeoA.P",
-        "https://www.youtube.com/results?search_query=Ticket+to+Paradise%2Bmovie",
-        "https://rakuten.tv/de/movies/ticket-ins-paradies"
-      ]
-    },
-    {
-      "id": 7,
-      "title": "Sex Appeal",
-      "year": "2022",
-      "trailer": "https://youtube.com/embed/A207HN4bRJM",
-      "plot": "Avery Hansen-White doesn't do things she isn't excellent at. So when her long-distance boyfriend hints at wanting to take their relationship to the next level, she sets out to master her sexuality, employing her oldest friend, Larson, as a test subject. In this hilarious teen comedy, Avery's study results in the realization that there's more to sex, and love, than mechanics. Relationships require both head and heart.",
-      "country": "United States",
-      "genre": "Drama, Comedy, Romance",
-      "release": "2022-01-14",
-      "director": "Talia Osteen",
-      "production": "American High, Lit Entertainment Group, Nickel City Pictures",
-      "image": "/images/movies/sexAppeal.jpg",
-      "providerRent": [
-        "https://www.disneyplus.com/en-gb/movies/sex-appeal/2XourrVHWKhq?irclickid=xvAUieUTkxyNTCGw4XR3FxkWUkAzSGwdgTo9XQ0&irgwc=1&cid=DSS-Affiliate-Impact-Content-JustWatch+GmbH-705874&tgclid=0601001c-f5fe-4b8a-9e00-1eda63adcd4e&dclid=COqB2o-sn_wCFRuT_QcdUJoGrA"
-      ],
-      "providerBuy": [""]
-    },
-    {
-      "id": 8,
-      "title": "Kimi",
-      "year": "2022",
-      "trailer": "https://youtube.com/embed/_Gr2zXuEBL0",
-      "plot": "During the COVID-19 pandemic in Seattle, an agoraphobic tech worker discovers evidence of a violent crime while reviewing a data stream, and is met with resistance and bureaucracy when she tries reporting it to her company. To get involved, she realizes she must face her greatest fear by venturing out of her apartment and into the city streets, which are filled with protestors after the city council passes a law restricting the movements of the homeless population.",
-      "country": "United States",
-      "genre": "Drama, Thriller, Crime",
-      "release": "2022-02-10",
-      "director": "Steven Soderbergh",
-      "production": "Warner Bros, New Line Cinema",
-      "image": "/images/movies/kimi.jpg",
-      "providerRent": [""],
-      "providerBuy": [
-        "https://www.amazon.de/gp/video/detail/0RYQ96WFO1O0VQ67Y3ZMSVWZIB/ref=atv_dl_rdr?tag=movie0c6-21",
-        "https://tv.apple.com/de/movie/kimi/umc.cmc.1xzhhwnh8oqlab7eiqyfgmvp6?playableId=tvs.sbd.9001%3A1606811934",
-        "https://play.google.com/store/movies/details/Kimi?gl=DE&hl=en&id=HSQrHxPrrDo.P",
-        "https://www.youtube.com/results?search_query=Kimi%2Bmovie"
-      ]
-    },
-    {
-      "id": 9,
-      "title": "Mortal Kombat",
-      "year": "2021",
-      "trailer": "https://youtube.com/embed/-BQPKD7eozY",
-      "plot": "MMA fighter Cole Young (Lewis Tan), accustomed to taking a beating for money, is unaware of his heritage-or why Outworld's Emperor Shang Tsung (Chin Han) has sent his best warrior, Sub-Zero (Joe Taslim), an otherworldly Cryomancer, to hunt Cole down. Fearing for his family's safety, Cole goes in search of Sonya Blade (Jessica McNamee) at the direction of Jax (Mehcad Brooks), a Special Forces Major who bears the same strange dragon marking Cole was born with. Soon, he finds himself at the temple of Lord Raiden (Tadanobu Asano), an Elder God and the protector of Earthrealm, who grants sanctuary to those who bear the mark. Here, Cole trains with experienced warriors Liu Kang (Ludi Lin), Kung Lao (Max Huang) and rogue mercenary Kano (Josh Lawson), as he prepares to stand with Earth's greatest champions against the enemies of Outworld in a high stakes battle for the universe. But will Cole be pushed hard enough to unlock his arcana-the immense power from within his soul-in time to save not only his family but to stop Outworld once and for all? ",
-      "country": "Drama, Thriller, Crime",
-      "genre": "Thriller, Sci-Fi, Adventure, Action, Fantasy",
-      "release": "2021-04-01",
-      "director": "Simon McQuoid",
-      "production": "New Line Cinema, Atomic Monster",
-      "image": "/images/movies/mortalKombat.jpg",
-      "providerRent": [
-        "https://www.amazon.de/gp/video/detail/0L20IRGNH9A6WLYG2KRUTIIU5U/ref=atv_dl_rdr?tag=movie0c6-21"
-      ],
-      "providerBuy": [
-        "https://tv.apple.com/de/movie/mortal-kombat/umc.cmc.j1lw9zl2komuxkbcglyy0zvx?playableId=tvs.sbd.9001%3A1562064160",
-        "https://www.amazon.de/gp/video/detail/0L20IRGNH9A6WLYG2KRUTIIU5U/ref=atv_dl_rdr?tag=movie0c6-21",
-        "https://store.sky.de/product/mortal-kombat-2021/7dd9e6ab-320d-40ad-aff5-68323e27b19e",
-        "https://rakuten.tv/de/movies/mortal-kombat"
-      ]
-    },
-    {
-      "id": 10,
-      "title": "Wrath of Man",
-      "year": "2021",
-      "trailer": "https://youtube.com/embed/EFYEni2gsK0",
-      "plot": "Having barely passed the qualification exam, taciturn, inscrutable, and physically intimidating Patrick Hill starts working for Fortico Security, an armoured vehicle company specialising in guarding and transporting millions of dollars across Los Angeles. But, in this business, nobodies like Patrick are the prey and not the predators, and before long, armed-to-the-teeth assailants try to rob his truck, only to die at his hands with pinpoint accuracy, in a flawlessly orchestrated ballet of bullets and death. Indeed, there is more to Patrick than meets the eye, making Fortico's instant hero someone you don't want to mess with. In the end, whose side is Patrick on?",
-      "country": "United States, United Kingdom",
-      "genre": "Thriller, Action",
-      "release": "2021-04-22",
-      "director": "Guy Ritchie",
-      "production": "Miramax, Metro Goldwyn Mayer MGM, CAA Media Finance",
-      "image": "/images/movies/wrathOfMan.jpg",
-      "providerRent": [
-        "https://www.amazon.de/gp/video/detail/0JNG7631N42MSACMPJIDGVAVQE/ref=atv_dl_rdr?tag=movie0c6-21",
-        "https://www.youtube.com/results?search_query=Cash+Truck%2Bmovie",
-        "https://tv.apple.com/de/movie/cash-truck/umc.cmc.1gzck9czlhv4jw6qra2sdvbc6?playableId=tvs.sbd.9001%3A1579326319",
-        "https://play.google.com/store/movies/details/Cash_Truck?gl=DE&hl=en&id=mtKSm4VKEos.P"
-      ],
-      "providerBuy": [
-        "https://play.google.com/store/movies/details/Cash_Truck?gl=DE&hl=en&id=mtKSm4VKEos.P",
-        "https://tv.apple.com/de/movie/cash-truck/umc.cmc.1gzck9czlhv4jw6qra2sdvbc6?playableId=tvs.sbd.9001%3A1579326319",
-        "https://www.amazon.de/gp/video/detail/0JNG7631N42MSACMPJIDGVAVQE/ref=atv_dl_rdr?tag=movie0c6-21"
-      ]
-    }
-  ],
+[
+  {
+    "movie": [
+      {
+        "id": 1,
+        "title": "Prey",
+        "year": "2022",
+        "trailer": "https://youtube.com/embed/wZ7LytagKlc",
+        "plot": "The Northern Great Plains, North America, 1719. Determined to prove her worth and join the ranks of the tribe's warriors, Naru, an expert Comanche tracker and healer, hones her combat skills. Constantly in the shadow of her skilled hunter brother Taabe, Naru gets the chance to shine when a brutal mountain lion attack brings to light something far more sinister than the virgin habitat's savage beasts of prey. And after seeing a sign in the morning sky, Naru realises she is ready for the big hunt--her rite of passage. However, does sharp-witted Naru have what it takes to confront the Predator (1987)?",
+        "country": "United States",
+        "genre": "Drama, Action, Horror",
+        "release": "2022-08-05",
+        "director": "Dan Trachtenberg",
+        "production": "20th Century Studios, Davis Entertainment",
+        "image": "/images/movies/prey.jpg",
+        "providerRent": [
+          "https://www.disneyplus.com/en-gb/movies/prey/5Y0VIrKjUDWm?irclickid=xvAUieUTkxyNTCGw4XR3FxkWUkA2-wW9gTo9XQ0&irgwc=1&cid=DSS-Affiliate-Impact-Content-JustWatch+GmbH-705874&tgclid=0c01001d-9ca9-4104-9000-0b2b63a977af&dclid=CJrxl_SJl_wCFVae_Qcd_nINBA",
+          ""
+        ],
+        "providerBuy": ["", ""]
+      },
+      {
+        "id": 2,
+        "title": "The Woman King",
+        "year": "2022",
+        "trailer": "https://youtube.com/embed/3RDaPV_rJ1Y",
+        "plot": "The Kingdom of Dahomey, West Africa, 1823. Having sworn to risk life and limb to protect the land, formidable General Nanisca and the Agojie, the elite, all-female military regiment of King Ghezo, keep the bellicose Oyo Empire at bay. In the meantime, as the unbroken sisterhood trains a new generation of fearless warriors, their battle-scarred leader seeks alternative sources of profit. However, Ghezo's participation in the slave trade paves the way for the inevitable violent confrontation between the Agojie, the Oyo, and the slavers that will compromise the kingdom's future.",
+        "country": "United States, Canada",
+        "genre": "Drama, Action, History",
+        "release": "2022-09-16",
+        "director": "Gina Prince-Bythewood",
+        "production": "TriStar Pictures, Welle Entertainment",
+        "image": "/images/movies/womanKing.jpeg",
+        "providerRent": [
+          "https://www.amazon.de/gp/video/detail/0OXW2YZUOM7GP9234N65IM29GI/ref=atv_dl_rdr?tag=movie0c6-21",
+          "https://play.google.com/store/movies/details/The_Woman_King?gl=DE&hl=en&id=cJ6OjWaEOes.P",
+          "https://www.youtube.com/results?search_query=The+Woman+King%2Bmovie",
+          "https://tv.apple.com/de/movie/the-woman-king/umc.cmc.5av1wo84gd2pj5vsx1m3fbok8?at=1000l3V2&ct=justwatch_tv&playableId=tvs.sbd.9001%3A1643239728"
+        ],
+        "providerBuy": [
+          "https://tv.apple.com/de/movie/the-woman-king/umc.cmc.5av1wo84gd2pj5vsx1m3fbok8?at=1000l3V2&ct=justwatch_tv&playableId=tvs.sbd.9001%3A1643239728",
+          "https://www.youtube.com/results?search_query=The+Woman+King%2Bmovie",
+          "https://www.amazon.de/gp/video/detail/0OXW2YZUOM7GP9234N65IM29GI/ref=atv_dl_rdr?tag=movie0c6-21",
+          "https://play.google.com/store/movies/details/The_Woman_King?gl=DE&hl=en&id=cJ6OjWaEOes.P&pli=1"
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Nobody",
+        "year": "2021",
+        "trailer": "https://youtube.com/embed/wZti8QKBWPo",
+        "plot": "Emmy winner Bob Odenkirk (Better Call Saul, The Post, Nebraska) stars as Hutch Mansell, an underestimated and overlooked dad and husband, taking life's indignities on the chin and never pushing back. A nobody. When two thieves break into his suburban home one night, Hutch declines to defend himself or his family, hoping to prevent serious violence. His teenage son, Blake (Gage Munroe, The Shack), is disappointed in him and his wife, Becca (Connie Nielsen, Wonder Woman), seems to pull only further away. The aftermath of the incident strikes a match to Hutch's long-simmering rage, triggering dormant instincts and propelling him on a brutal path that will surface dark secrets and lethal skills. In a barrage of fists, gunfire and squealing tires, Hutch must save his family from a dangerous adversary (famed Russian actor Aleksey Serebryakov, Amazon's McMafia)-and ensure that he will never be underestimated as a nobody again.",
+        "country": "United States, Japan",
+        "genre": "Thriller, Action Crime",
+        "release": "2021-03-18",
+        "director": "Ilya Naishuller",
+        "production": "Dentsu, 87North, Eighty Two Films",
+        "image": "/images/movies/nobody.jpg",
+        "providerRent": [""],
+        "providerBuy": [
+          "https://www.amazon.de/gp/video/detail/0PI0PIMDNFHA5G0KBU1WSCGNQK/ref=atv_dl_rdr?tag=movie0c6-21",
+          "https://store.sky.de/product/nobody/d633aff9-404b-4412-b2f4-1c6e312512af",
+          "https://tv.apple.com/de/movie/nobody/umc.cmc.13jp9vo70kqo642fafrkr07z2?at=1000l3V2&ct=justwatch_tv&playableId=tvs.sbd.9001%3A1558942987",
+          "https://www.youtube.com/results?search_query=Nobody%2Bmovie"
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Outside the Wire",
+        "year": "2021",
+        "trailer": "https://youtube.com/embed/u8ZsUivELbs",
+        "plot": "2036, Ukraine. Pro-Russian terrorists detonated a dirty nuclear bomb in the center of Kyiv, killing 25,000 people, and the Ukrainian government no longer exists. There is a 'civil war' going on between the pro-Russian 'reds' who are trying to annex Ukraine to the Russian Federation, and the Resistance, which is fighting for a united and independent country.",
+        "country": "United States, Hungary",
+        "genre": "Sci-Fi, Adventure, Action, Fantasy",
+        "release": "2021-01-15",
+        "director": "Mikael Håfström",
+        "production": "Netflix, 42, Automatik Entertainment",
+        "image": "/images/movies/outsideTheWire.jpg",
+        "providerRent": ["https://www.netflix.com/de-en/title/81074110"],
+        "providerBuy": [""]
+      },
+      {
+        "id": 5,
+        "title": "Doctor Strange in the Multiverse of Madness",
+        "year": "2022",
+        "trailer": "https://youtube.com/embed/aWzlQ2N6qqg",
+        "plot": "Bizarre visions of a mysterious teenage girl stranded in an unfamiliar dimension haunt Dr Stephen Strange shortly after the events of Spider-Man: No Way Home (2021) and Eternals (2021). Indeed, a lot has changed since Doctor Strange (2016). But when Strange encounters the extraordinary girl from his dreams, the delicate boundaries between the current reality and an unfathomable alternate world start to collapse. Before long, horrific creatures working for nefarious forces wreak chaos, fusing parallel universes into a dangerous reality. Can Sorcerer Supreme Wong and invincible Wanda Maximoff help Strange stop the new adversary before the Multiverse of Madness consumes everything?",
+        "country": "United States",
+        "genre": "Adventure, Action, Fantasy",
+        "release": "2022-05-06",
+        "director": "Sam Raimi",
+        "production": "Marvel Studios",
+        "image": "/images/movies/doctorStrange.jpg",
+        "providerRent": [
+          "https://www.disneyplus.com/en-gb/movies/doctor-strange-in-the-multiverse-of-madness/27EiqSW4jIyH?irclickid=xvAUieUTkxyNTCGw4XR3FxkWUkAzSiXJgTo9XQ0&irgwc=1&cid=DSS-Affiliate-Impact-Content-JustWatch+GmbH-705874&tgclid=0a01003b-b923-4b87-9b00-1e9663adcaeb&dclid=CJ6IwOypn_wCFYTIuwgdx64GRA"
+        ],
+        "providerBuy": [
+          "https://tv.apple.com/de/movie/doctor-strange-in-the-multiverse-of-madness/umc.cmc.5f0mydwzevgd47pqxidz6sjf9?playableId=tvs.sbd.9001%3A1626574466",
+          "https://www.amazon.de/gp/video/detail/0IEJKNCZXR12ELCHBZCQW8G8ZR/ref=atv_dl_rdr?tag=movie0c6-21",
+          "https://play.google.com/store/movies/details/Doctor_Strange_In_The_Multiverse_Of_Madness?gl=DE&hl=en&id=_Y7R7-38IJU.P",
+          "https://www.youtube.com/results?search_query=Doctor+Strange+in+the+Multiverse+of+Madness%2Bmovie"
+        ]
+      },
+      {
+        "id": 6,
+        "title": "Ticket to Paradise",
+        "year": "2022",
+        "trailer": "https://youtube.com/embed/hkP4tVTdsz8",
+        "plot": "After an ill-starred five-year marriage, former college sweethearts David and Georgia divorced and have been dealing with loathing and resentment for the past 19 years. And as the bitter antagonists enjoy a carefree life away from each other, their daughter Lily, newly graduated from law school, drops a bombshell: she's getting married in four days to handsome Gede, eager to start afresh in Bali, Indonesia. As a result, simmering with restless irritation, Georgia and David agree to play along and devise a secret plan to sabotage the young couple's traditional Balinese wedding. However, there's something mysterious about exotic Bali. Can David and Georgia bury the hatchet for old times' sake?",
+        "country": "United States",
+        "genre": "Comedy, Romance",
+        "release": "2022-10-21",
+        "director": "Ol Parker",
+        "production": "Universal Pictures, Working Title Films, Smokehouse Pictures",
+        "image": "/images/movies/ticketToParadise.jpg",
+        "providerRent": [""],
+        "providerBuy": [
+          "https://tv.apple.com/de/movie/ticket-ins-paradies/umc.cmc.pwsdtg0wa0xdersf7m76q4vc?at=1000l3V2&ct=justwatch_tv&playableId=tvs.sbd.9001%3A1644969354",
+          "https://www.amazon.de/gp/video/detail/0FTSR9V69MM62XJU95WDBN4DQ4/ref=atv_dl_rdr?tag=movie0c6-21",
+          "https://play.google.com/store/movies/details/Ticket_to_Paradise?gl=DE&hl=en&id=X2R54fLjeoA.P",
+          "https://www.youtube.com/results?search_query=Ticket+to+Paradise%2Bmovie",
+          "https://rakuten.tv/de/movies/ticket-ins-paradies"
+        ]
+      },
+      {
+        "id": 7,
+        "title": "Sex Appeal",
+        "year": "2022",
+        "trailer": "https://youtube.com/embed/A207HN4bRJM",
+        "plot": "Avery Hansen-White doesn't do things she isn't excellent at. So when her long-distance boyfriend hints at wanting to take their relationship to the next level, she sets out to master her sexuality, employing her oldest friend, Larson, as a test subject. In this hilarious teen comedy, Avery's study results in the realization that there's more to sex, and love, than mechanics. Relationships require both head and heart.",
+        "country": "United States",
+        "genre": "Drama, Comedy, Romance",
+        "release": "2022-01-14",
+        "director": "Talia Osteen",
+        "production": "American High, Lit Entertainment Group, Nickel City Pictures",
+        "image": "/images/movies/sexAppeal.jpg",
+        "providerRent": [
+          "https://www.disneyplus.com/en-gb/movies/sex-appeal/2XourrVHWKhq?irclickid=xvAUieUTkxyNTCGw4XR3FxkWUkAzSGwdgTo9XQ0&irgwc=1&cid=DSS-Affiliate-Impact-Content-JustWatch+GmbH-705874&tgclid=0601001c-f5fe-4b8a-9e00-1eda63adcd4e&dclid=COqB2o-sn_wCFRuT_QcdUJoGrA"
+        ],
+        "providerBuy": [""]
+      },
+      {
+        "id": 8,
+        "title": "Kimi",
+        "year": "2022",
+        "trailer": "https://youtube.com/embed/_Gr2zXuEBL0",
+        "plot": "During the COVID-19 pandemic in Seattle, an agoraphobic tech worker discovers evidence of a violent crime while reviewing a data stream, and is met with resistance and bureaucracy when she tries reporting it to her company. To get involved, she realizes she must face her greatest fear by venturing out of her apartment and into the city streets, which are filled with protestors after the city council passes a law restricting the movements of the homeless population.",
+        "country": "United States",
+        "genre": "Drama, Thriller, Crime",
+        "release": "2022-02-10",
+        "director": "Steven Soderbergh",
+        "production": "Warner Bros, New Line Cinema",
+        "image": "/images/movies/kimi.jpg",
+        "providerRent": [""],
+        "providerBuy": [
+          "https://www.amazon.de/gp/video/detail/0RYQ96WFO1O0VQ67Y3ZMSVWZIB/ref=atv_dl_rdr?tag=movie0c6-21",
+          "https://tv.apple.com/de/movie/kimi/umc.cmc.1xzhhwnh8oqlab7eiqyfgmvp6?playableId=tvs.sbd.9001%3A1606811934",
+          "https://play.google.com/store/movies/details/Kimi?gl=DE&hl=en&id=HSQrHxPrrDo.P",
+          "https://www.youtube.com/results?search_query=Kimi%2Bmovie"
+        ]
+      },
+      {
+        "id": 9,
+        "title": "Mortal Kombat",
+        "year": "2021",
+        "trailer": "https://youtube.com/embed/-BQPKD7eozY",
+        "plot": "MMA fighter Cole Young (Lewis Tan), accustomed to taking a beating for money, is unaware of his heritage-or why Outworld's Emperor Shang Tsung (Chin Han) has sent his best warrior, Sub-Zero (Joe Taslim), an otherworldly Cryomancer, to hunt Cole down. Fearing for his family's safety, Cole goes in search of Sonya Blade (Jessica McNamee) at the direction of Jax (Mehcad Brooks), a Special Forces Major who bears the same strange dragon marking Cole was born with. Soon, he finds himself at the temple of Lord Raiden (Tadanobu Asano), an Elder God and the protector of Earthrealm, who grants sanctuary to those who bear the mark. Here, Cole trains with experienced warriors Liu Kang (Ludi Lin), Kung Lao (Max Huang) and rogue mercenary Kano (Josh Lawson), as he prepares to stand with Earth's greatest champions against the enemies of Outworld in a high stakes battle for the universe. But will Cole be pushed hard enough to unlock his arcana-the immense power from within his soul-in time to save not only his family but to stop Outworld once and for all? ",
+        "country": "Drama, Thriller, Crime",
+        "genre": "Thriller, Sci-Fi, Adventure, Action, Fantasy",
+        "release": "2021-04-01",
+        "director": "Simon McQuoid",
+        "production": "New Line Cinema, Atomic Monster",
+        "image": "/images/movies/mortalKombat.jpg",
+        "providerRent": [
+          "https://www.amazon.de/gp/video/detail/0L20IRGNH9A6WLYG2KRUTIIU5U/ref=atv_dl_rdr?tag=movie0c6-21"
+        ],
+        "providerBuy": [
+          "https://tv.apple.com/de/movie/mortal-kombat/umc.cmc.j1lw9zl2komuxkbcglyy0zvx?playableId=tvs.sbd.9001%3A1562064160",
+          "https://www.amazon.de/gp/video/detail/0L20IRGNH9A6WLYG2KRUTIIU5U/ref=atv_dl_rdr?tag=movie0c6-21",
+          "https://store.sky.de/product/mortal-kombat-2021/7dd9e6ab-320d-40ad-aff5-68323e27b19e",
+          "https://rakuten.tv/de/movies/mortal-kombat"
+        ]
+      },
+      {
+        "id": 10,
+        "title": "Wrath of Man",
+        "year": "2021",
+        "trailer": "https://youtube.com/embed/EFYEni2gsK0",
+        "plot": "Having barely passed the qualification exam, taciturn, inscrutable, and physically intimidating Patrick Hill starts working for Fortico Security, an armoured vehicle company specialising in guarding and transporting millions of dollars across Los Angeles. But, in this business, nobodies like Patrick are the prey and not the predators, and before long, armed-to-the-teeth assailants try to rob his truck, only to die at his hands with pinpoint accuracy, in a flawlessly orchestrated ballet of bullets and death. Indeed, there is more to Patrick than meets the eye, making Fortico's instant hero someone you don't want to mess with. In the end, whose side is Patrick on?",
+        "country": "United States, United Kingdom",
+        "genre": "Thriller, Action",
+        "release": "2021-04-22",
+        "director": "Guy Ritchie",
+        "production": "Miramax, Metro Goldwyn Mayer MGM, CAA Media Finance",
+        "image": "/images/movies/wrathOfMan.jpg",
+        "providerRent": [
+          "https://www.amazon.de/gp/video/detail/0JNG7631N42MSACMPJIDGVAVQE/ref=atv_dl_rdr?tag=movie0c6-21",
+          "https://www.youtube.com/results?search_query=Cash+Truck%2Bmovie",
+          "https://tv.apple.com/de/movie/cash-truck/umc.cmc.1gzck9czlhv4jw6qra2sdvbc6?playableId=tvs.sbd.9001%3A1579326319",
+          "https://play.google.com/store/movies/details/Cash_Truck?gl=DE&hl=en&id=mtKSm4VKEos.P"
+        ],
+        "providerBuy": [
+          "https://play.google.com/store/movies/details/Cash_Truck?gl=DE&hl=en&id=mtKSm4VKEos.P",
+          "https://tv.apple.com/de/movie/cash-truck/umc.cmc.1gzck9czlhv4jw6qra2sdvbc6?playableId=tvs.sbd.9001%3A1579326319",
+          "https://www.amazon.de/gp/video/detail/0JNG7631N42MSACMPJIDGVAVQE/ref=atv_dl_rdr?tag=movie0c6-21"
+        ]
+      }
+    ],
 
-  "series": [
-    {
-      "id": 1,
-      "title": "Wednesday",
-      "year": 2022,
-      "trailer": "https://youtube.com/embed/sJzm8RFQ8bA",
-      "plot": "A sleuthing, supernaturally infused mystery charting Wednesday Addams' years as a student at Nevermore Academy. Wednesday's attempts to master her emerging psychic ability, thwart a monstrous killing spree that has terrorized the local town, and solve the supernatural mystery that embroiled her parents 25 years ago - all while navigating her new and very tangled relationships at Nevermore.",
-      "country": "United States",
-      "genre": "Comedy, Crime, Family",
-      "release": "2022-11-23",
-      "director": "N/A",
-      "production": "MGM Television, Millar Gough Ink, Tee, Charles Addams Foundation",
-      "image": "/images/series/wednesday.jpg",
-      "providerRent": ["https://www.netflix.com/de-en/title/81231974"],
-      "providerBuy": [""]
-    },
-    {
-      "id": 2,
-      "title": "Loki",
-      "year": 2021,
-      "trailer": "https://youtube.com/embed/nW948Va-l10",
-      "plot": "The mercurial villain Loki resumes his role as the God of Mischief in a new series that takes place after the events of “Avengers: Endgame.",
-      "country": "United States",
-      "genre": "Sci-Fi, Adventure, Action, Fantasy",
-      "release": "2021-06-09",
-      "director": "N/A",
-      "production": "Marvel Studios",
-      "image": "/images/series/loki.jpg",
-      "providerRent": [
-        "https://www.disneyplus.com/series/loki/6pARMvILBGzF?irclickid=xvAUieUTkxyNTCGw4XR3FxkWUkAzCg0lgTo9XQ0&irgwc=1&cid=DSS-Affiliate-Impact-Content-JustWatch+GmbH-705874&tgclid=0001000b-d914-424a-a000-014363b1c705&dclid=CNzKzdj2pvwCFanhuwgd4TwM-Q"
-      ],
-      "providerBuy": [""]
-    },
-    {
-      "id": 3,
-      "title": "Squid Game",
-      "year": 2021,
-      "trailer": "https://youtube.com/embed/oqxAJKy0ii4",
-      "plot": "A story of people who fail at life for various reasons, but suddenly receive a mysterious invitation to participate in a survival game to win more than 38 million US dollars. The game takes place at an isolated island and the participants are locked up until there is a final winner. The story will incorporate popular children's games from the 1970s and 1980s of Korea, such as squid game, literal translation of its Korean name, which is a type of tag where offense and defense use a squid-shaped board drawn in the dirt.",
-      "country": "South Korea",
-      "genre": "Drama, Adventure, Action",
-      "release": "2021-09-17",
-      "director": "N/A",
-      "production": "Siren Pictures",
-      "image": "/images/series/squidGame.jpg",
-      "providerRent": ["https://www.netflix.com/de-en/title/81040344"],
-      "providerBuy": [""]
-    },
-    {
-      "id": 4,
-      "title": "WandaVision",
-      "year": 2021,
-      "trailer": "https://youtube.com/embed/sj9J2ecsSpo",
-      "plot": "Blends the style of classic sitcoms with the MCU, in which Wanda Maximoff and Vision - two super-powered beings living their ideal suburban lives - begin to suspect that everything is not as it seems.",
-      "country": "United States",
-      "genre": "Drama, Comedy, Sci-Fi, Adventure, Action, Fantasy",
-      "release": "2021-01-15",
-      "director": "N/A",
-      "production": "Marvel Studios",
-      "image": "/images/series/wanda.jpg",
-      "providerRent": [
-        "https://www.disneyplus.com/series/wandavision/4SrN28ZjDLwH?irclickid=xvAUieUTkxyNTCGw4XR3FxkWUkAzCuURgTo9XQ0&irgwc=1&cid=DSS-Affiliate-Impact-Content-JustWatch+GmbH-705874&tgclid=0101002f-fb92-4526-a600-1e7463b1d582&dclid=CJ7essGEp_wCFU2Q_QcdL1UEBA"
-      ],
-      "providerBuy": [""]
-    },
-    {
-      "id": 5,
-      "title": "House of the Dragon",
-      "year": 2022,
-      "trailer": "https://youtube.com/embed/DotnJ7tTA34",
-      "plot": "The Targaryen dynasty is at the absolute apex of its power, with more than 10 dragons under their yoke. Most empires crumble from such heights. In the case of the Targaryens, their slow fall begins when King Viserys breaks with a century of tradition by naming his daughter Rhaenyra heir to the Iron Throne. But when Viserys later fathers a son, the court is shocked when Rhaenyra retains her status as his heir, and seeds of division sow friction across the realm.",
-      "country": "United States",
-      "genre": "Drama, Adventure, Action",
-      "release": "2022-08-21",
-      "director": "N/A",
-      "production": "Home Box Office HBO, 126 Pictures",
-      "image": "/images/series/houseOfDragon.jpg",
-      "providerRent": [
-        "https://www.wowtv.de/filme-serien?DCMP=bac_DE_JUSTWATCH_nc_OFFER_AQ_-_-_-_&wkz=WDPRF28W&wkz=WDPRF28W&eml=ADGapID_026_800138_546365914-504325759:P352011299:A544221827:C182761640&extLi=28972725&dclid=CL7_msv5pvwCFS7Kuwgd_wsLIA&et_uk=f0a2025af284477b9b717dc5fdca5203&et_gk=MTc3ZGYwNjc1ZDE1NGE3YzkzODcwZmQ0NGFiY2RlOGQlN0MyNy4wMi4yMDIzKzE2JTNBNTklM0EwMg"
-      ],
-      "providerBuy": [
-        "https://rakuten.tv/de/tv_shows/house-of-the-dragon/seasons/house-of-the-dragon-1",
-        "https://tv.apple.com/de/show/house-of-the-dragon/umc.cmc.a7ghfhimozfi6v8egh2tsx1g",
-        "https://www.amazon.de/gp/video/detail/0J3XNM8LOV4V2C81L6Y87J12UG/ref=atv_dl_rdr?tag=movie0c6-21"
-      ]
-    },
-    {
-      "id": 6,
-      "title": "Reacher",
-      "year": 2022,
-      "trailer": "https://youtube.com/embed/GSycMV-_Csw",
-      "plot": "When retired Military Police Officer Jack Reacher is arrested for a murder he did not commit, he finds himself in the middle of a deadly conspiracy full of dirty cops, shady businessmen and scheming politicians. With nothing but his wits, he must figure out what is happening in Margrave, Georgia.",
-      "country": "United States",
-      "genre": "Drama, Action, Crime",
-      "release": "2022-02-04",
-      "director": "N/A",
-      "production": "Amazon Studios, Paramount Television, Blackjack Films Inc",
-      "image": "/images/series/reacher.jpg",
-      "providerRent": [
-        "https://www.amazon.de/gp/video/detail/0J277BIKJDP28XYGTV1HHYRH2T/ref=atv_dl_rdr?tag=movie0c6-21"
-      ],
-      "providerBuy": [""]
-    },
-    {
-      "id": 7,
-      "title": "The Summer I Turned Pretty",
-      "year": 2022,
-      "trailer": "https://youtube.com/embed/FfAueqEab30",
-      "plot": "A love triangle between one girl and two brothers. A story about first love, first heartbreak, and the magic of that one perfect summer.",
-      "country": "United States",
-      "genre": "Drama, Romance",
-      "release": "2022-06-17",
-      "director": "N/A",
-      "production": "Amazon Studios, wiip studios",
-      "image": "/images/series/theSummer.jpg",
-      "providerRent": [
-        "https://www.amazon.de/gp/video/detail/0JZ0C5J7BFG696OA9FB3OLG8NO/ref=atv_dl_rdr?tag=movie0c6-21"
-      ],
-      "providerBuy": [""]
-    },
-    {
-      "id": 8,
-      "title": "The Sex Lives of College Girls",
-      "year": 2022,
-      "trailer": "https://youtube.com/embed/XcfWhv0NaVM",
-      "plot": "'The Sex Lives of College Girls' follows four college roommates as they arrive at New England's prestigious Essex College. A bundle of contradictions and hormones, the girls are equal parts lovable and infuriating as they navigate their new, free lives on campus.",
-      "country": "United States",
-      "genre": "Comedy",
-      "release": "2022-11-17",
-      "director": "N/A",
-      "production": "3 Arts Entertainment, Warner Bros Television, Kaling International",
-      "image": "/images/series/theSexLives.jpg",
-      "providerRent": [
-        "https://www.amazon.de/gp/video/detail/0JKHQVAWRMCM6RCH62RUISYMAZ/ref=atv_dl_rdr?tag=movie0c6-21"
-      ],
-      "providerBuy": [
-        "https://tv.apple.com/de/show/the-sex-lives-of-college-girls/umc.cmc.6lnatnju4626h05o6rgzo202v",
-        "https://www.amazon.de/gp/video/detail/0PZXPESZOJPJ0DXOC8XPGPQ8LW/ref=atv_dl_rdr?tag=movie0c6-21",
-        "https://play.google.com/store/tv/show?cdid=tvseason-yW_ApxR8ick.P&gl=DE&hl=en&id=zJz7-Ki_sDo.P"
-      ]
-    },
-    {
-      "id": 9,
-      "title": "Only Murders in the Building",
-      "year": 2022,
-      "trailer": "https://youtube.com/embed/z4d7y7GDhDE",
-      "plot": "Follows three strangers (Steve Martin, Martin Short, and Selena Gomez) who share an obsession with true crime and suddenly find themselves wrapped up in one. When a grisly death occurs inside their exclusive Upper West Side apartment building, the trio suspects murder and employs their precise knowledge of true crime to investigate the truth. As they record a podcast of their own to document the case, the three unravel the complex secrets of the building which stretch back years. Perhaps even more explosive are the lies they tell one another. Soon, the endangered trio comes to realize a killer might be living amongst them as they race to decipher the mounting clues before it's too late.",
-      "country": "United States",
-      "genre": "Drama, Comedy, Crime",
-      "release": "2022-06-28",
-      "director": "N/A",
-      "production": "20th Television, 20th Century Fox Television",
-      "image": "/images/series/onlyMurders.jpg",
-      "providerRent": [
-        "https://www.disneyplus.com/series/only-murders-in-the-building/2EfP45PYWY5s?irclickid=xvAUieUTkxyNTCGw4XR3FxkWUkAzCCWVgTo9XQ0&irgwc=1&cid=DSS-Affiliate-Impact-Content-JustWatch+GmbH-705874&tgclid=0201003b-2f2f-40a4-b500-006e63b1d2a3&dclid=CM2s9uKBp_wCFYTIuwgdVTwDSw"
-      ],
-      "providerBuy": [""]
-    },
-    {
-      "id": 10,
-      "title": "Star Wars: The Bad Batch",
-      "year": 2021,
-      "trailer": "https://youtube.com/embed/BsOmYpP4UDU",
-      "plot": "The Clone Wars are over; now The Galactic Empire has taken over The Republic. But from the embers of The Clone Wars is The Bad Batch: a ragtag group of 'defective' clones whose skills are off-the-charts for any breed of soldier. In order to stand up to The Empire, The Bad Batch must get up to speed with the rest of the Galaxy, or die with the past.",
-      "country": "United States",
-      "genre": "Drama, Animation, Sci-Fi, Adventure, Action, Fantasy",
-      "release": "2021-05-04",
-      "director": "N/A",
-      "production": "Disney+, Lucasfilm Animation, Lucasfilm",
-      "image": "/images/series/starWars.jpg",
-      "providerRent": [
-        "https://www.disneyplus.com/en-gb/series/star-wars-the-bad-batch/4gMliqFxxqXC?irclickid=xvAUieUTkxyNTCGw4XR3FxkWUkAzCn2tgTo9XQ0&irgwc=1&cid=DSS-Affiliate-Impact-Content-JustWatch+GmbH-705874&tgclid=01010036-19b7-4907-b500-1be663b1c929&dclid=CLv3_934pvwCFczHuwgdSSwIBA"
-      ],
-      "providerBuy": [""]
-    },
-    {
-      "id": 11,
-      "title": "Vincenzo",
-      "year": 2021,
-      "trailer": "https://youtube.com/embed/_J8tYxYB_YU",
-      "plot": "Vincenzo Cassano, Korean-Italian mob lawyer and consigliere of the Cassano crime family, returns to his homeland to search for a place to stash the mob's assets and find further money-laundering business opportunities. However, with the corrupt Babel Corporate Group and its cronies dead set on gentrifying any business opportunities, Vincenzo is forced to band with the locals of a small town in order to take the fight against the tyranny of Babel and secure the Cassano family's foothold, unwittingly becoming a warrior of justice in the process.",
-      "country": "South Korea",
-      "genre": "Comedy, Romance, Crime",
-      "release": "2021-02-20",
-      "director": "N/A",
-      "production": "Studio Dragon, Logos Film",
-      "image": "/images/series/vincenzo.jpg",
-      "providerRent": ["https://www.netflix.com/de-en/title/81365087"],
-      "providerBuy": [""]
-    },
-    {
-      "id": 12,
-      "title": "Peacemaker",
-      "year": 2022,
-      "trailer": "https://youtube.com/embed/WHXq62VCaCM",
-      "plot": "Picking up where The Suicide Squad (2021) left off, Peacemaker returns home after recovering from his encounter with Bloodsport - only to discover that his freedom comes at a price.",
-      "country": "United States",
-      "genre": "Comedy, Adventure, Action",
-      "release": "2021-01-13",
-      "director": "N/A",
-      "production": "DC Entertainment, Troll Court Entertainment, The Safran Company",
-      "image": "/images/series/peacemaker.jpg",
-      "providerRent": [""],
-      "providerBuy": [
-        "https://play.google.com/store/tv/show?cdid=tvseason-YeunME9ppn8.P&gl=DE&hl=en&id=R_urMegy3gY.P",
-        "https://tv.apple.com/de/show/peacemaker/umc.cmc.29be4iil4rn1ov8vrdxhh4375",
-        "https://www.amazon.de/gp/video/detail/0KFTNI9QHYNEE9ZSM73N8WEA8G/ref=atv_dl_rdr?tag=movie0c6-21"
-      ]
-    },
-    {
-      "id": 13,
-      "title": "1899",
-      "year": 2022,
-      "trailer": "https://youtube.com/embed/p7OUQ9U2qIw",
-      "plot": "Follow the mysterious circumstances around the voyage of an immigrant ship from Europe to New York. The passengers, all of different backgrounds and nationalities, are united by their hopes and dreams for a new century and their future abroad. When they discover a second ship adrift on the open sea that had gone missing for months, their journey takes an unexpected turn. What they find on board will turn their passage to the promised land into a nightmare-lke riddle, connecting each of the passenger's pasts through a web of secrets.",
-      "country": "United States, Germany",
-      "genre": "Drama, History, Horror",
-      "release": "2022-11-17",
-      "director": "N/A",
-      "production": "Netflix, Dark Ways",
-      "image": "/images/series/1899.jpg",
-      "providerRent": ["https://www.netflix.com/de-en/title/80214497"],
-      "providerBuy": [""]
-    }
-  ]
-}
+    "series": [
+      {
+        "id": 1,
+        "title": "Wednesday",
+        "year": 2022,
+        "trailer": "https://youtube.com/embed/sJzm8RFQ8bA",
+        "plot": "A sleuthing, supernaturally infused mystery charting Wednesday Addams' years as a student at Nevermore Academy. Wednesday's attempts to master her emerging psychic ability, thwart a monstrous killing spree that has terrorized the local town, and solve the supernatural mystery that embroiled her parents 25 years ago - all while navigating her new and very tangled relationships at Nevermore.",
+        "country": "United States",
+        "genre": "Comedy, Crime, Family",
+        "release": "2022-11-23",
+        "director": "N/A",
+        "production": "MGM Television, Millar Gough Ink, Tee, Charles Addams Foundation",
+        "image": "/images/series/wednesday.jpg",
+        "providerRent": ["https://www.netflix.com/de-en/title/81231974"],
+        "providerBuy": [""]
+      },
+      {
+        "id": 2,
+        "title": "Loki",
+        "year": 2021,
+        "trailer": "https://youtube.com/embed/nW948Va-l10",
+        "plot": "The mercurial villain Loki resumes his role as the God of Mischief in a new series that takes place after the events of “Avengers: Endgame.",
+        "country": "United States",
+        "genre": "Sci-Fi, Adventure, Action, Fantasy",
+        "release": "2021-06-09",
+        "director": "N/A",
+        "production": "Marvel Studios",
+        "image": "/images/series/loki.jpg",
+        "providerRent": [
+          "https://www.disneyplus.com/series/loki/6pARMvILBGzF?irclickid=xvAUieUTkxyNTCGw4XR3FxkWUkAzCg0lgTo9XQ0&irgwc=1&cid=DSS-Affiliate-Impact-Content-JustWatch+GmbH-705874&tgclid=0001000b-d914-424a-a000-014363b1c705&dclid=CNzKzdj2pvwCFanhuwgd4TwM-Q"
+        ],
+        "providerBuy": [""]
+      },
+      {
+        "id": 3,
+        "title": "Squid Game",
+        "year": 2021,
+        "trailer": "https://youtube.com/embed/oqxAJKy0ii4",
+        "plot": "A story of people who fail at life for various reasons, but suddenly receive a mysterious invitation to participate in a survival game to win more than 38 million US dollars. The game takes place at an isolated island and the participants are locked up until there is a final winner. The story will incorporate popular children's games from the 1970s and 1980s of Korea, such as squid game, literal translation of its Korean name, which is a type of tag where offense and defense use a squid-shaped board drawn in the dirt.",
+        "country": "South Korea",
+        "genre": "Drama, Adventure, Action",
+        "release": "2021-09-17",
+        "director": "N/A",
+        "production": "Siren Pictures",
+        "image": "/images/series/squidGame.jpg",
+        "providerRent": ["https://www.netflix.com/de-en/title/81040344"],
+        "providerBuy": [""]
+      },
+      {
+        "id": 4,
+        "title": "WandaVision",
+        "year": 2021,
+        "trailer": "https://youtube.com/embed/sj9J2ecsSpo",
+        "plot": "Blends the style of classic sitcoms with the MCU, in which Wanda Maximoff and Vision - two super-powered beings living their ideal suburban lives - begin to suspect that everything is not as it seems.",
+        "country": "United States",
+        "genre": "Drama, Comedy, Sci-Fi, Adventure, Action, Fantasy",
+        "release": "2021-01-15",
+        "director": "N/A",
+        "production": "Marvel Studios",
+        "image": "/images/series/wanda.jpg",
+        "providerRent": [
+          "https://www.disneyplus.com/series/wandavision/4SrN28ZjDLwH?irclickid=xvAUieUTkxyNTCGw4XR3FxkWUkAzCuURgTo9XQ0&irgwc=1&cid=DSS-Affiliate-Impact-Content-JustWatch+GmbH-705874&tgclid=0101002f-fb92-4526-a600-1e7463b1d582&dclid=CJ7essGEp_wCFU2Q_QcdL1UEBA"
+        ],
+        "providerBuy": [""]
+      },
+      {
+        "id": 5,
+        "title": "House of the Dragon",
+        "year": 2022,
+        "trailer": "https://youtube.com/embed/DotnJ7tTA34",
+        "plot": "The Targaryen dynasty is at the absolute apex of its power, with more than 10 dragons under their yoke. Most empires crumble from such heights. In the case of the Targaryens, their slow fall begins when King Viserys breaks with a century of tradition by naming his daughter Rhaenyra heir to the Iron Throne. But when Viserys later fathers a son, the court is shocked when Rhaenyra retains her status as his heir, and seeds of division sow friction across the realm.",
+        "country": "United States",
+        "genre": "Drama, Adventure, Action",
+        "release": "2022-08-21",
+        "director": "N/A",
+        "production": "Home Box Office HBO, 126 Pictures",
+        "image": "/images/series/houseOfDragon.jpg",
+        "providerRent": [
+          "https://www.wowtv.de/filme-serien?DCMP=bac_DE_JUSTWATCH_nc_OFFER_AQ_-_-_-_&wkz=WDPRF28W&wkz=WDPRF28W&eml=ADGapID_026_800138_546365914-504325759:P352011299:A544221827:C182761640&extLi=28972725&dclid=CL7_msv5pvwCFS7Kuwgd_wsLIA&et_uk=f0a2025af284477b9b717dc5fdca5203&et_gk=MTc3ZGYwNjc1ZDE1NGE3YzkzODcwZmQ0NGFiY2RlOGQlN0MyNy4wMi4yMDIzKzE2JTNBNTklM0EwMg"
+        ],
+        "providerBuy": [
+          "https://rakuten.tv/de/tv_shows/house-of-the-dragon/seasons/house-of-the-dragon-1",
+          "https://tv.apple.com/de/show/house-of-the-dragon/umc.cmc.a7ghfhimozfi6v8egh2tsx1g",
+          "https://www.amazon.de/gp/video/detail/0J3XNM8LOV4V2C81L6Y87J12UG/ref=atv_dl_rdr?tag=movie0c6-21"
+        ]
+      },
+      {
+        "id": 6,
+        "title": "Reacher",
+        "year": 2022,
+        "trailer": "https://youtube.com/embed/GSycMV-_Csw",
+        "plot": "When retired Military Police Officer Jack Reacher is arrested for a murder he did not commit, he finds himself in the middle of a deadly conspiracy full of dirty cops, shady businessmen and scheming politicians. With nothing but his wits, he must figure out what is happening in Margrave, Georgia.",
+        "country": "United States",
+        "genre": "Drama, Action, Crime",
+        "release": "2022-02-04",
+        "director": "N/A",
+        "production": "Amazon Studios, Paramount Television, Blackjack Films Inc",
+        "image": "/images/series/reacher.jpg",
+        "providerRent": [
+          "https://www.amazon.de/gp/video/detail/0J277BIKJDP28XYGTV1HHYRH2T/ref=atv_dl_rdr?tag=movie0c6-21"
+        ],
+        "providerBuy": [""]
+      },
+      {
+        "id": 7,
+        "title": "The Summer I Turned Pretty",
+        "year": 2022,
+        "trailer": "https://youtube.com/embed/FfAueqEab30",
+        "plot": "A love triangle between one girl and two brothers. A story about first love, first heartbreak, and the magic of that one perfect summer.",
+        "country": "United States",
+        "genre": "Drama, Romance",
+        "release": "2022-06-17",
+        "director": "N/A",
+        "production": "Amazon Studios, wiip studios",
+        "image": "/images/series/theSummer.jpg",
+        "providerRent": [
+          "https://www.amazon.de/gp/video/detail/0JZ0C5J7BFG696OA9FB3OLG8NO/ref=atv_dl_rdr?tag=movie0c6-21"
+        ],
+        "providerBuy": [""]
+      },
+      {
+        "id": 8,
+        "title": "The Sex Lives of College Girls",
+        "year": 2022,
+        "trailer": "https://youtube.com/embed/XcfWhv0NaVM",
+        "plot": "'The Sex Lives of College Girls' follows four college roommates as they arrive at New England's prestigious Essex College. A bundle of contradictions and hormones, the girls are equal parts lovable and infuriating as they navigate their new, free lives on campus.",
+        "country": "United States",
+        "genre": "Comedy",
+        "release": "2022-11-17",
+        "director": "N/A",
+        "production": "3 Arts Entertainment, Warner Bros Television, Kaling International",
+        "image": "/images/series/theSexLives.jpg",
+        "providerRent": [
+          "https://www.amazon.de/gp/video/detail/0JKHQVAWRMCM6RCH62RUISYMAZ/ref=atv_dl_rdr?tag=movie0c6-21"
+        ],
+        "providerBuy": [
+          "https://tv.apple.com/de/show/the-sex-lives-of-college-girls/umc.cmc.6lnatnju4626h05o6rgzo202v",
+          "https://www.amazon.de/gp/video/detail/0PZXPESZOJPJ0DXOC8XPGPQ8LW/ref=atv_dl_rdr?tag=movie0c6-21",
+          "https://play.google.com/store/tv/show?cdid=tvseason-yW_ApxR8ick.P&gl=DE&hl=en&id=zJz7-Ki_sDo.P"
+        ]
+      },
+      {
+        "id": 9,
+        "title": "Only Murders in the Building",
+        "year": 2022,
+        "trailer": "https://youtube.com/embed/z4d7y7GDhDE",
+        "plot": "Follows three strangers (Steve Martin, Martin Short, and Selena Gomez) who share an obsession with true crime and suddenly find themselves wrapped up in one. When a grisly death occurs inside their exclusive Upper West Side apartment building, the trio suspects murder and employs their precise knowledge of true crime to investigate the truth. As they record a podcast of their own to document the case, the three unravel the complex secrets of the building which stretch back years. Perhaps even more explosive are the lies they tell one another. Soon, the endangered trio comes to realize a killer might be living amongst them as they race to decipher the mounting clues before it's too late.",
+        "country": "United States",
+        "genre": "Drama, Comedy, Crime",
+        "release": "2022-06-28",
+        "director": "N/A",
+        "production": "20th Television, 20th Century Fox Television",
+        "image": "/images/series/onlyMurders.jpg",
+        "providerRent": [
+          "https://www.disneyplus.com/series/only-murders-in-the-building/2EfP45PYWY5s?irclickid=xvAUieUTkxyNTCGw4XR3FxkWUkAzCCWVgTo9XQ0&irgwc=1&cid=DSS-Affiliate-Impact-Content-JustWatch+GmbH-705874&tgclid=0201003b-2f2f-40a4-b500-006e63b1d2a3&dclid=CM2s9uKBp_wCFYTIuwgdVTwDSw"
+        ],
+        "providerBuy": [""]
+      },
+      {
+        "id": 10,
+        "title": "Star Wars: The Bad Batch",
+        "year": 2021,
+        "trailer": "https://youtube.com/embed/BsOmYpP4UDU",
+        "plot": "The Clone Wars are over; now The Galactic Empire has taken over The Republic. But from the embers of The Clone Wars is The Bad Batch: a ragtag group of 'defective' clones whose skills are off-the-charts for any breed of soldier. In order to stand up to The Empire, The Bad Batch must get up to speed with the rest of the Galaxy, or die with the past.",
+        "country": "United States",
+        "genre": "Drama, Animation, Sci-Fi, Adventure, Action, Fantasy",
+        "release": "2021-05-04",
+        "director": "N/A",
+        "production": "Disney+, Lucasfilm Animation, Lucasfilm",
+        "image": "/images/series/starWars.jpg",
+        "providerRent": [
+          "https://www.disneyplus.com/en-gb/series/star-wars-the-bad-batch/4gMliqFxxqXC?irclickid=xvAUieUTkxyNTCGw4XR3FxkWUkAzCn2tgTo9XQ0&irgwc=1&cid=DSS-Affiliate-Impact-Content-JustWatch+GmbH-705874&tgclid=01010036-19b7-4907-b500-1be663b1c929&dclid=CLv3_934pvwCFczHuwgdSSwIBA"
+        ],
+        "providerBuy": [""]
+      },
+      {
+        "id": 11,
+        "title": "Vincenzo",
+        "year": 2021,
+        "trailer": "https://youtube.com/embed/_J8tYxYB_YU",
+        "plot": "Vincenzo Cassano, Korean-Italian mob lawyer and consigliere of the Cassano crime family, returns to his homeland to search for a place to stash the mob's assets and find further money-laundering business opportunities. However, with the corrupt Babel Corporate Group and its cronies dead set on gentrifying any business opportunities, Vincenzo is forced to band with the locals of a small town in order to take the fight against the tyranny of Babel and secure the Cassano family's foothold, unwittingly becoming a warrior of justice in the process.",
+        "country": "South Korea",
+        "genre": "Comedy, Romance, Crime",
+        "release": "2021-02-20",
+        "director": "N/A",
+        "production": "Studio Dragon, Logos Film",
+        "image": "/images/series/vincenzo.jpg",
+        "providerRent": ["https://www.netflix.com/de-en/title/81365087"],
+        "providerBuy": [""]
+      },
+      {
+        "id": 12,
+        "title": "Peacemaker",
+        "year": 2022,
+        "trailer": "https://youtube.com/embed/WHXq62VCaCM",
+        "plot": "Picking up where The Suicide Squad (2021) left off, Peacemaker returns home after recovering from his encounter with Bloodsport - only to discover that his freedom comes at a price.",
+        "country": "United States",
+        "genre": "Comedy, Adventure, Action",
+        "release": "2021-01-13",
+        "director": "N/A",
+        "production": "DC Entertainment, Troll Court Entertainment, The Safran Company",
+        "image": "/images/series/peacemaker.jpg",
+        "providerRent": [""],
+        "providerBuy": [
+          "https://play.google.com/store/tv/show?cdid=tvseason-YeunME9ppn8.P&gl=DE&hl=en&id=R_urMegy3gY.P",
+          "https://tv.apple.com/de/show/peacemaker/umc.cmc.29be4iil4rn1ov8vrdxhh4375",
+          "https://www.amazon.de/gp/video/detail/0KFTNI9QHYNEE9ZSM73N8WEA8G/ref=atv_dl_rdr?tag=movie0c6-21"
+        ]
+      },
+      {
+        "id": 13,
+        "title": "1899",
+        "year": 2022,
+        "trailer": "https://youtube.com/embed/p7OUQ9U2qIw",
+        "plot": "Follow the mysterious circumstances around the voyage of an immigrant ship from Europe to New York. The passengers, all of different backgrounds and nationalities, are united by their hopes and dreams for a new century and their future abroad. When they discover a second ship adrift on the open sea that had gone missing for months, their journey takes an unexpected turn. What they find on board will turn their passage to the promised land into a nightmare-lke riddle, connecting each of the passenger's pasts through a web of secrets.",
+        "country": "United States, Germany",
+        "genre": "Drama, History, Horror",
+        "release": "2022-11-17",
+        "director": "N/A",
+        "production": "Netflix, Dark Ways",
+        "image": "/images/series/1899.jpg",
+        "providerRent": ["https://www.netflix.com/de-en/title/80214497"],
+        "providerBuy": [""]
+      }
+    ]
+  }
+]

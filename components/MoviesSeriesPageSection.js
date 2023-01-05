@@ -166,7 +166,7 @@ const InfoSection = styled.section`
   margin: 10rem 0;
 
   @media screen and (max-width: 430px) {
-    grid-template-rows: 50% 40%;
+    grid-template-rows: 52% 38%;
     grid-template-columns: repeat(2, 50%);
     margin: 6rem 1rem;
     column-gap: 1rem;
