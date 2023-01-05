@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import MoviesSection from "../components/MoviesSection";
-// import data from "./api/tmdb.json";
 
 export default function Movies() {
   return (

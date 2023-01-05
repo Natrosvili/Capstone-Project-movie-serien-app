@@ -7,7 +7,6 @@ import {
   StyledLink,
 } from "./MoviesSection";
 import {useEffect, useState} from "react";
-// import data from "../pages/api/tmdb.json";
 
 export default function SeriesSection({genre}) {
   const [filter, setFilter] = useState([]);

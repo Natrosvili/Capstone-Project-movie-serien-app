@@ -1,7 +1,6 @@
 import Link from "next/link";
 import styled from "styled-components";
 import {useEffect, useState} from "react";
-// import data from "../pages/api/tmdb.json";
 
 export default function MoviesSection({genre}) {
   const [filter, setFilter] = useState([]);
