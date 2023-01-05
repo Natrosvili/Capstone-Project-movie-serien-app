@@ -137,7 +137,7 @@ const StyledSection = styled.section`
   row-gap: 5px;
 
   @media screen and (max-width: 430px) {
-    top: 11.5rem;
+    top: 7rem;
   }
 
   & iframe {
