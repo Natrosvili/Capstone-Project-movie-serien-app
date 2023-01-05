@@ -1,4 +1,3 @@
-// import data from "../api/tmdb.json";
 import MoviesSeriesPageSection from "../../components/MoviesSeriesPageSection";
 import {useRouter} from "next/router";
 import {useState, useEffect} from "react";
