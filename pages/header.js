@@ -40,7 +40,7 @@ const StyledHeader = styled.header`
   border-bottom: 2px solid;
 
   @media screen and (max-width: 430px) {
-    padding-top: 17%;
+    /* padding-top: 17%; */
     justify-content: space-between;
   }
 `;
