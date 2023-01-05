@@ -268,10 +268,6 @@ const H2 = styled.h2`
 const GridContainer = styled.article`
   border: 2px solid #ffe600;
   color: #ffe600;
-
-  /* @media screen and (max-width: 430px){
-    margin-top: 2rem;
-  } */
 `;
 
 const StyledLink = styled(Link)`
