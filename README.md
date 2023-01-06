@@ -1,9 +1,9 @@
 <section style="text-align:center;">
     <a href="https://capstone-project-movies-series-app.vercel.app">
-        <img style="border-radius: 0.8rem" src="./public/images/other/logo.png" alt="logo"/>
+        <img style="border-radius:0.8rem" src="./public/images/other/logo.png" alt="logo"/>
     </a>
     <h1 style="font-style:italic;">Description</h1>
-    <p><strong>Note: This is a capstone project for <a style="color:rgba(167, 49, 4);" href="https://www.neuefische.de/en">neuefische</a> Web Development Bootcamp.</strong></p>
+    <p><strong>Note: This is a capstone project for <a style="color:rgba(167,49,4);" href="https://www.neuefische.de/en">neuefische</a> Web Development Bootcamp.</strong></p>
     <p>Search Find Go! - Just a better place to find Movies and Series in high Quality. It allows you to find the best streaming platforms of your favourite Movies and Series for free.</p>
     <img style="border-radius:1rem;width:50%;height:70%;" src="./public/images/other/georgios_natrosvili.gif" />
     <br>
@@ -13,27 +13,28 @@
     <br>
     <div>
         <h1 style="font-style:italic;">Tech Stack</h1>
-        <div style="text-align:center;">
-            <p>Figma</p>
-            <p>React</p>
-            <p>React Hooks</p>
-            <p>React Router</p>
-            <p>NextJS</p>
-            <p>Node.js</p>
-            <p>Styled Components</p>
-            <p>Vercel</p>
-        </div>
+        <ul>
+            <li>Figma</li>
+            <li>React</li>
+            <li>React Hooks</li>
+            <li>React Router</li>
+            <li>NextJS</li>
+            <li>Node.js</li>
+            <li>Styled Components</li>
+            <li>Vercel</li>
+        </ul>
     </div>
     <br>
-    <div style="line-height: 2.2">
+    <div style="line-height:2.2">
     <h1 style="font-style:italic;">Project Setup</h1>
-        <ul stlyle="list-style-type:none;padding:0;">
-            <li>1. Clone this repository.</li> 
-            <li>2. Install all npm dependencies</li> 
-            <span style="color: #ffe600;">npm install</span>.
-            <li>3. To run the app in development mode <span class="npm-start">npm start</span>, then open http://localhost:3000 to view it in the browser.</li>
-            <li>4. To run unit and component tests: <span style="color: #ffe600;">npm test</span>.</li>
-            <li>5. to create a build ready for deploying: <span style="color: #ffe600;">npm run build</span>.</li>
-        </ul>
+        <ol stlyle="padding:0;">
+            <li>Clone this repository.</li> 
+            <li>Install all npm dependencies</li> 
+            <span style="color:#ffe600;">npm install</span>.
+            <li>To run the app in development mode <span class="npm-start">npm start</span>, then open <a href="http://localhost:3000">http://localhost:3000</a> to view it in the browser.</li>
+            <li>4. To run unit and component tests: <span style="color:#ffe600;">npm test</span>.</li>
+            <li>5. to create a build ready for deploying:
+            <span style="color:#ffe600">npm run build</span>.</li>
+        </ol>
     </div>
 </section>
