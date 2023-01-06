@@ -75,7 +75,7 @@ export default function Register() {
   }
 
   return (
-    <StyledSection>
+    <StyledSection primary>
       <StyledForm onSubmit={handleSubmitRegister} primary>
         <H1>Registration Form</H1>
         <StyledPar>

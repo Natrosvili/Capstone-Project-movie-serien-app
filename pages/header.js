@@ -30,6 +30,7 @@ export default function Header({children}) {
 }
 
 const StyledHeader = styled.header`
+  width: 100%;
   height: 15%;
   background-color: #010101;
   display: flex;
@@ -38,6 +39,9 @@ const StyledHeader = styled.header`
   align-items: center;
   text-align: center;
   border-bottom: 2px solid;
+  position: fixed;
+  top: 0;
+  z-index: 1;
 
   @media screen and (max-width: 430px) {
     justify-content: space-between;

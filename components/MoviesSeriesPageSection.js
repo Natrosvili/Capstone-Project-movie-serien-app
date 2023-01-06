@@ -110,6 +110,7 @@ export default function MoviesSeriesPageSection({data, altImage, text}) {
 const MainSection = styled.section`
   background-color: #000000;
   padding-bottom: 1rem;
+  padding-top: 20%;
 `;
 
 const FlexContainer = styled.section`
@@ -145,7 +146,6 @@ const StyledSection = styled.section`
     height: 55vh;
     border-radius: 12px;
     border: none;
-    z-index: 2;
     overflow: hidden;
     animation: ${iframeAnimation};
     animatin-duration: 1s;
@@ -166,7 +166,7 @@ const InfoSection = styled.section`
   margin: 10rem 0;
 
   @media screen and (max-width: 430px) {
-    grid-template-rows: 52% 38%;
+    grid-template-rows: 52% 70%;
     grid-template-columns: repeat(2, 50%);
     margin: 6rem 1rem;
     column-gap: 1rem;
@@ -229,9 +229,10 @@ const Container3 = styled.section`
   margin-top: 2.2rem;
 
   @media screen and (max-width: 430px) {
+    margin-top: 0.8rem;
     font-size: 0.6rem;
     line-height: 1.2rem;
-    justify-content: center;
+    justify-content: start;
   }
 
   & td {

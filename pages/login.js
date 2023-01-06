@@ -56,10 +56,10 @@ export default function LogIn() {
 
 export const StyledSection = styled.section`
   background-color: #000000;
-  padding: 2rem;
+  padding: ${props => (props.primary ? "30% 2rem 10%" : "20% 2rem 0")};
   display: grid;
   place-content: center;
-  height: 100vh;
+  height: 100%;
 `;
 
 export const StyledForm = styled.form`
