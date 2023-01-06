@@ -56,7 +56,7 @@ export default function LogIn() {
 
 export const StyledSection = styled.section`
   background-color: #000000;
-  padding: ${props => (props.primary ? "30% 2rem 10%" : "20% 2rem 0")};
+  padding: ${props => (props.primary ? "30% 2rem 10%" : "35% 2rem 10%")};
   display: grid;
   place-content: center;
   height: 100%;
