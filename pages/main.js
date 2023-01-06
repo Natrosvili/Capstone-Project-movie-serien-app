@@ -8,8 +8,7 @@ import SeriesSection from "../components/SeriesSection";
 export default function Main() {
   return (
     <>
-      <link rel="icon" href="/images/other/favicon.ico" />
-      <main style={{backgroundColor: "#010101"}}>
+      <main style={{backgroundColor: "#010101", paddingTop: "20%"}}>
         <StyledSection heightMedia={"40rem"}>
           <BackgroundImage src={seats2} alt="seats as background image" />
           <h1>Find Movies and Series</h1>
