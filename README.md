@@ -20,6 +20,7 @@
             <li>React Router</li>
             <li>NextJS</li>
             <li>Node.js</li>
+            <li>MongoDB</li>
             <li>Styled Components</li>
             <li>Vercel</li>
         </ul>
